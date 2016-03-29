@@ -1,5 +1,5 @@
 //
-//  ProfileViewController.swift
+//  ActivityCell.swift
 //  Zeus
 //
 //  Created by 吴蕾君 on 16/3/29.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ProfileViewController: BaseViewController {
-    override func viewDidLoad() {
-        //
+class ActivityCell: BaseTableViewCell {
+    override class func heightOfCell()->CGFloat {
+        return 120
     }
 }

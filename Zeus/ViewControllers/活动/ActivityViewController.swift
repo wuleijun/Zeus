@@ -10,4 +10,42 @@ import UIKit
 
 class ActivityViewController: BaseViewController {
 
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var tableView: UITableView!
+ 
+    let activityCellId = "ActivityCellId"
+    
+    override func viewDidLoad() {
+        tableView.registerNib(UINib.init(nibName: "ActivityCell", bundle: nil), forCellReuseIdentifier:activityCellId)
+        tableView.rowHeight = ActivityCell.heightOfCell()
+    }
+}
+
+extension ActivityViewController:UITableViewDelegate{
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+    
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        view.endEditing(true)
+    }
+}
+
+extension ActivityViewController : UITableViewDataSource {
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let activityCell = tableView.dequeueReusableCellWithIdentifier(activityCellId) as! ActivityCell
+        return activityCell
+        
+    }
+    
 }
