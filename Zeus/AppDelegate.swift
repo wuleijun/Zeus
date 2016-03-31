@@ -44,10 +44,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: Private
     private func setupAppearance(){
-        window?.tintColor = UIColor.zeusTintColor()
         
-        UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.zeusTintColor()], forState: .Normal)
-        UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.zeusTintColor().colorWithAlphaComponent(0.3)], forState: .Disabled)
+        
+//        UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.zeusTintColor()], forState: .Normal)
+//        UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.zeusTintColor().colorWithAlphaComponent(0.3)], forState: .Disabled)
         
         // NavigationBar Title Style
         
@@ -74,6 +74,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().titleTextAttributes = textAttributes
         UINavigationBar.appearance().barTintColor = UIColor.zeusNavigationBarTintColor()
         UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().tintColor = UIColor.zeusNavigationBarTitleColor()
+        
         //UIBarButtonItem.appearance().setTitleTextAttributes(barButtonTextAttributes, forState: UIControlState.Normal)
         //UINavigationBar.appearance().setBackgroundImage(UIImage(named:"white"), forBarMetrics: .Default)
         
