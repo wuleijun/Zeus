@@ -93,6 +93,9 @@
                                 <rect key="frame" x="447" y="7" width="133" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <segue destination="B1q-YU-oVr" kind="show" id="Wsh-6A-Q36"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -210,6 +213,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ac7-XL-FEH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1931" y="1068"/>
+        </scene>
+        <!--AddActivityVC-->
+        <scene sceneID="RnH-MO-Qjc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddActivityVC" id="B1q-YU-oVr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5KG-RQ-rak" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-995" y="1384"/>
         </scene>
     </scenes>
     <resources>
