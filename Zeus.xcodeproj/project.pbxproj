@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4523B3EF1CACBB9F00811E50 /* UIColor+Zeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523B3EE1CACBB9F00811E50 /* UIColor+Zeus.swift */; };
+		4523B3F11CACBDDC00811E50 /* UIFont+Zeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523B3F01CACBDDC00811E50 /* UIFont+Zeus.swift */; };
 		458C27131CAA6D8E004575FC /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C27121CAA6D8E004575FC /* ActivityViewController.swift */; };
 		458C27161CAA6DB9004575FC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C27151CAA6DB9004575FC /* BaseViewController.swift */; };
 		458C27181CAA6E05004575FC /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C27171CAA6E05004575FC /* ClientViewController.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4523B3EE1CACBB9F00811E50 /* UIColor+Zeus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Zeus.swift"; sourceTree = "<group>"; };
+		4523B3F01CACBDDC00811E50 /* UIFont+Zeus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Zeus.swift"; sourceTree = "<group>"; };
 		458C27121CAA6D8E004575FC /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		458C27151CAA6DB9004575FC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		458C27171CAA6E05004575FC /* ClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 		458C270B1CAA6915004575FC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4523B3EE1CACBB9F00811E50 /* UIColor+Zeus.swift */,
+				4523B3F01CACBDDC00811E50 /* UIFont+Zeus.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -347,10 +353,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4523B3F11CACBDDC00811E50 /* UIFont+Zeus.swift in Sources */,
 				458C27161CAA6DB9004575FC /* BaseViewController.swift in Sources */,
 				45D0522A1CAA594400BB1738 /* AppDelegate.swift in Sources */,
 				458C271A1CAA6E24004575FC /* ProfileViewController.swift in Sources */,
 				458C27131CAA6D8E004575FC /* ActivityViewController.swift in Sources */,
+				4523B3EF1CACBB9F00811E50 /* UIColor+Zeus.swift in Sources */,
 				458C27231CAA7C04004575FC /* BaseTableViewCell.swift in Sources */,
 				458C271F1CAA7AF0004575FC /* ActivityCell.swift in Sources */,
 				458C27181CAA6E05004575FC /* ClientViewController.swift in Sources */,
@@ -496,6 +504,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Zeus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hesheng.Zeus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,6 +516,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Zeus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hesheng.Zeus;
 				PRODUCT_NAME = "$(TARGET_NAME)";

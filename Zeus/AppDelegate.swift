@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        setupAppearance()
         return true
     }
 
@@ -41,6 +42,51 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    // MARK: Private
+    private func setupAppearance(){
+        window?.tintColor = UIColor.zeusTintColor()
+        
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.zeusTintColor()], forState: .Normal)
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.zeusTintColor().colorWithAlphaComponent(0.3)], forState: .Disabled)
+        
+        // NavigationBar Title Style
+        
+        let shadow: NSShadow = {
+            let shadow = NSShadow()
+            shadow.shadowColor = UIColor.lightGrayColor()
+            shadow.shadowOffset = CGSizeMake(0, 0)
+            return shadow
+        }()
+        
+        let textAttributes = [
+            NSForegroundColorAttributeName: UIColor.zeusNavigationBarTitleColor(),
+            NSShadowAttributeName: shadow,
+            NSFontAttributeName: UIFont.zeusNavigationBarTitleFont()
+        ]
+        
+        /*
+         let barButtonTextAttributes = [
+         NSForegroundColorAttributeName: UIColor.yepTintColor(),
+         NSFontAttributeName: UIFont.barButtonFont()
+         ]
+         */
+        
+        UINavigationBar.appearance().titleTextAttributes = textAttributes
+        UINavigationBar.appearance().barTintColor = UIColor.zeusNavigationBarTintColor()
+        //UIBarButtonItem.appearance().setTitleTextAttributes(barButtonTextAttributes, forState: UIControlState.Normal)
+        //UINavigationBar.appearance().setBackgroundImage(UIImage(named:"white"), forBarMetrics: .Default)
+        //UINavigationBar.appearance().shadowImage = UIImage()
+        //UINavigationBar.appearance().translucent = false
+        
+        // TabBar
+        
+        //UITabBar.appearance().backgroundImage = UIImage(named:"white")
+        //UITabBar.appearance().shadowImage = UIImage()
+        UITabBar.appearance().tintColor = UIColor.zeusTabBarTintColor()
+        UITabBar.appearance().barTintColor = UIColor.whiteColor()
+        //UITabBar.appearance().translucent = false
+        
+        UIApplication.sharedApplication().setStatusBarStyle(.LightContent, animated: true)
+    }
 }
 

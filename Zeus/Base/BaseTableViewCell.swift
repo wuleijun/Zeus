@@ -10,12 +10,7 @@ import UIKit
 
 
 class BaseTableViewCell: UITableViewCell {
-    
 
-    class func nib()->UINib{
-        return UINib.init(nibName: NSStringFromClass(self), bundle: nil)
-    }
-    
     class func heightOfCell()->CGFloat {
         return 50
     }

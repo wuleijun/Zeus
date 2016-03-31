@@ -13,10 +13,10 @@ class ActivityViewController: BaseViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
  
-    let activityCellId = "ActivityCellId"
+    let activityCellId = "ActivityCell"
     
     override func viewDidLoad() {
-        tableView.registerNib(UINib.init(nibName: "ActivityCell", bundle: nil), forCellReuseIdentifier:activityCellId)
+        tableView.registerNib(UINib.init(nibName: activityCellId, bundle: nil), forCellReuseIdentifier:activityCellId)
         tableView.rowHeight = ActivityCell.heightOfCell()
     }
 }
