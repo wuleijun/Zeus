@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4523B3EF1CACBB9F00811E50 /* UIColor+Zeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523B3EE1CACBB9F00811E50 /* UIColor+Zeus.swift */; };
 		4523B3F11CACBDDC00811E50 /* UIFont+Zeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523B3F01CACBDDC00811E50 /* UIFont+Zeus.swift */; };
+		4523B3F41CACD0ED00811E50 /* HistoryActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523B3F31CACD0ED00811E50 /* HistoryActivityVC.swift */; };
+		4523B3F91CACD1CA00811E50 /* HistoryActivityVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4523B3F71CACD1CA00811E50 /* HistoryActivityVC.storyboard */; };
 		458C27131CAA6D8E004575FC /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C27121CAA6D8E004575FC /* ActivityViewController.swift */; };
 		458C27161CAA6DB9004575FC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C27151CAA6DB9004575FC /* BaseViewController.swift */; };
 		458C27181CAA6E05004575FC /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C27171CAA6E05004575FC /* ClientViewController.swift */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		4523B3EE1CACBB9F00811E50 /* UIColor+Zeus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Zeus.swift"; sourceTree = "<group>"; };
 		4523B3F01CACBDDC00811E50 /* UIFont+Zeus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Zeus.swift"; sourceTree = "<group>"; };
+		4523B3F31CACD0ED00811E50 /* HistoryActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryActivityVC.swift; sourceTree = "<group>"; };
+		4523B3F81CACD1CA00811E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HistoryActivityVC.storyboard; sourceTree = "<group>"; };
 		458C27121CAA6D8E004575FC /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		458C27151CAA6DB9004575FC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		458C27171CAA6E05004575FC /* ClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4523B3F21CACD0CE00811E50 /* 历史活动 */ = {
+			isa = PBXGroup;
+			children = (
+				4523B3F31CACD0ED00811E50 /* HistoryActivityVC.swift */,
+				4523B3F71CACD1CA00811E50 /* HistoryActivityVC.storyboard */,
+			);
+			name = "历史活动";
+			sourceTree = "<group>";
+		};
 		458C270B1CAA6915004575FC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +139,7 @@
 		458C270F1CAA698F004575FC /* 活动 */ = {
 			isa = PBXGroup;
 			children = (
+				4523B3F21CACD0CE00811E50 /* 历史活动 */,
 				458C271B1CAA7AA3004575FC /* Cells */,
 				458C27121CAA6D8E004575FC /* ActivityViewController.swift */,
 			);
@@ -325,6 +339,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4523B3F91CACD1CA00811E50 /* HistoryActivityVC.storyboard in Resources */,
 				45D052361CAA594400BB1738 /* LaunchScreen.storyboard in Resources */,
 				45D052331CAA594400BB1738 /* Assets.xcassets in Resources */,
 				458C27211CAA7AFE004575FC /* ActivityCell.xib in Resources */,
@@ -359,6 +374,7 @@
 				458C271A1CAA6E24004575FC /* ProfileViewController.swift in Sources */,
 				458C27131CAA6D8E004575FC /* ActivityViewController.swift in Sources */,
 				4523B3EF1CACBB9F00811E50 /* UIColor+Zeus.swift in Sources */,
+				4523B3F41CACD0ED00811E50 /* HistoryActivityVC.swift in Sources */,
 				458C27231CAA7C04004575FC /* BaseTableViewCell.swift in Sources */,
 				458C271F1CAA7AF0004575FC /* ActivityCell.swift in Sources */,
 				458C27181CAA6E05004575FC /* ClientViewController.swift in Sources */,
@@ -397,6 +413,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4523B3F71CACD1CA00811E50 /* HistoryActivityVC.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4523B3F81CACD1CA00811E50 /* Base */,
+			);
+			name = HistoryActivityVC.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		45D0522F1CAA594400BB1738 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

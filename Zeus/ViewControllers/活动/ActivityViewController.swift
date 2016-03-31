@@ -30,6 +30,20 @@ extension ActivityViewController:UITableViewDelegate{
     func scrollViewDidScroll(scrollView: UIScrollView) {
         view.endEditing(true)
     }
+    
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, titleForDeleteConfirmationButtonForRowAtIndexPath indexPath: NSIndexPath) -> String? {
+        return "删除"
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
+        if editingStyle == .Delete {
+            print("\(indexPath.row)");
+        }
+    }
 }
 
 extension ActivityViewController : UITableViewDataSource {
@@ -39,7 +53,7 @@ extension ActivityViewController : UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 15
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -47,5 +61,4 @@ extension ActivityViewController : UITableViewDataSource {
         return activityCell
         
     }
-    
 }

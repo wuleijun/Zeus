@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Klz-aV-iyG">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--历史活动-->
+        <scene sceneID="bgA-bw-rD5">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="Klz-aV-iyG" customClass="HistoryActivityVC" customModule="Zeus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rt9-15-bky"/>
+                        <viewControllerLayoutGuide type="bottom" id="IUK-3a-7WX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F7k-il-wdG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aJe-ll-oVf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="9jv-3s-UcK">
+                                    <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                                <connections>
+                                    <outlet property="dataSource" destination="Klz-aV-iyG" id="LO0-dn-KV0"/>
+                                    <outlet property="delegate" destination="Klz-aV-iyG" id="OjK-Yp-j0J"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aJe-ll-oVf" firstAttribute="leading" secondItem="F7k-il-wdG" secondAttribute="leading" id="9Lo-yo-lUx"/>
+                            <constraint firstItem="aJe-ll-oVf" firstAttribute="top" secondItem="F7k-il-wdG" secondAttribute="top" id="9kg-7Y-leo"/>
+                            <constraint firstAttribute="trailing" secondItem="aJe-ll-oVf" secondAttribute="trailing" id="C3g-I4-Uve"/>
+                            <constraint firstItem="IUK-3a-7WX" firstAttribute="top" secondItem="aJe-ll-oVf" secondAttribute="bottom" id="hIb-se-Znb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="历史活动" id="ORz-oV-TTf"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="aJe-ll-oVf" id="3wm-oc-aun"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kci-Nv-jY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1931" y="1068"/>
+        </scene>
+    </scenes>
+</document>

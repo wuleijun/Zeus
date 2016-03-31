@@ -52,7 +52,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KLf-qG-yNR">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" id="xO0-aR-x7D">
                                     <rect key="frame" x="0.0" y="64" width="600" height="44"/>
@@ -70,13 +70,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="KLf-qG-yNR" secondAttribute="bottom" id="12a-17-BJi"/>
-                            <constraint firstItem="KLf-qG-yNR" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="Bk4-Mp-gmm"/>
-                            <constraint firstItem="KLf-qG-yNR" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="-64" id="mML-Wq-WT3"/>
-                            <constraint firstAttribute="trailing" secondItem="KLf-qG-yNR" secondAttribute="trailing" id="x17-0p-4Vp"/>
+                            <constraint firstAttribute="trailing" secondItem="KLf-qG-yNR" secondAttribute="trailing" id="TfX-Gr-612"/>
+                            <constraint firstItem="KLf-qG-yNR" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="Vfi-g5-c03"/>
+                            <constraint firstAttribute="bottom" secondItem="KLf-qG-yNR" secondAttribute="bottom" id="fJI-as-w94"/>
+                            <constraint firstItem="KLf-qG-yNR" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="sfr-gF-aVM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="活动" id="WAo-Mg-G4m">
+                        <barButtonItem key="leftBarButtonItem" id="fF3-mu-n9p">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dTE-vt-h9m">
+                                <rect key="frame" x="20" y="11" width="60" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="历史活动"/>
+                                <connections>
+                                    <segue destination="AHZ-8D-gqc" kind="show" id="jsr-Ir-yzS"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" id="6RY-Yh-UmL">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7w3-rc-nH2">
                                 <rect key="frame" x="447" y="7" width="133" height="30"/>
@@ -189,6 +200,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-580" y="-665"/>
+        </scene>
+        <!--HistoryActivityVC-->
+        <scene sceneID="08p-qU-Zn9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HistoryActivityVC" id="AHZ-8D-gqc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="I9r-Tb-gNJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ac7-XL-FEH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1931" y="1068"/>
         </scene>
     </scenes>
     <resources>

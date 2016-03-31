@@ -73,10 +73,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UINavigationBar.appearance().titleTextAttributes = textAttributes
         UINavigationBar.appearance().barTintColor = UIColor.zeusNavigationBarTintColor()
+        UINavigationBar.appearance().shadowImage = UIImage()
         //UIBarButtonItem.appearance().setTitleTextAttributes(barButtonTextAttributes, forState: UIControlState.Normal)
         //UINavigationBar.appearance().setBackgroundImage(UIImage(named:"white"), forBarMetrics: .Default)
-        //UINavigationBar.appearance().shadowImage = UIImage()
-        //UINavigationBar.appearance().translucent = false
+        
+        UINavigationBar.appearance().translucent = true
         
         // TabBar
         
