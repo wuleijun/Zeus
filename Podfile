@@ -7,6 +7,7 @@ def pods
     pod 'FXBlurView'
     pod 'Kingfisher'
     pod 'XLForm'
+    pod 'SnapKit'
 end
 
 target 'Zeus' do

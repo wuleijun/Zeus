@@ -10,7 +10,9 @@ import UIKit
 import XLForm
 
 class AddActivityVC: XLFormViewController {
-    
+    /**
+     *  Form Tags
+     */
     private struct Tags {
         static let Name = "name"
         static let Count = "count"
@@ -23,7 +25,7 @@ class AddActivityVC: XLFormViewController {
         static let ChairMan = "chairMan"
         static let Speaker = "Speaker"
         static let Topic = "topic"
-        
+        /// 落款
         static let Sign = "sign"
     }
     
@@ -40,8 +42,19 @@ class AddActivityVC: XLFormViewController {
         initializeForm()
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view
+        let buttonView = PublishButtonView(frame: self.view.frame)
+        buttonView.size = CGSize(width: self.view.width, height: 150)
+        buttonView.delegate = self
+        self.tableView.tableFooterView = buttonView
+    }
+    
+    // MARK: Init Form
     func initializeForm() {
         
+        //注册自定义Cell
         XLFormViewController.cellClassesForRowDescriptorTypes()[XLFormRowDescriptorTypeAddButton] = "AddItemCell"
         
         let form : XLFormDescriptor
@@ -49,7 +62,7 @@ class AddActivityVC: XLFormViewController {
         var row : XLFormRowDescriptor
         
         form = XLFormDescriptor(title: "新建活动")
-        form.assignFirstResponderOnShow = true
+        //form.assignFirstResponderOnShow = true
         
         section = XLFormSectionDescriptor()
         //活动名称
@@ -116,7 +129,7 @@ class AddActivityVC: XLFormViewController {
         row = XLFormRowDescriptor(tag: Tags.Speaker,rowType: XLFormRowDescriptorTypeSelectorPush,title: "讲者")
         row.noValueDisplayText = "请选择"
         section.addFormRow(row)
-    
+        
         //讲题
         row = XLFormRowDescriptor(tag: Tags.Topic, rowType: XLFormRowDescriptorTypeText, title: "讲题")
         row.required = true
@@ -131,6 +144,7 @@ class AddActivityVC: XLFormViewController {
         
         form.addFormSection(section)
         
+        //落款
         section = XLFormSectionDescriptor()
         row = XLFormRowDescriptor(tag: Tags.Sign, rowType: XLFormRowDescriptorTypeText, title: "落款")
         row.required = true
@@ -143,6 +157,11 @@ class AddActivityVC: XLFormViewController {
         
     }
     
+    // MARK: Actions
+    func publishActivity() {
+        
+    }
+    
     func addTopic(){
         let row = XLFormRowDescriptor(tag: Tags.Speaker,rowType: XLFormRowDescriptorTypeSelectorPush,title: "讲者")
         self.form.addFormRow(row, afterRow: lastTopicRow)
@@ -152,7 +171,7 @@ class AddActivityVC: XLFormViewController {
         topicRow.cellConfigAtConfigure["textField.placeholder"] = "请输入"
         topicRow.cellConfigAtConfigure["textField.textAlignment"] = NSTextAlignment.Right.rawValue
         self.form.addFormRow(topicRow, afterRow: row)
-
+        
         lastTopicRow = topicRow
     }
     
@@ -161,11 +180,6 @@ class AddActivityVC: XLFormViewController {
         
         self.form.addFormRow(row, afterRow: lastChairManRow)
         lastChairManRow = row
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {
@@ -184,4 +198,12 @@ class AddActivityVC: XLFormViewController {
      }
      */
     
+}
+
+
+extension AddActivityVC:PublishButtonViewDelegate{
+    // MARK: Publish Action
+    func publishButtonViewDidTouchButton() {
+        print("publish");
+    }
 }

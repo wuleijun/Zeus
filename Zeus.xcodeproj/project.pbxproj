@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45175A971CAE0A9400D42A47 /* PublishButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45175A961CAE0A9400D42A47 /* PublishButtonView.swift */; };
+		45175A991CAE0B1E00D42A47 /* UIView+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45175A981CAE0B1E00D42A47 /* UIView+Position.swift */; };
 		4523B3EF1CACBB9F00811E50 /* UIColor+Zeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523B3EE1CACBB9F00811E50 /* UIColor+Zeus.swift */; };
 		4523B3F11CACBDDC00811E50 /* UIFont+Zeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523B3F01CACBDDC00811E50 /* UIFont+Zeus.swift */; };
 		4523B3F41CACD0ED00811E50 /* HistoryActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523B3F31CACD0ED00811E50 /* HistoryActivityVC.swift */; };
@@ -52,6 +54,8 @@
 
 /* Begin PBXFileReference section */
 		054A9FFFFB89F87101B7258A /* Pods-Zeus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zeus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zeus/Pods-Zeus.debug.xcconfig"; sourceTree = "<group>"; };
+		45175A961CAE0A9400D42A47 /* PublishButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishButtonView.swift; sourceTree = "<group>"; };
+		45175A981CAE0B1E00D42A47 /* UIView+Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Position.swift"; sourceTree = "<group>"; };
 		4523B3EE1CACBB9F00811E50 /* UIColor+Zeus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Zeus.swift"; sourceTree = "<group>"; };
 		4523B3F01CACBDDC00811E50 /* UIFont+Zeus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Zeus.swift"; sourceTree = "<group>"; };
 		4523B3F31CACD0ED00811E50 /* HistoryActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryActivityVC.swift; sourceTree = "<group>"; };
@@ -111,6 +115,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45175A951CAE0A8400D42A47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45175A961CAE0A9400D42A47 /* PublishButtonView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		4523B3F21CACD0CE00811E50 /* 历史活动 */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +135,7 @@
 		4523B3FA1CACFD4E00811E50 /* 新建活动 */ = {
 			isa = PBXGroup;
 			children = (
+				45175A951CAE0A8400D42A47 /* Views */,
 				4523B4101CAD251100811E50 /* Cells */,
 				4523B3FB1CACFD8A00811E50 /* AddActivityVC.swift */,
 				4523B3FD1CACFDD500811E50 /* AddActivityVC.storyboard */,
@@ -151,6 +164,7 @@
 		458C270B1CAA6915004575FC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				45175A981CAE0B1E00D42A47 /* UIView+Position.swift */,
 				4523B3EE1CACBB9F00811E50 /* UIColor+Zeus.swift */,
 				4523B3F01CACBDDC00811E50 /* UIFont+Zeus.swift */,
 			);
@@ -488,6 +502,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45175A971CAE0A9400D42A47 /* PublishButtonView.swift in Sources */,
 				4523B3F11CACBDDC00811E50 /* UIFont+Zeus.swift in Sources */,
 				458C27161CAA6DB9004575FC /* BaseViewController.swift in Sources */,
 				45D0522A1CAA594400BB1738 /* AppDelegate.swift in Sources */,
@@ -499,6 +514,7 @@
 				4523B3EF1CACBB9F00811E50 /* UIColor+Zeus.swift in Sources */,
 				4523B3F41CACD0ED00811E50 /* HistoryActivityVC.swift in Sources */,
 				458C27231CAA7C04004575FC /* BaseTableViewCell.swift in Sources */,
+				45175A991CAE0B1E00D42A47 /* UIView+Position.swift in Sources */,
 				458C271F1CAA7AF0004575FC /* ActivityCell.swift in Sources */,
 				458C27181CAA6E05004575FC /* ClientViewController.swift in Sources */,
 			);

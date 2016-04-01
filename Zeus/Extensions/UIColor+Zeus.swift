@@ -24,4 +24,8 @@ extension UIColor{
     class func zeusTabBarTintColor()->UIColor {
         return UIColor(red: 0, green:190/255.0, blue:12/255.0, alpha: 1.0)
     }
+    
+    class func zeusPublishButtonBackgroundColor()->UIColor {
+        return UIColor(red: 0.90, green:0.22, blue:0.21, alpha: 1.0)
+    }
 }
