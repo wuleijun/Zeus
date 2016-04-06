@@ -4,10 +4,13 @@ use_frameworks!
 
 def pods
     pod 'Alamofire'
-    pod 'FXBlurView'
     pod 'Kingfisher'
-    pod 'XLForm'
     pod 'SnapKit'
+    
+    #Objc
+    pod 'YYCategories'
+    pod 'XLForm'
+    pod 'FXBlurView'
 end
 
 target 'Zeus' do

@@ -4,6 +4,9 @@ PODS:
   - Kingfisher (2.2.0)
   - SnapKit (0.20.0)
   - XLForm (3.1.1)
+  - YYCategories (1.0.1):
+    - YYCategories/no-arc (= 1.0.1)
+  - YYCategories/no-arc (1.0.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -11,6 +14,7 @@ DEPENDENCIES:
   - Kingfisher
   - SnapKit
   - XLForm
+  - YYCategories
 
 SPEC CHECKSUMS:
   Alamofire: 9054db4a1b1ca9e363223183e01cea380159a27c
@@ -18,5 +22,6 @@ SPEC CHECKSUMS:
   Kingfisher: 350869ed88d6451803b390475d977abdd9f0a357
   SnapKit: 5fce3c1bbbf1fbd31de9aa92f33eb9fa03f15650
   XLForm: c9ee7e0f859341279bfd894f9589a9d25c23e4df
+  YYCategories: ebd2d2d473de67a29fbfb83e812c350966cc256f
 
 COCOAPODS: 0.39.0

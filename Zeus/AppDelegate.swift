@@ -46,8 +46,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func setupAppearance(){
         
         
-//        UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.zeusTintColor()], forState: .Normal)
-//        UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.zeusTintColor().colorWithAlphaComponent(0.3)], forState: .Disabled)
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.zeusTintColor()], forState: .Normal)
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.zeusTintColor().colorWithAlphaComponent(0.3)], forState: .Disabled)
         
         // NavigationBar Title Style
         
@@ -79,7 +79,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //UIBarButtonItem.appearance().setTitleTextAttributes(barButtonTextAttributes, forState: UIControlState.Normal)
         //UINavigationBar.appearance().setBackgroundImage(UIImage(named:"white"), forBarMetrics: .Default)
         
-        UINavigationBar.appearance().translucent = true
+        UINavigationBar.appearance().translucent = false
         
         // TabBar
         

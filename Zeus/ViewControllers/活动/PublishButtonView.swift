@@ -9,8 +9,17 @@
 import UIKit
 import SnapKit
 
-@objc protocol PublishButtonViewDelegate {
+
+/**
+ *  PublishButtonViewDelegate
+ */
+protocol PublishButtonViewDelegate: NSObjectProtocol {
+    
+    /**
+     点击了发布按钮
+     */
     func publishButtonViewDidTouchButton()
+    
 }
 
 class PublishButtonView: UIView {

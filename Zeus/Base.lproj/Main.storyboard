@@ -15,12 +15,88 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="W7C-IY-msn" kind="relationship" relationship="rootViewController" id="Li2-X0-XuY"/>
+                        <segue destination="1Jo-EX-RfL" kind="relationship" relationship="rootViewController" id="c3Q-xr-jUD"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CYy-1T-auf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="184" y="167"/>
+        </scene>
+        <!--我-->
+        <scene sceneID="C5d-Q2-BAB">
+            <objects>
+                <viewController id="1Jo-EX-RfL" customClass="ProfileViewController" customModule="Zeus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ed0-N6-fFe"/>
+                        <viewControllerLayoutGuide type="bottom" id="r5d-IZ-WZA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="22b-JJ-gVW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fV0-TU-y25">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJO-nh-Np2" customClass="CellBaseContainerView" customModule="Zeus" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="10" width="375" height="80"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mNa-Eg-ChO">
+                                                <rect key="frame" x="10" y="10" width="60" height="60"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="1cM-AM-aO0"/>
+                                                    <constraint firstAttribute="height" constant="60" id="8Cd-h6-rjb"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="张三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WF1-QZ-LKA">
+                                                <rect key="frame" x="77" y="18" width="125" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15068877369" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfq-eu-Gjv">
+                                                <rect key="frame" x="78" y="42" width="125" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="mNa-Eg-ChO" firstAttribute="leading" secondItem="iJO-nh-Np2" secondAttribute="leading" constant="10" id="Jre-Ak-g6w"/>
+                                            <constraint firstItem="mNa-Eg-ChO" firstAttribute="centerY" secondItem="iJO-nh-Np2" secondAttribute="centerY" id="YIA-EW-tUX"/>
+                                            <constraint firstAttribute="height" constant="80" id="bdh-mk-M5S"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="iJO-nh-Np2" secondAttribute="trailing" id="CSY-q9-XC8"/>
+                                    <constraint firstItem="iJO-nh-Np2" firstAttribute="leading" secondItem="fV0-TU-y25" secondAttribute="leading" id="DwN-vU-g0N"/>
+                                    <constraint firstItem="iJO-nh-Np2" firstAttribute="top" secondItem="fV0-TU-y25" secondAttribute="top" constant="10" id="QVN-Hk-OLe"/>
+                                    <constraint firstAttribute="bottom" secondItem="iJO-nh-Np2" secondAttribute="bottom" constant="524" id="oXK-OE-EyO"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fV0-TU-y25" secondAttribute="trailing" id="AFL-xr-pAV"/>
+                            <constraint firstItem="iJO-nh-Np2" firstAttribute="width" secondItem="22b-JJ-gVW" secondAttribute="width" id="DJE-4i-rs8"/>
+                            <constraint firstItem="fV0-TU-y25" firstAttribute="leading" secondItem="22b-JJ-gVW" secondAttribute="leading" id="Jj8-2K-HwI"/>
+                            <constraint firstItem="fV0-TU-y25" firstAttribute="top" secondItem="22b-JJ-gVW" secondAttribute="top" id="LJh-F2-qS6"/>
+                            <constraint firstAttribute="bottom" secondItem="fV0-TU-y25" secondAttribute="bottom" id="Ypg-G0-0uY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="我" id="lkT-wn-wZx"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="infoView" destination="iJO-nh-Np2" id="GrF-Nu-VS4"/>
+                        <outlet property="infoViewBottomConstraint" destination="oXK-OE-EyO" id="khq-AG-hmg"/>
+                        <segue destination="Mz7-Fn-NKz" kind="show" identifier="showInfoViewController" id="Yq6-E8-aVi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zdg-iV-5FF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5.5" y="937.5"/>
         </scene>
         <!--活动-->
         <scene sceneID="1tk-IY-78W">
@@ -141,13 +217,13 @@
                                 <rect key="frame" x="195" y="279" width="209.5" height="41.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
                                 <rect key="frame" x="192" y="329" width="215.5" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -164,25 +240,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-520" y="964"/>
-        </scene>
-        <!--我-->
-        <scene sceneID="gK3-FG-NKb">
-            <objects>
-                <viewController id="W7C-IY-msn" customClass="ProfileViewController" customModule="Zeus" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3kE-zp-4E6"/>
-                        <viewControllerLayoutGuide type="bottom" id="Z4C-3e-rlm"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PDp-jm-gUD">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="我" id="oEc-ZM-ydj"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L5a-oM-ngC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="192" y="980"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -221,6 +278,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5KG-RQ-rak" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-995" y="1384"/>
+        </scene>
+        <!--InfoViewController-->
+        <scene sceneID="kRB-63-jMn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="InfoViewController" id="Mz7-Fn-NKz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PKW-3a-3mg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="638.5" y="896.5"/>
         </scene>
     </scenes>
     <resources>
