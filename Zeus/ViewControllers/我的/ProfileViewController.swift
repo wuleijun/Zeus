@@ -13,7 +13,7 @@ class ProfileViewController: BaseViewController {
     @IBOutlet weak var infoView: CellBaseContainerView!
     @IBOutlet weak var infoViewBottomConstraint: NSLayoutConstraint!
     override func viewDidLoad() {
-        view.backgroundColor = UIColor.zeusBackgroundColor()
+        super.viewDidLoad()
         let tabBarHeight:CGFloat = 50.0 + 64.0
         infoViewBottomConstraint.constant = view.height-tabBarHeight-infoView.height+1
 

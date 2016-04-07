@@ -15,7 +15,7 @@ extension UIColor{
      - returns: UIColor
      */
     class func zeusBackgroundColor()->UIColor {
-        return UIColor(red: 0.98, green: 0.98, blue: 0.98, alpha: 1.0)
+        return UIColor(red: 0.97, green: 0.97, blue: 0.97, alpha: 1.0)
     }
     
     /**

@@ -8,12 +8,19 @@
 
 import UIKit
 
-class InfoViewController: UIViewController {
+class InfoViewController: BaseViewController {
 
+    @IBOutlet weak var headCellView: CellBaseContainerView!
+    @IBOutlet weak var nameCellView: CellBaseContainerView!
+    @IBOutlet weak var companyCellView: CellBaseContainerView!
+    @IBOutlet weak var positionCellView: CellBaseContainerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        headCellView.tapAction = {[weak self] in
+            self?.performSegueWithIdentifier("showEditInfoViewController", sender: nil)
+        }
     }
 
     override func didReceiveMemoryWarning() {

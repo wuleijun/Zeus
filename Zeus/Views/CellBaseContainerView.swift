@@ -20,6 +20,11 @@ class CellBaseContainerView: UIView {
         return button
     }()
     
+    lazy var nextArrowImageView:UIImageView = {
+        let imageView = UIImageView(image: UIImage(named: "personalinformation_rightarrow"))
+        return imageView
+    }()
+    
     func backgroundTouch(){
         tapAction?()
     }
@@ -37,6 +42,15 @@ class CellBaseContainerView: UIView {
         backgroundButton.snp_makeConstraints { (make) in
             make.edges.equalTo(snp_edges)
         }
+        
+        insertSubview(nextArrowImageView, atIndex: 1)
+        nextArrowImageView.snp_makeConstraints { (make) in
+            make.centerY.equalTo(self)
+            make.right.equalTo(self).offset(-15)
+            make.size.equalTo(CGSize(width: 5, height: 8))
+        }
+        
         setLayerShadow(UIColor.blackColor(), offset: CGSizeZero, radius: 0.3)
+        backgroundColor = UIColor.whiteColor()
     }
 }

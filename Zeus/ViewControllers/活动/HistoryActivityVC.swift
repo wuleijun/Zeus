@@ -14,7 +14,7 @@ class HistoryActivityVC: BaseViewController {
     let activityCellId = "ActivityCell"
     
     override func viewDidLoad() {
-    
+        super.viewDidLoad()
         tableView.registerNib(UINib(nibName: activityCellId, bundle:nil), forCellReuseIdentifier: activityCellId)
         tableView.rowHeight = ActivityCell.heightOfCell()
     }

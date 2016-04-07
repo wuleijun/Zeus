@@ -21,6 +21,8 @@
 		4523B40F1CAD16B700811E50 /* ClientTypeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4523B40D1CAD16B700811E50 /* ClientTypeVC.storyboard */; };
 		4523B4131CAD253B00811E50 /* AddItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523B4111CAD253B00811E50 /* AddItemCell.swift */; };
 		4523B4141CAD253B00811E50 /* AddItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4523B4121CAD253B00811E50 /* AddItemCell.xib */; };
+		457C6AD11CB642AE0065E883 /* EditInfoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457C6ACF1CB642AE0065E883 /* EditInfoViewController.storyboard */; };
+		457C6AD31CB642CF0065E883 /* EditInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457C6AD21CB642CF0065E883 /* EditInfoViewController.swift */; };
 		458C27131CAA6D8E004575FC /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C27121CAA6D8E004575FC /* ActivityViewController.swift */; };
 		458C27161CAA6DB9004575FC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C27151CAA6DB9004575FC /* BaseViewController.swift */; };
 		458C27181CAA6E05004575FC /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C27171CAA6E05004575FC /* ClientViewController.swift */; };
@@ -70,6 +72,8 @@
 		4523B40E1CAD16B700811E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Zeus/Base.lproj/ClientTypeVC.storyboard; sourceTree = SOURCE_ROOT; };
 		4523B4111CAD253B00811E50 /* AddItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemCell.swift; sourceTree = "<group>"; };
 		4523B4121CAD253B00811E50 /* AddItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddItemCell.xib; sourceTree = "<group>"; };
+		457C6AD01CB642AE0065E883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Zeus/Base.lproj/EditInfoViewController.storyboard; sourceTree = SOURCE_ROOT; };
+		457C6AD21CB642CF0065E883 /* EditInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditInfoViewController.swift; sourceTree = "<group>"; };
 		458C27121CAA6D8E004575FC /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		458C27151CAA6DB9004575FC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		458C27171CAA6E05004575FC /* ClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +193,15 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		457C6ACE1CB6420E0065E883 /* 编辑个人信息 */ = {
+			isa = PBXGroup;
+			children = (
+				457C6AD21CB642CF0065E883 /* EditInfoViewController.swift */,
+				457C6ACF1CB642AE0065E883 /* EditInfoViewController.storyboard */,
+			);
+			name = "编辑个人信息";
+			sourceTree = "<group>";
+		};
 		458C270B1CAA6915004575FC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				458C27191CAA6E24004575FC /* ProfileViewController.swift */,
+				457C6ACE1CB6420E0065E883 /* 编辑个人信息 */,
 				451EA00B1CB4FF35004FE212 /* 个人信息 */,
 			);
 			path = "我的";
@@ -457,6 +471,7 @@
 				4523B3F91CACD1CA00811E50 /* HistoryActivityVC.storyboard in Resources */,
 				4523B40F1CAD16B700811E50 /* ClientTypeVC.storyboard in Resources */,
 				45D052361CAA594400BB1738 /* LaunchScreen.storyboard in Resources */,
+				457C6AD11CB642AE0065E883 /* EditInfoViewController.storyboard in Resources */,
 				4523B3FF1CACFDD500811E50 /* AddActivityVC.storyboard in Resources */,
 				45D052331CAA594400BB1738 /* Assets.xcassets in Resources */,
 				458C27211CAA7AFE004575FC /* ActivityCell.xib in Resources */,
@@ -538,6 +553,7 @@
 				458C27161CAA6DB9004575FC /* BaseViewController.swift in Sources */,
 				45D0522A1CAA594400BB1738 /* AppDelegate.swift in Sources */,
 				4523B4131CAD253B00811E50 /* AddItemCell.swift in Sources */,
+				457C6AD31CB642CF0065E883 /* EditInfoViewController.swift in Sources */,
 				4523B4041CAD12EA00811E50 /* ClientTypeVC.swift in Sources */,
 				458C271A1CAA6E24004575FC /* ProfileViewController.swift in Sources */,
 				458C27131CAA6D8E004575FC /* ActivityViewController.swift in Sources */,
@@ -618,6 +634,14 @@
 			);
 			name = ClientTypeVC.storyboard;
 			path = "../活动";
+			sourceTree = "<group>";
+		};
+		457C6ACF1CB642AE0065E883 /* EditInfoViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				457C6AD01CB642AE0065E883 /* Base */,
+			);
+			name = EditInfoViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		45D0522F1CAA594400BB1738 /* Main.storyboard */ = {
