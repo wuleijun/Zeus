@@ -12,10 +12,11 @@ import YYCategories
 class ProfileViewController: BaseViewController {
     @IBOutlet weak var infoView: CellBaseContainerView!
     @IBOutlet weak var infoViewBottomConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let tabBarHeight:CGFloat = 50.0 + 64.0
-        infoViewBottomConstraint.constant = view.height-tabBarHeight-infoView.height+1
+
+        infoViewBottomConstraint.constant = view.height-topBarsHeight+1
 
         infoView.tapAction = { [weak self] in
             self?.performSegueWithIdentifier("showInfoViewController", sender: nil)

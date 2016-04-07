@@ -8,7 +8,7 @@
         <!--Edit Info View Controller-->
         <scene sceneID="zZP-EM-tfJ">
             <objects>
-                <viewController id="TtI-SU-gst" customClass="EditInfoViewController" customModule="Zeus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditInfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TtI-SU-gst" customClass="EditInfoViewController" customModule="Zeus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VN1-pZ-cEr"/>
                         <viewControllerLayoutGuide type="bottom" id="oZ4-gC-09t"/>
@@ -62,6 +62,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="save_Touch:" destination="TtI-SU-gst" eventType="touchUpInside" id="cHc-4N-H3y"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -69,8 +72,8 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="textField" destination="BMs-4e-9eA" id="hen-fb-hjz"/>
-                        <outlet property="titleLabel" destination="080-vm-YYD" id="yRZ-AQ-NFg"/>
+                        <outlet property="textField" destination="BMs-4e-9eA" id="yoV-Yb-jQC"/>
+                        <outlet property="titleLabel" destination="080-vm-YYD" id="XsK-ri-bbv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1j-xl-seV" userLabel="First Responder" sceneMemberID="firstResponder"/>

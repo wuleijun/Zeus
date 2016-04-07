@@ -130,23 +130,17 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="companyCellView" destination="AJH-pu-Q4h" id="jYM-pZ-cvn"/>
+                        <outlet property="companyLabel" destination="h8N-JU-0Be" id="olH-Wq-i0z"/>
                         <outlet property="headCellView" destination="4Mc-nu-jyj" id="s7H-r9-351"/>
                         <outlet property="nameCellView" destination="zL0-I0-GnS" id="XXB-6x-Nf7"/>
+                        <outlet property="nameLabel" destination="Wk5-cZ-07A" id="Lrr-Ny-1MN"/>
                         <outlet property="positionCellView" destination="gkh-UU-Mu5" id="Oqm-Fr-KLC"/>
-                        <segue destination="0xh-nj-n9f" kind="show" identifier="showEditInfoViewController" id="nN7-No-kDB"/>
+                        <outlet property="positionLabel" destination="gos-hd-NBC" id="FDB-XA-bkR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jog-hm-0gN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="204.5" y="456.5"/>
-        </scene>
-        <!--EditInfoViewController-->
-        <scene sceneID="0jL-eK-6nv">
-            <objects>
-                <viewControllerPlaceholder storyboardName="EditInfoViewController" id="0xh-nj-n9f" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0QA-qx-Sim" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="690.5" y="456.5"/>
         </scene>
     </scenes>
 </document>

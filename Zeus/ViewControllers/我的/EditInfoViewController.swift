@@ -8,19 +8,73 @@
 
 import UIKit
 
+
+enum EditInfoType {
+    case Name, Company, Position
+}
+
+struct EditInfo {
+
+    var infoType = EditInfoType.Name
+    var value:String?
+    
+    init(infoType:EditInfoType,value:String){
+        self.infoType = infoType
+        self.value = value
+    }
+}
+
+protocol EditInfoViewControllerDelegate {
+    func editInfoViewControllerDidSaveEditInfo(editInfo:EditInfo)
+}
+
 class EditInfoViewController: BaseViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
     
+    var editInfo:EditInfo?
+    var delegate:EditInfoViewControllerDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setupUI()
+    }
+    
+    func setupUI(){
+        
+        guard let info = self.editInfo else{
+            assert(false, "必须设置editInfo")
+            return
+        }
+        
+        switch info.infoType {
+        case EditInfoType.Name:
+            self.titleLabel.text = "姓名"
+        case EditInfoType.Company:
+            self.titleLabel.text = "公司"
+        case EditInfoType.Position:
+            self.titleLabel.text = "职位"
+        }
+        title = titleLabel.text
+        textField.text = info.value
+        
+        textField.becomeFirstResponder()
     }
 
+    @IBAction func save_Touch(sender: AnyObject) {
+        //TODO:网络请求
+        editInfo?.value = textField.text
+        if let delegate = delegate {
+            delegate.editInfoViewControllerDidSaveEditInfo(self.editInfo!)
+        }
+        navigationController?.popViewControllerAnimated(true)
+    }
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        textField.becomeFirstResponder()
+        
     }
     
     override func didReceiveMemoryWarning() {

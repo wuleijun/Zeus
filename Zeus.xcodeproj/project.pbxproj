@@ -23,6 +23,7 @@
 		4523B4141CAD253B00811E50 /* AddItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4523B4121CAD253B00811E50 /* AddItemCell.xib */; };
 		457C6AD11CB642AE0065E883 /* EditInfoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457C6ACF1CB642AE0065E883 /* EditInfoViewController.storyboard */; };
 		457C6AD31CB642CF0065E883 /* EditInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457C6AD21CB642CF0065E883 /* EditInfoViewController.swift */; };
+		457C6AD61CB655B90065E883 /* UIViewController+Zeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457C6AD51CB655B90065E883 /* UIViewController+Zeus.swift */; };
 		458C27131CAA6D8E004575FC /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C27121CAA6D8E004575FC /* ActivityViewController.swift */; };
 		458C27161CAA6DB9004575FC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C27151CAA6DB9004575FC /* BaseViewController.swift */; };
 		458C27181CAA6E05004575FC /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C27171CAA6E05004575FC /* ClientViewController.swift */; };
@@ -74,6 +75,7 @@
 		4523B4121CAD253B00811E50 /* AddItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddItemCell.xib; sourceTree = "<group>"; };
 		457C6AD01CB642AE0065E883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Zeus/Base.lproj/EditInfoViewController.storyboard; sourceTree = SOURCE_ROOT; };
 		457C6AD21CB642CF0065E883 /* EditInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditInfoViewController.swift; sourceTree = "<group>"; };
+		457C6AD51CB655B90065E883 /* UIViewController+Zeus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Zeus.swift"; sourceTree = "<group>"; };
 		458C27121CAA6D8E004575FC /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		458C27151CAA6DB9004575FC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		458C27171CAA6E05004575FC /* ClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			children = (
 				4523B3EE1CACBB9F00811E50 /* UIColor+Zeus.swift */,
 				4523B3F01CACBDDC00811E50 /* UIFont+Zeus.swift */,
+				457C6AD51CB655B90065E883 /* UIViewController+Zeus.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -261,8 +264,8 @@
 			isa = PBXGroup;
 			children = (
 				458C27191CAA6E24004575FC /* ProfileViewController.swift */,
-				457C6ACE1CB6420E0065E883 /* 编辑个人信息 */,
 				451EA00B1CB4FF35004FE212 /* 个人信息 */,
+				457C6ACE1CB6420E0065E883 /* 编辑个人信息 */,
 			);
 			path = "我的";
 			sourceTree = "<group>";
@@ -555,6 +558,7 @@
 				4523B4131CAD253B00811E50 /* AddItemCell.swift in Sources */,
 				457C6AD31CB642CF0065E883 /* EditInfoViewController.swift in Sources */,
 				4523B4041CAD12EA00811E50 /* ClientTypeVC.swift in Sources */,
+				457C6AD61CB655B90065E883 /* UIViewController+Zeus.swift in Sources */,
 				458C271A1CAA6E24004575FC /* ProfileViewController.swift in Sources */,
 				458C27131CAA6D8E004575FC /* ActivityViewController.swift in Sources */,
 				451EA0021CB4F2F2004FE212 /* CellBaseContainerView.swift in Sources */,
