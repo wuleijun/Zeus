@@ -15,6 +15,7 @@ class InfoViewController: BaseViewController {
     @IBOutlet weak var companyCellView: CellBaseContainerView!
     @IBOutlet weak var positionCellView: CellBaseContainerView!
     
+    @IBOutlet weak var headImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var companyLabel: UILabel!
     @IBOutlet weak var positionLabel: UILabel!
@@ -25,6 +26,31 @@ class InfoViewController: BaseViewController {
     }
     
     func bindActions() {
+        
+        headCellView.tapAction = {[weak self] in
+            
+            let imagePickerVC = UIImagePickerController()
+            imagePickerVC.allowsEditing = true
+            imagePickerVC.delegate = self
+            imagePickerVC.sourceType = .PhotoLibrary
+            
+            let alertViewController = UIAlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
+            alertViewController.addAction(UIAlertAction(title: "拍照", style: .Default, handler: { (action:UIAlertAction) in
+                
+                imagePickerVC.sourceType = .Camera
+                self?.presentViewController(imagePickerVC, animated: true, completion: nil)
+                
+            }))
+            alertViewController.addAction(UIAlertAction(title: "从手机相册选择", style: .Default, handler: { (action:UIAlertAction) in
+                
+                self?.presentViewController(imagePickerVC, animated: true, completion: nil)
+                
+            }))
+            alertViewController.addAction(UIAlertAction(title: "取消", style: .Cancel, handler: nil))
+            
+            self?.presentViewController(alertViewController, animated: true, completion: nil)
+        }
+        
         nameCellView.tapAction = {[weak self] in
             self?.jumpToEditInfoVC(EditInfo(infoType: EditInfoType.Name, value: "test"))
         }
@@ -72,5 +98,12 @@ extension InfoViewController:EditInfoViewControllerDelegate{
         case .Position:
             positionLabel.text = editInfo.value
         }
+    }
+}
+
+extension InfoViewController:UIImagePickerControllerDelegate,UINavigationControllerDelegate{
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        headImageView.image = image.imageByRoundCornerRadius(image.size.width)
+        picker.dismissViewControllerAnimated(true, completion: nil)
     }
 }

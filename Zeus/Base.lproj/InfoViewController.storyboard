@@ -28,7 +28,7 @@
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Akj-Dz-Njm">
                                         <rect key="frame" x="290" y="8" width="50" height="50"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="NSq-HH-t4z"/>
                                             <constraint firstAttribute="width" constant="50" id="YA7-Ku-BHq"/>
@@ -132,6 +132,7 @@
                         <outlet property="companyCellView" destination="AJH-pu-Q4h" id="jYM-pZ-cvn"/>
                         <outlet property="companyLabel" destination="h8N-JU-0Be" id="olH-Wq-i0z"/>
                         <outlet property="headCellView" destination="4Mc-nu-jyj" id="s7H-r9-351"/>
+                        <outlet property="headImageView" destination="Akj-Dz-Njm" id="pT0-RS-tQ5"/>
                         <outlet property="nameCellView" destination="zL0-I0-GnS" id="XXB-6x-Nf7"/>
                         <outlet property="nameLabel" destination="Wk5-cZ-07A" id="Lrr-Ny-1MN"/>
                         <outlet property="positionCellView" destination="gkh-UU-Mu5" id="Oqm-Fr-KLC"/>

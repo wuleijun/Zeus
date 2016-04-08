@@ -433,6 +433,7 @@
 				TargetAttributes = {
 					45D052251CAA594300BB1738 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = VG9ZTTPBW8;
 					};
 					45D0523B1CAA594400BB1738 = {
 						CreatedOnToolsVersion = 7.3;
@@ -755,11 +756,14 @@
 			baseConfigurationReference = 054A9FFFFB89F87101B7258A /* Pods-Zeus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jin Tao (88EZ8AQ3C7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jin Tao (88EZ8AQ3C7)";
 				INFOPLIST_FILE = Zeus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hesheng.Zeus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5c6100d3-004b-4eda-ae83-4469dc76bc17";
 			};
 			name = Debug;
 		};
@@ -768,11 +772,14 @@
 			baseConfigurationReference = 7F03FDE68F71AC8018F8842C /* Pods-Zeus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jin Tao (88EZ8AQ3C7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jin Tao (88EZ8AQ3C7)";
 				INFOPLIST_FILE = Zeus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hesheng.Zeus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5c6100d3-004b-4eda-ae83-4469dc76bc17";
 			};
 			name = Release;
 		};
