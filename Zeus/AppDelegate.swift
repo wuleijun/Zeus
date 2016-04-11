@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         setupAppearance()
+        startLoginStory()
         return true
     }
 
@@ -42,6 +43,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    
+    // MARK: Helpers
+    func startLoginStory() {
+        let loginNavigationController = UIViewController.controllerWith(storyboardName: "LoginAndRegister", viewControllerId: "loginNavigationController") as! UINavigationController
+        window?.rootViewController = loginNavigationController
+    }
+    func startMainStory() {
+        let mainTabBarController = UIViewController.controllerWith(storyboardName: "Main", viewControllerId: "mainTabBarController") as! UITabBarController
+        window?.rootViewController = mainTabBarController
+    }
+    
     // MARK: Private
     private func setupAppearance(){
         

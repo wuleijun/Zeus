@@ -12,6 +12,7 @@ import YYCategories
 class ProfileViewController: BaseViewController {
     @IBOutlet weak var infoView: CellBaseContainerView!
     @IBOutlet weak var infoViewBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var settingsView: CellBaseContainerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,10 @@ class ProfileViewController: BaseViewController {
 
         infoView.tapAction = { [weak self] in
             self?.performSegueWithIdentifier("showInfoViewController", sender: nil)
+        }
+        
+        settingsView.tapAction = { [weak self] in
+            self?.performSegueWithIdentifier("showSettingsViewController", sender: nil)
         }
     }
 }

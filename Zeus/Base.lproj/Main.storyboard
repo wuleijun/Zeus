@@ -146,7 +146,9 @@
                     <connections>
                         <outlet property="infoView" destination="iJO-nh-Np2" id="GrF-Nu-VS4"/>
                         <outlet property="infoViewBottomConstraint" destination="oXK-OE-EyO" id="khq-AG-hmg"/>
+                        <outlet property="settingsView" destination="7Vv-my-LPg" id="Arb-en-u8Q"/>
                         <segue destination="Mz7-Fn-NKz" kind="show" identifier="showInfoViewController" id="Yq6-E8-aVi"/>
+                        <segue destination="NVd-el-Wkw" kind="show" identifier="showSettingsViewController" id="Lr2-mL-bhc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zdg-iV-5FF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -299,7 +301,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="mainTabBarController" id="49e-Tb-3d3" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -334,13 +336,21 @@
             </objects>
             <point key="canvasLocation" x="-995" y="1384"/>
         </scene>
+        <!--SettingsViewController-->
+        <scene sceneID="PpR-7K-La2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SettingsViewController" id="NVd-el-Wkw" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I2C-aQ-fuX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="615.5" y="721"/>
+        </scene>
         <!--InfoViewController-->
         <scene sceneID="kRB-63-jMn">
             <objects>
                 <viewControllerPlaceholder storyboardName="InfoViewController" id="Mz7-Fn-NKz" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PKW-3a-3mg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="638.5" y="896.5"/>
+            <point key="canvasLocation" x="638.5" y="1000"/>
         </scene>
     </scenes>
     <resources>

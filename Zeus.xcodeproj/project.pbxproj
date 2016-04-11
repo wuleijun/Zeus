@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4507EB521CBB9796007F3A5F /* LoginAndRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4507EB511CBB9796007F3A5F /* LoginAndRegister.storyboard */; };
+		4507EB541CBB980F007F3A5F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507EB531CBB980F007F3A5F /* LoginViewController.swift */; };
 		45175A971CAE0A9400D42A47 /* PublishButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45175A961CAE0A9400D42A47 /* PublishButtonView.swift */; };
 		451EA0021CB4F2F2004FE212 /* CellBaseContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EA0011CB4F2F2004FE212 /* CellBaseContainerView.swift */; };
 		451EA0071CB4FD68004FE212 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EA0061CB4FD68004FE212 /* InfoViewController.swift */; };
@@ -37,6 +39,9 @@
 		45D052361CAA594400BB1738 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D052341CAA594400BB1738 /* LaunchScreen.storyboard */; };
 		45D052411CAA594400BB1738 /* ZeusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D052401CAA594400BB1738 /* ZeusTests.swift */; };
 		45D0524C1CAA594400BB1738 /* ZeusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D0524B1CAA594400BB1738 /* ZeusUITests.swift */; };
+		45E71AC91CBB7C4C00FC26CF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E71AC81CBB7C4C00FC26CF /* SettingsViewController.swift */; };
+		45E71ACD1CBB7D5000FC26CF /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E71ACC1CBB7D5000FC26CF /* SettingsViewController.storyboard */; };
+		45E71AD01CBB937300FC26CF /* ZeusAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E71ACF1CBB937300FC26CF /* ZeusAlert.swift */; };
 		CF96432054E88CA928ACE1F8 /* Pods_Zeus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A063B3FEB6934D4812B20218 /* Pods_Zeus.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +64,8 @@
 
 /* Begin PBXFileReference section */
 		054A9FFFFB89F87101B7258A /* Pods-Zeus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zeus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zeus/Pods-Zeus.debug.xcconfig"; sourceTree = "<group>"; };
+		4507EB511CBB9796007F3A5F /* LoginAndRegister.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginAndRegister.storyboard; sourceTree = "<group>"; };
+		4507EB531CBB980F007F3A5F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		45175A961CAE0A9400D42A47 /* PublishButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishButtonView.swift; sourceTree = "<group>"; };
 		451EA0011CB4F2F2004FE212 /* CellBaseContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellBaseContainerView.swift; sourceTree = "<group>"; };
 		451EA0061CB4FD68004FE212 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +102,9 @@
 		45D052471CAA594400BB1738 /* ZeusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D0524B1CAA594400BB1738 /* ZeusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeusUITests.swift; sourceTree = "<group>"; };
 		45D0524D1CAA594400BB1738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45E71AC81CBB7C4C00FC26CF /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		45E71ACC1CBB7D5000FC26CF /* SettingsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
+		45E71ACF1CBB937300FC26CF /* ZeusAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusAlert.swift; sourceTree = "<group>"; };
 		7F03FDE68F71AC8018F8842C /* Pods-Zeus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zeus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zeus/Pods-Zeus.release.xcconfig"; sourceTree = "<group>"; };
 		A063B3FEB6934D4812B20218 /* Pods_Zeus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zeus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -125,6 +135,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4507EB501CBB971E007F3A5F /* 登录注册 */ = {
+			isa = PBXGroup;
+			children = (
+				4507EB531CBB980F007F3A5F /* LoginViewController.swift */,
+			);
+			name = "登录注册";
+			sourceTree = "<group>";
+		};
 		45175A951CAE0A8400D42A47 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +242,7 @@
 		458C270D1CAA6915004575FC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4507EB501CBB971E007F3A5F /* 登录注册 */,
 				458C270F1CAA698F004575FC /* 活动 */,
 				458C27101CAA698F004575FC /* 客户 */,
 				458C27111CAA698F004575FC /* 我的 */,
@@ -264,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				458C27191CAA6E24004575FC /* ProfileViewController.swift */,
+				45E71AC71CBB7C1500FC26CF /* 系统设置 */,
 				451EA00B1CB4FF35004FE212 /* 个人信息 */,
 				457C6ACE1CB6420E0065E883 /* 编辑个人信息 */,
 			);
@@ -313,6 +333,7 @@
 		45D052281CAA594400BB1738 /* Zeus */ = {
 			isa = PBXGroup;
 			children = (
+				45E71ACE1CBB935700FC26CF /* Helpers */,
 				458C270D1CAA6915004575FC /* ViewControllers */,
 				458C27141CAA6DAA004575FC /* Base */,
 				458C270B1CAA6915004575FC /* Extensions */,
@@ -320,6 +341,7 @@
 				458C270E1CAA6915004575FC /* Views */,
 				45D052291CAA594400BB1738 /* AppDelegate.swift */,
 				45D0522F1CAA594400BB1738 /* Main.storyboard */,
+				4507EB511CBB9796007F3A5F /* LoginAndRegister.storyboard */,
 				45D052321CAA594400BB1738 /* Assets.xcassets */,
 				45D052341CAA594400BB1738 /* LaunchScreen.storyboard */,
 				45D052371CAA594400BB1738 /* Info.plist */,
@@ -343,6 +365,23 @@
 				45D0524D1CAA594400BB1738 /* Info.plist */,
 			);
 			path = ZeusUITests;
+			sourceTree = "<group>";
+		};
+		45E71AC71CBB7C1500FC26CF /* 系统设置 */ = {
+			isa = PBXGroup;
+			children = (
+				45E71AC81CBB7C4C00FC26CF /* SettingsViewController.swift */,
+				45E71ACC1CBB7D5000FC26CF /* SettingsViewController.storyboard */,
+			);
+			name = "系统设置";
+			sourceTree = "<group>";
+		};
+		45E71ACE1CBB935700FC26CF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				45E71ACF1CBB937300FC26CF /* ZeusAlert.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		8C4805F9BB3D2076624D1800 /* Pods */ = {
@@ -471,7 +510,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				451EA00A1CB4FEA0004FE212 /* InfoViewController.storyboard in Resources */,
+				45E71ACD1CBB7D5000FC26CF /* SettingsViewController.storyboard in Resources */,
 				4523B4141CAD253B00811E50 /* AddItemCell.xib in Resources */,
+				4507EB521CBB9796007F3A5F /* LoginAndRegister.storyboard in Resources */,
 				4523B3F91CACD1CA00811E50 /* HistoryActivityVC.storyboard in Resources */,
 				4523B40F1CAD16B700811E50 /* ClientTypeVC.storyboard in Resources */,
 				45D052361CAA594400BB1738 /* LaunchScreen.storyboard in Resources */,
@@ -552,11 +593,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4507EB541CBB980F007F3A5F /* LoginViewController.swift in Sources */,
 				45175A971CAE0A9400D42A47 /* PublishButtonView.swift in Sources */,
 				4523B3F11CACBDDC00811E50 /* UIFont+Zeus.swift in Sources */,
 				458C27161CAA6DB9004575FC /* BaseViewController.swift in Sources */,
 				45D0522A1CAA594400BB1738 /* AppDelegate.swift in Sources */,
 				4523B4131CAD253B00811E50 /* AddItemCell.swift in Sources */,
+				45E71AD01CBB937300FC26CF /* ZeusAlert.swift in Sources */,
+				45E71AC91CBB7C4C00FC26CF /* SettingsViewController.swift in Sources */,
 				457C6AD31CB642CF0065E883 /* EditInfoViewController.swift in Sources */,
 				4523B4041CAD12EA00811E50 /* ClientTypeVC.swift in Sources */,
 				457C6AD61CB655B90065E883 /* UIViewController+Zeus.swift in Sources */,
