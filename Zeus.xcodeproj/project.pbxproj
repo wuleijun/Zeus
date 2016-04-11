@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		4507EB521CBB9796007F3A5F /* LoginAndRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4507EB511CBB9796007F3A5F /* LoginAndRegister.storyboard */; };
 		4507EB541CBB980F007F3A5F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507EB531CBB980F007F3A5F /* LoginViewController.swift */; };
+		4507EB5A1CBBB3CC007F3A5F /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507EB591CBBB3CC007F3A5F /* FeedbackViewController.swift */; };
+		4507EB5C1CBBB3E5007F3A5F /* FeedbackViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4507EB5B1CBBB3E5007F3A5F /* FeedbackViewController.storyboard */; };
+		4507EB5E1CBBB51E007F3A5F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507EB5D1CBBB51E007F3A5F /* AboutViewController.swift */; };
+		4507EB601CBBB54C007F3A5F /* AboutViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4507EB5F1CBBB54C007F3A5F /* AboutViewController.storyboard */; };
 		45175A971CAE0A9400D42A47 /* PublishButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45175A961CAE0A9400D42A47 /* PublishButtonView.swift */; };
 		451EA0021CB4F2F2004FE212 /* CellBaseContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EA0011CB4F2F2004FE212 /* CellBaseContainerView.swift */; };
 		451EA0071CB4FD68004FE212 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EA0061CB4FD68004FE212 /* InfoViewController.swift */; };
@@ -66,6 +70,10 @@
 		054A9FFFFB89F87101B7258A /* Pods-Zeus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zeus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zeus/Pods-Zeus.debug.xcconfig"; sourceTree = "<group>"; };
 		4507EB511CBB9796007F3A5F /* LoginAndRegister.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginAndRegister.storyboard; sourceTree = "<group>"; };
 		4507EB531CBB980F007F3A5F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4507EB591CBBB3CC007F3A5F /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		4507EB5B1CBBB3E5007F3A5F /* FeedbackViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FeedbackViewController.storyboard; sourceTree = "<group>"; };
+		4507EB5D1CBBB51E007F3A5F /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		4507EB5F1CBBB54C007F3A5F /* AboutViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutViewController.storyboard; sourceTree = "<group>"; };
 		45175A961CAE0A9400D42A47 /* PublishButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishButtonView.swift; sourceTree = "<group>"; };
 		451EA0011CB4F2F2004FE212 /* CellBaseContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellBaseContainerView.swift; sourceTree = "<group>"; };
 		451EA0061CB4FD68004FE212 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +149,24 @@
 				4507EB531CBB980F007F3A5F /* LoginViewController.swift */,
 			);
 			name = "登录注册";
+			sourceTree = "<group>";
+		};
+		4507EB571CBBB3A1007F3A5F /* 意见反馈 */ = {
+			isa = PBXGroup;
+			children = (
+				4507EB591CBBB3CC007F3A5F /* FeedbackViewController.swift */,
+				4507EB5B1CBBB3E5007F3A5F /* FeedbackViewController.storyboard */,
+			);
+			name = "意见反馈";
+			sourceTree = "<group>";
+		};
+		4507EB581CBBB3A7007F3A5F /* 关于 */ = {
+			isa = PBXGroup;
+			children = (
+				4507EB5D1CBBB51E007F3A5F /* AboutViewController.swift */,
+				4507EB5F1CBBB54C007F3A5F /* AboutViewController.storyboard */,
+			);
+			name = "关于";
 			sourceTree = "<group>";
 		};
 		45175A951CAE0A8400D42A47 /* Views */ = {
@@ -370,6 +396,8 @@
 		45E71AC71CBB7C1500FC26CF /* 系统设置 */ = {
 			isa = PBXGroup;
 			children = (
+				4507EB581CBBB3A7007F3A5F /* 关于 */,
+				4507EB571CBBB3A1007F3A5F /* 意见反馈 */,
 				45E71AC81CBB7C4C00FC26CF /* SettingsViewController.swift */,
 				45E71ACC1CBB7D5000FC26CF /* SettingsViewController.storyboard */,
 			);
@@ -510,7 +538,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				451EA00A1CB4FEA0004FE212 /* InfoViewController.storyboard in Resources */,
+				4507EB5C1CBBB3E5007F3A5F /* FeedbackViewController.storyboard in Resources */,
 				45E71ACD1CBB7D5000FC26CF /* SettingsViewController.storyboard in Resources */,
+				4507EB601CBBB54C007F3A5F /* AboutViewController.storyboard in Resources */,
 				4523B4141CAD253B00811E50 /* AddItemCell.xib in Resources */,
 				4507EB521CBB9796007F3A5F /* LoginAndRegister.storyboard in Resources */,
 				4523B3F91CACD1CA00811E50 /* HistoryActivityVC.storyboard in Resources */,
@@ -606,6 +636,7 @@
 				457C6AD61CB655B90065E883 /* UIViewController+Zeus.swift in Sources */,
 				458C271A1CAA6E24004575FC /* ProfileViewController.swift in Sources */,
 				458C27131CAA6D8E004575FC /* ActivityViewController.swift in Sources */,
+				4507EB5A1CBBB3CC007F3A5F /* FeedbackViewController.swift in Sources */,
 				451EA0021CB4F2F2004FE212 /* CellBaseContainerView.swift in Sources */,
 				4523B3FC1CACFD8A00811E50 /* AddActivityVC.swift in Sources */,
 				4523B3EF1CACBB9F00811E50 /* UIColor+Zeus.swift in Sources */,
@@ -614,6 +645,7 @@
 				458C271F1CAA7AF0004575FC /* ActivityCell.swift in Sources */,
 				451EA0071CB4FD68004FE212 /* InfoViewController.swift in Sources */,
 				458C27181CAA6E05004575FC /* ClientViewController.swift in Sources */,
+				4507EB5E1CBBB51E007F3A5F /* AboutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

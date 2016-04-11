@@ -75,6 +75,9 @@
                                                 <constraint firstAttribute="trailing" secondItem="UnY-zR-wub" secondAttribute="trailing" constant="15" id="h98-ui-J5J"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="YIY-yD-X20" kind="show" id="cKf-Mk-Qrd"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="asd-C7-Ysr">
                                         <rect key="frame" x="0.0" y="199" width="375" height="50"/>
@@ -135,6 +138,9 @@
                                                 <constraint firstItem="oYy-XP-KQF" firstAttribute="centerY" secondItem="fEh-IM-bbw" secondAttribute="centerY" id="qjQ-NG-ycR"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="p7Z-fC-sfI" kind="show" id="JL2-b1-W1f"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -180,6 +186,22 @@
                 </view>
             </objects>
             <point key="canvasLocation" x="266.5" y="-50.5"/>
+        </scene>
+        <!--FeedbackViewController-->
+        <scene sceneID="LZl-1s-VWj">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="FeedbackViewController" storyboardName="FeedbackViewController" id="YIY-yD-X20" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9wh-fo-oj1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="672.5" y="-209"/>
+        </scene>
+        <!--AboutViewController-->
+        <scene sceneID="fDx-Wu-vOf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AboutViewController" id="p7Z-fC-sfI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o2e-LE-NcN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="712.5" y="-50"/>
         </scene>
     </scenes>
     <resources>
