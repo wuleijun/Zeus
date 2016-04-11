@@ -13,11 +13,25 @@ class SettingsViewController: UITableViewController {
     @IBOutlet var logoutButton: UIButton!
     @IBOutlet var footerView: UIView!
     
+    lazy var versionLabel:UILabel = {
+        let versionLabel = UILabel()
+        versionLabel.font = UIFont.systemFontOfSize(12)
+        versionLabel.textColor = UIColor.lightGrayColor()
+        versionLabel.text = UIApplication.sharedApplication().appVersion
+        return versionLabel
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.zeusBackgroundColor()
         tableView.tableFooterView = footerView
         
+        tableView.addSubview(versionLabel)
+        versionLabel.snp_makeConstraints { (make) in
+            make.centerX.equalTo(tableView)
+            make.height.equalTo(30)
+            make.top.equalTo(tableView.snp_bottom).offset(view.height-topBarsHeight-tabBarHeight)
+        }
     }
     
     @IBAction func logout_Touch(sender: AnyObject){
