@@ -46,3 +46,29 @@ class ZeusAlert {
         }
     }
 }
+
+extension UIViewController {
+    func alertCanNotAccessCameraRoll() {
+        
+        dispatch_async(dispatch_get_main_queue()) {
+            ZeusAlert.alertConfirmOrCancel(title: "抱歉", message:"EMM不能访问您的相册！\n但您可以在iOS设置里修改设定。", confirmTitle: "现在就改", cancelTitle: "取消", inViewController: self, withConfirmAction: {
+                
+                UIApplication.sharedApplication().openURL(NSURL(string: UIApplicationOpenSettingsURLString)!)
+                
+                }, cancelAction: {
+            })
+        }
+    }
+    
+    func alertCanNotOpenCamera() {
+        
+        dispatch_async(dispatch_get_main_queue()) {
+            ZeusAlert.alertConfirmOrCancel(title: "抱歉", message:"EMM不能打开您的相机！\n但您可以在iOS设置里修改设定。", confirmTitle: "现在就改", cancelTitle: "取消", inViewController: self, withConfirmAction: {
+                
+                UIApplication.sharedApplication().openURL(NSURL(string: UIApplicationOpenSettingsURLString)!)
+                
+                }, cancelAction: {
+            })
+        }
+    }
+}

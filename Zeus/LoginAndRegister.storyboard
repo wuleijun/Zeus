@@ -33,44 +33,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iEh-df-Idx">
-                                <rect key="frame" x="139" y="247" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YF-gW-BL8">
-                                <rect key="frame" x="93.5" y="313.5" width="188" height="40"/>
+                                <rect key="frame" x="0.0" y="617" width="187.5" height="50"/>
                                 <color key="backgroundColor" red="0.33725490200000002" green="0.58039215690000001" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="188" id="YGv-th-O1C"/>
-                                    <constraint firstAttribute="height" constant="40" id="dy7-N6-ZfZ"/>
+                                    <constraint firstAttribute="height" constant="50" id="qqp-BL-uOe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="登录">
+                                <state key="normal" title="注册">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="login_Touch:" destination="4g9-ze-qam" eventType="touchUpInside" id="WEb-gr-uaQ"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HBh-LD-7jN">
-                                <rect key="frame" x="139" y="186" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrJ-o8-MrV">
+                                <rect key="frame" x="187.5" y="617" width="187.5" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="iee-Pa-gNj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="登录">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="login_Touch:" destination="4g9-ze-qam" eventType="touchUpInside" id="kmu-zi-JUL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1YF-gW-BL8" firstAttribute="centerY" secondItem="Drc-UI-pDE" secondAttribute="centerY" id="6cY-Rb-Ycd"/>
-                            <constraint firstItem="1YF-gW-BL8" firstAttribute="centerX" secondItem="Drc-UI-pDE" secondAttribute="centerX" id="xl6-Cr-5qY"/>
+                            <constraint firstAttribute="trailing" secondItem="vrJ-o8-MrV" secondAttribute="trailing" id="1Gz-a5-jgT"/>
+                            <constraint firstItem="vrJ-o8-MrV" firstAttribute="width" secondItem="1YF-gW-BL8" secondAttribute="width" id="GTW-98-Bk8"/>
+                            <constraint firstItem="xMZ-kI-kPJ" firstAttribute="top" secondItem="1YF-gW-BL8" secondAttribute="bottom" id="MFe-uP-Sks"/>
+                            <constraint firstItem="vrJ-o8-MrV" firstAttribute="height" secondItem="1YF-gW-BL8" secondAttribute="height" id="MaT-78-UNl"/>
+                            <constraint firstItem="1YF-gW-BL8" firstAttribute="leading" secondItem="Drc-UI-pDE" secondAttribute="leading" id="UIF-sc-v22"/>
+                            <constraint firstItem="vrJ-o8-MrV" firstAttribute="leading" secondItem="1YF-gW-BL8" secondAttribute="trailing" id="b4A-fj-KHz"/>
+                            <constraint firstItem="xMZ-kI-kPJ" firstAttribute="top" secondItem="vrJ-o8-MrV" secondAttribute="bottom" id="jv9-hv-LHO"/>
+                            <constraint firstItem="vrJ-o8-MrV" firstAttribute="leading" secondItem="1YF-gW-BL8" secondAttribute="trailing" id="vla-wp-eud"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="IJt-3t-30h"/>
+                    <navigationItem key="navigationItem" id="bel-tc-zR9"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JU4-Wf-MdY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="242.5" y="317.5"/>
+            <point key="canvasLocation" x="185.5" y="310.5"/>
         </scene>
     </scenes>
 </document>

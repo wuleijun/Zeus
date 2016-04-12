@@ -12,7 +12,6 @@ class LoginViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -20,8 +19,7 @@ class LoginViewController: BaseViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
-    @IBAction func login_Touch(sender: AnyObject)
-    {
+    @IBAction func login_Touch(sender: AnyObject){
         let appdelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         appdelegate.startMainStory()
     }

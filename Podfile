@@ -6,6 +6,7 @@ def pods
     pod 'Alamofire'
     pod 'Kingfisher'
     pod 'SnapKit'
+    pod 'Proposer'
     
     #Objc
     pod 'YYCategories'

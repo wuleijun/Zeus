@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Proposer
 
 class InfoViewController: BaseViewController {
 
@@ -37,13 +38,30 @@ class InfoViewController: BaseViewController {
             let alertViewController = UIAlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
             alertViewController.addAction(UIAlertAction(title: "拍照", style: .Default, handler: { (action:UIAlertAction) in
                 
-                imagePickerVC.sourceType = .Camera
-                self?.presentViewController(imagePickerVC, animated: true, completion: nil)
-                
+                proposeToAccess(.Camera, agreed: {
+                    guard UIImagePickerController.isSourceTypeAvailable(.Camera) else {
+                        self?.alertCanNotOpenCamera()
+                        return
+                    }
+                    imagePickerVC.sourceType = .Camera
+                        self?.presentViewController(imagePickerVC, animated: true, completion: nil)
+                }, rejected: {
+                    self?.alertCanNotOpenCamera()
+                })
             }))
-            alertViewController.addAction(UIAlertAction(title: "从手机相册选择", style: .Default, handler: { (action:UIAlertAction) in
+            alertViewController.addAction(UIAlertAction(title: "从手机相册选择", style: .Default, handler: { [weak self](action:UIAlertAction) in
                 
-                self?.presentViewController(imagePickerVC, animated: true, completion: nil)
+                proposeToAccess(.Photos, agreed: {
+                    
+                    guard UIImagePickerController.isSourceTypeAvailable(.PhotoLibrary) else {
+                        self?.alertCanNotAccessCameraRoll()
+                        return
+                    }
+                    self?.presentViewController(imagePickerVC, animated: true, completion: nil)
+                }, rejected: {
+                    self?.alertCanNotAccessCameraRoll()
+                })
+                
                 
             }))
             alertViewController.addAction(UIAlertAction(title: "取消", style: .Cancel, handler: nil))

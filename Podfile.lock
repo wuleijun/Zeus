@@ -2,6 +2,7 @@ PODS:
   - Alamofire (3.3.1)
   - FXBlurView (1.6.4)
   - Kingfisher (2.2.2)
+  - Proposer (0.8.0)
   - SnapKit (0.20.0)
   - XLForm (3.1.1)
   - YYCategories (1.0.1):
@@ -12,6 +13,7 @@ DEPENDENCIES:
   - Alamofire
   - FXBlurView
   - Kingfisher
+  - Proposer
   - SnapKit
   - XLForm
   - YYCategories
@@ -20,6 +22,7 @@ SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
   FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
   Kingfisher: 7e8de5b0cf7b5dc8ec559d193029a0859df93ef1
+  Proposer: 17cd7fd2509b0d8d7c9e33815d648087c7dcaa81
   SnapKit: 5fce3c1bbbf1fbd31de9aa92f33eb9fa03f15650
   XLForm: c9ee7e0f859341279bfd894f9589a9d25c23e4df
   YYCategories: ebd2d2d473de67a29fbfb83e812c350966cc256f
