@@ -62,4 +62,13 @@ extension UIColor{
     class func zeusPublishButtonBackgroundColor()->UIColor {
         return UIColor(red: 0.90, green:0.22, blue:0.21, alpha: 1.0)
     }
+    
+    /**
+     边界颜色
+     
+     - returns: UIColor
+     */
+    class func zeusBorderColor()->UIColor {
+        return UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1)
+    }
 }

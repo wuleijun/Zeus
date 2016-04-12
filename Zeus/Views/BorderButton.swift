@@ -14,7 +14,7 @@ class BorderButton: UIButton {
     lazy var topLineLayer:CAShapeLayer = {
         let topLayer = CAShapeLayer()
         topLayer.lineWidth = 1
-        topLayer.strokeColor = UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1).CGColor
+        topLayer.strokeColor = UIColor.zeusBorderColor().CGColor
        return topLayer
     }()
     

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4507EB521CBB9796007F3A5F /* LoginAndRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4507EB511CBB9796007F3A5F /* LoginAndRegister.storyboard */; };
-		4507EB541CBB980F007F3A5F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507EB531CBB980F007F3A5F /* LoginViewController.swift */; };
+		4507EB541CBB980F007F3A5F /* LoginRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507EB531CBB980F007F3A5F /* LoginRegisterVC.swift */; };
 		4507EB5A1CBBB3CC007F3A5F /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507EB591CBBB3CC007F3A5F /* FeedbackViewController.swift */; };
 		4507EB5C1CBBB3E5007F3A5F /* FeedbackViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4507EB5B1CBBB3E5007F3A5F /* FeedbackViewController.storyboard */; };
 		4507EB5E1CBBB51E007F3A5F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507EB5D1CBBB51E007F3A5F /* AboutViewController.swift */; };
@@ -18,6 +18,11 @@
 		451EA0071CB4FD68004FE212 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EA0061CB4FD68004FE212 /* InfoViewController.swift */; };
 		451EA00A1CB4FEA0004FE212 /* InfoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451EA0081CB4FEA0004FE212 /* InfoViewController.storyboard */; };
 		451FF6CF1CBCD68000E31344 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FF6CE1CBCD68000E31344 /* BorderButton.swift */; };
+		451FF6D51CBCE4E100E31344 /* BorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FF6D41CBCE4E100E31344 /* BorderTextField.swift */; };
+		451FF6D71CBCE68F00E31344 /* LoginByMobileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FF6D61CBCE68F00E31344 /* LoginByMobileVC.swift */; };
+		451FF6D91CBCE6C300E31344 /* RegisterByMobileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FF6D81CBCE6C300E31344 /* RegisterByMobileVC.swift */; };
+		451FF6DB1CBCEC9C00E31344 /* VerifyMobileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FF6DA1CBCEC9C00E31344 /* VerifyMobileVC.swift */; };
+		451FF6DD1CBCEFE200E31344 /* RegisterUserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FF6DC1CBCEFE200E31344 /* RegisterUserInfoVC.swift */; };
 		4523B3EF1CACBB9F00811E50 /* UIColor+Zeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523B3EE1CACBB9F00811E50 /* UIColor+Zeus.swift */; };
 		4523B3F11CACBDDC00811E50 /* UIFont+Zeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523B3F01CACBDDC00811E50 /* UIFont+Zeus.swift */; };
 		4523B3F41CACD0ED00811E50 /* HistoryActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523B3F31CACD0ED00811E50 /* HistoryActivityVC.swift */; };
@@ -70,7 +75,7 @@
 /* Begin PBXFileReference section */
 		054A9FFFFB89F87101B7258A /* Pods-Zeus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zeus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zeus/Pods-Zeus.debug.xcconfig"; sourceTree = "<group>"; };
 		4507EB511CBB9796007F3A5F /* LoginAndRegister.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginAndRegister.storyboard; sourceTree = "<group>"; };
-		4507EB531CBB980F007F3A5F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4507EB531CBB980F007F3A5F /* LoginRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRegisterVC.swift; sourceTree = "<group>"; };
 		4507EB591CBBB3CC007F3A5F /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		4507EB5B1CBBB3E5007F3A5F /* FeedbackViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FeedbackViewController.storyboard; sourceTree = "<group>"; };
 		4507EB5D1CBBB51E007F3A5F /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +85,11 @@
 		451EA0061CB4FD68004FE212 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		451EA0091CB4FEA0004FE212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/InfoViewController.storyboard; sourceTree = "<group>"; };
 		451FF6CE1CBCD68000E31344 /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		451FF6D41CBCE4E100E31344 /* BorderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderTextField.swift; sourceTree = "<group>"; };
+		451FF6D61CBCE68F00E31344 /* LoginByMobileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginByMobileVC.swift; sourceTree = "<group>"; };
+		451FF6D81CBCE6C300E31344 /* RegisterByMobileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterByMobileVC.swift; sourceTree = "<group>"; };
+		451FF6DA1CBCEC9C00E31344 /* VerifyMobileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyMobileVC.swift; sourceTree = "<group>"; };
+		451FF6DC1CBCEFE200E31344 /* RegisterUserInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterUserInfoVC.swift; sourceTree = "<group>"; };
 		4523B3EE1CACBB9F00811E50 /* UIColor+Zeus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Zeus.swift"; sourceTree = "<group>"; };
 		4523B3F01CACBDDC00811E50 /* UIFont+Zeus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Zeus.swift"; sourceTree = "<group>"; };
 		4523B3F31CACD0ED00811E50 /* HistoryActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryActivityVC.swift; sourceTree = "<group>"; };
@@ -148,7 +158,9 @@
 		4507EB501CBB971E007F3A5F /* 登录注册 */ = {
 			isa = PBXGroup;
 			children = (
-				4507EB531CBB980F007F3A5F /* LoginViewController.swift */,
+				451FF6DE1CBCF1D700E31344 /* 注册 */,
+				4507EB531CBB980F007F3A5F /* LoginRegisterVC.swift */,
+				451FF6D61CBCE68F00E31344 /* LoginByMobileVC.swift */,
 			);
 			name = "登录注册";
 			sourceTree = "<group>";
@@ -202,6 +214,16 @@
 				451EA0081CB4FEA0004FE212 /* InfoViewController.storyboard */,
 			);
 			name = "个人信息";
+			sourceTree = "<group>";
+		};
+		451FF6DE1CBCF1D700E31344 /* 注册 */ = {
+			isa = PBXGroup;
+			children = (
+				451FF6D81CBCE6C300E31344 /* RegisterByMobileVC.swift */,
+				451FF6DA1CBCEC9C00E31344 /* VerifyMobileVC.swift */,
+				451FF6DC1CBCEFE200E31344 /* RegisterUserInfoVC.swift */,
+			);
+			name = "注册";
 			sourceTree = "<group>";
 		};
 		4523B3F21CACD0CE00811E50 /* 历史活动 */ = {
@@ -282,6 +304,7 @@
 		458C270E1CAA6915004575FC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				451FF6D41CBCE4E100E31344 /* BorderTextField.swift */,
 				451EA0031CB4FB88004FE212 /* Buttons */,
 				451EA0001CB4F2A7004FE212 /* 我的 */,
 			);
@@ -626,9 +649,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4507EB541CBB980F007F3A5F /* LoginViewController.swift in Sources */,
+				451FF6DD1CBCEFE200E31344 /* RegisterUserInfoVC.swift in Sources */,
+				4507EB541CBB980F007F3A5F /* LoginRegisterVC.swift in Sources */,
 				45175A971CAE0A9400D42A47 /* PublishButtonView.swift in Sources */,
 				4523B3F11CACBDDC00811E50 /* UIFont+Zeus.swift in Sources */,
+				451FF6D71CBCE68F00E31344 /* LoginByMobileVC.swift in Sources */,
 				458C27161CAA6DB9004575FC /* BaseViewController.swift in Sources */,
 				45D0522A1CAA594400BB1738 /* AppDelegate.swift in Sources */,
 				4523B4131CAD253B00811E50 /* AddItemCell.swift in Sources */,
@@ -644,12 +669,15 @@
 				4523B3FC1CACFD8A00811E50 /* AddActivityVC.swift in Sources */,
 				4523B3EF1CACBB9F00811E50 /* UIColor+Zeus.swift in Sources */,
 				4523B3F41CACD0ED00811E50 /* HistoryActivityVC.swift in Sources */,
+				451FF6D51CBCE4E100E31344 /* BorderTextField.swift in Sources */,
 				458C27231CAA7C04004575FC /* BaseTableViewCell.swift in Sources */,
 				458C271F1CAA7AF0004575FC /* ActivityCell.swift in Sources */,
 				451EA0071CB4FD68004FE212 /* InfoViewController.swift in Sources */,
 				458C27181CAA6E05004575FC /* ClientViewController.swift in Sources */,
 				4507EB5E1CBBB51E007F3A5F /* AboutViewController.swift in Sources */,
+				451FF6DB1CBCEC9C00E31344 /* VerifyMobileVC.swift in Sources */,
 				451FF6CF1CBCD68000E31344 /* BorderButton.swift in Sources */,
+				451FF6D91CBCE6C300E31344 /* RegisterByMobileVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

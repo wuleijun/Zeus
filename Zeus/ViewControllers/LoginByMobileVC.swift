@@ -1,33 +1,26 @@
 //
-//  LoginViewController.swift
+//  LoginByMobileVC.swift
 //  Zeus
 //
-//  Created by 吴蕾君 on 16/4/11.
+//  Created by 吴蕾君 on 16/4/12.
 //  Copyright © 2016年 rayjuneWu. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: BaseViewController {
+class LoginByMobileVC: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        // Do any additional setup after loading the view.
     }
 
-    @IBAction func login_Touch(sender: AnyObject){
-        let appdelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        appdelegate.startMainStory()
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
     /*
     // MARK: - Navigation
