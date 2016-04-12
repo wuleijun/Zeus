@@ -17,6 +17,7 @@
 		451EA0021CB4F2F2004FE212 /* CellBaseContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EA0011CB4F2F2004FE212 /* CellBaseContainerView.swift */; };
 		451EA0071CB4FD68004FE212 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EA0061CB4FD68004FE212 /* InfoViewController.swift */; };
 		451EA00A1CB4FEA0004FE212 /* InfoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451EA0081CB4FEA0004FE212 /* InfoViewController.storyboard */; };
+		451FF6CF1CBCD68000E31344 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FF6CE1CBCD68000E31344 /* BorderButton.swift */; };
 		4523B3EF1CACBB9F00811E50 /* UIColor+Zeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523B3EE1CACBB9F00811E50 /* UIColor+Zeus.swift */; };
 		4523B3F11CACBDDC00811E50 /* UIFont+Zeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523B3F01CACBDDC00811E50 /* UIFont+Zeus.swift */; };
 		4523B3F41CACD0ED00811E50 /* HistoryActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523B3F31CACD0ED00811E50 /* HistoryActivityVC.swift */; };
@@ -78,6 +79,7 @@
 		451EA0011CB4F2F2004FE212 /* CellBaseContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellBaseContainerView.swift; sourceTree = "<group>"; };
 		451EA0061CB4FD68004FE212 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		451EA0091CB4FEA0004FE212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/InfoViewController.storyboard; sourceTree = "<group>"; };
+		451FF6CE1CBCD68000E31344 /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		4523B3EE1CACBB9F00811E50 /* UIColor+Zeus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Zeus.swift"; sourceTree = "<group>"; };
 		4523B3F01CACBDDC00811E50 /* UIFont+Zeus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Zeus.swift"; sourceTree = "<group>"; };
 		4523B3F31CACD0ED00811E50 /* HistoryActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryActivityVC.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 		451EA0031CB4FB88004FE212 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				451FF6CE1CBCD68000E31344 /* BorderButton.swift */,
 			);
 			name = Buttons;
 			sourceTree = "<group>";
@@ -646,6 +649,7 @@
 				451EA0071CB4FD68004FE212 /* InfoViewController.swift in Sources */,
 				458C27181CAA6E05004575FC /* ClientViewController.swift in Sources */,
 				4507EB5E1CBBB51E007F3A5F /* AboutViewController.swift in Sources */,
+				451FF6CF1CBCD68000E31344 /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,7 +34,6 @@ extension UIViewController{
         return 50
     }
     
-    
     var topBarsHeight: CGFloat {
         return statusBarHeight + navigationBarHeight
     }
