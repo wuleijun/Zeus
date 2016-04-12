@@ -12,7 +12,7 @@ class LoginByMobileVC: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
         // Do any additional setup after loading the view.
     }
 
