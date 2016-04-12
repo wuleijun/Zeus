@@ -123,12 +123,6 @@
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18602354812" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSq-Y5-KJN">
-                                <rect key="frame" x="143" y="150" width="89" height="17"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="验证码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pBe-LM-7ue" customClass="BorderTextField" customModule="Zeus" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="196" width="375" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -157,17 +151,52 @@
                                     <constraint firstAttribute="height" constant="23" id="YOz-OR-ROl"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18602354812" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSq-Y5-KJN">
+                                <rect key="frame" x="143" y="150" width="89" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THg-fc-3aH">
+                                <rect key="frame" x="184" y="300" width="56" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="3vx-hA-TTs"/>
+                                    <constraint firstAttribute="width" constant="69" id="ZQY-mN-kaE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <state key="normal" title="重新获取">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ZQY-mN-kaE"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="resendVerifyCode_Touch:" destination="u62-Qs-Cj1" eventType="touchUpInside" id="ut7-wl-2DA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="没有收到?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXs-m0-JZI">
+                                <rect key="frame" x="116" y="306" width="63" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pBe-LM-7ue" firstAttribute="leading" secondItem="sMu-lr-quQ" secondAttribute="leading" id="1RV-0P-saM"/>
                             <constraint firstItem="pSq-Y5-KJN" firstAttribute="centerX" secondItem="EdZ-YI-hDc" secondAttribute="centerX" id="6zM-ib-Of0"/>
+                            <constraint firstItem="mXs-m0-JZI" firstAttribute="centerX" secondItem="sMu-lr-quQ" secondAttribute="centerX" constant="-40" id="VUT-wG-80c"/>
                             <constraint firstItem="EdZ-YI-hDc" firstAttribute="centerX" secondItem="sMu-lr-quQ" secondAttribute="centerX" id="W9k-Uo-fJZ"/>
                             <constraint firstItem="EdZ-YI-hDc" firstAttribute="top" secondItem="Uj3-uV-c8f" secondAttribute="bottom" constant="60" id="adA-96-0Ij"/>
                             <constraint firstItem="ubW-cB-M9m" firstAttribute="leading" secondItem="sMu-lr-quQ" secondAttribute="leading" constant="20" id="baR-3B-5Xu"/>
+                            <constraint firstItem="THg-fc-3aH" firstAttribute="centerY" secondItem="mXs-m0-JZI" secondAttribute="centerY" id="f72-am-Bv5"/>
                             <constraint firstItem="ubW-cB-M9m" firstAttribute="centerY" secondItem="pBe-LM-7ue" secondAttribute="centerY" id="l9k-Mc-eXI"/>
+                            <constraint firstItem="mXs-m0-JZI" firstAttribute="top" secondItem="pBe-LM-7ue" secondAttribute="bottom" constant="50" id="sZ4-R6-gFf"/>
                             <constraint firstItem="pBe-LM-7ue" firstAttribute="top" secondItem="EdZ-YI-hDc" secondAttribute="bottom" constant="50.5" id="tf8-ox-rrJ"/>
                             <constraint firstAttribute="trailing" secondItem="pBe-LM-7ue" secondAttribute="trailing" id="u3y-gw-iKI"/>
+                            <constraint firstItem="THg-fc-3aH" firstAttribute="leading" secondItem="mXs-m0-JZI" secondAttribute="trailing" constant="5" id="y48-w2-Qbg"/>
                             <constraint firstItem="pSq-Y5-KJN" firstAttribute="top" secondItem="EdZ-YI-hDc" secondAttribute="bottom" constant="4.5" id="zqw-Ly-gZK"/>
                         </constraints>
                     </view>
@@ -193,6 +222,7 @@
                         <outlet property="codeTextField" destination="pBe-LM-7ue" id="Kqi-rU-b9E"/>
                         <outlet property="mobileLabel" destination="pSq-Y5-KJN" id="DLh-zU-DWO"/>
                         <outlet property="nextButton" destination="MU6-Ha-PZP" id="LkE-O9-igH"/>
+                        <outlet property="resendButton" destination="THg-fc-3aH" id="51h-H5-jO1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mN3-Ux-hz0" userLabel="First Responder" sceneMemberID="firstResponder"/>

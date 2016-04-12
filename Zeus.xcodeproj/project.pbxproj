@@ -23,6 +23,7 @@
 		451FF6D91CBCE6C300E31344 /* RegisterByMobileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FF6D81CBCE6C300E31344 /* RegisterByMobileVC.swift */; };
 		451FF6DB1CBCEC9C00E31344 /* VerifyMobileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FF6DA1CBCEC9C00E31344 /* VerifyMobileVC.swift */; };
 		451FF6DD1CBCEFE200E31344 /* RegisterUserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FF6DC1CBCEFE200E31344 /* RegisterUserInfoVC.swift */; };
+		451FF6E11CBD009400E31344 /* ZeusConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FF6E01CBD009400E31344 /* ZeusConfig.swift */; };
 		4523B3EF1CACBB9F00811E50 /* UIColor+Zeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523B3EE1CACBB9F00811E50 /* UIColor+Zeus.swift */; };
 		4523B3F11CACBDDC00811E50 /* UIFont+Zeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523B3F01CACBDDC00811E50 /* UIFont+Zeus.swift */; };
 		4523B3F41CACD0ED00811E50 /* HistoryActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523B3F31CACD0ED00811E50 /* HistoryActivityVC.swift */; };
@@ -90,6 +91,7 @@
 		451FF6D81CBCE6C300E31344 /* RegisterByMobileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterByMobileVC.swift; sourceTree = "<group>"; };
 		451FF6DA1CBCEC9C00E31344 /* VerifyMobileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyMobileVC.swift; sourceTree = "<group>"; };
 		451FF6DC1CBCEFE200E31344 /* RegisterUserInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterUserInfoVC.swift; sourceTree = "<group>"; };
+		451FF6E01CBD009400E31344 /* ZeusConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusConfig.swift; sourceTree = "<group>"; };
 		4523B3EE1CACBB9F00811E50 /* UIColor+Zeus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Zeus.swift"; sourceTree = "<group>"; };
 		4523B3F01CACBDDC00811E50 /* UIFont+Zeus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Zeus.swift"; sourceTree = "<group>"; };
 		4523B3F31CACD0ED00811E50 /* HistoryActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryActivityVC.swift; sourceTree = "<group>"; };
@@ -224,6 +226,14 @@
 				451FF6DC1CBCEFE200E31344 /* RegisterUserInfoVC.swift */,
 			);
 			name = "注册";
+			sourceTree = "<group>";
+		};
+		451FF6DF1CBD006400E31344 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				451FF6E01CBD009400E31344 /* ZeusConfig.swift */,
+			);
+			name = Configs;
 			sourceTree = "<group>";
 		};
 		4523B3F21CACD0CE00811E50 /* 历史活动 */ = {
@@ -385,6 +395,7 @@
 		45D052281CAA594400BB1738 /* Zeus */ = {
 			isa = PBXGroup;
 			children = (
+				451FF6DF1CBD006400E31344 /* Configs */,
 				45E71ACE1CBB935700FC26CF /* Helpers */,
 				458C270D1CAA6915004575FC /* ViewControllers */,
 				458C27141CAA6DAA004575FC /* Base */,
@@ -669,6 +680,7 @@
 				4523B3FC1CACFD8A00811E50 /* AddActivityVC.swift in Sources */,
 				4523B3EF1CACBB9F00811E50 /* UIColor+Zeus.swift in Sources */,
 				4523B3F41CACD0ED00811E50 /* HistoryActivityVC.swift in Sources */,
+				451FF6E11CBD009400E31344 /* ZeusConfig.swift in Sources */,
 				451FF6D51CBCE4E100E31344 /* BorderTextField.swift in Sources */,
 				458C27231CAA7C04004575FC /* BaseTableViewCell.swift in Sources */,
 				458C271F1CAA7AF0004575FC /* ActivityCell.swift in Sources */,
