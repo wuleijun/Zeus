@@ -38,7 +38,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vNv-ia-J9t" customClass="BorderTextField" customModule="Zeus" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vNv-ia-J9t" customClass="BorderTextField" customModule="Zeus" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="195.5" width="375" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -50,20 +50,32 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="enabledTopLine" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="enabledBottomLine" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftTextInset">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="textFieldDidChanged:" destination="CJ4-do-fvx" eventType="editingChanged" id="e4b-Xs-yoK"/>
                                     <outlet property="delegate" destination="CJ4-do-fvx" id="ohA-BV-pYg"/>
                                 </connections>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_phonenumber" translatesAutoresizingMaskIntoConstraints="NO" id="Mbd-am-FMv">
+                                <rect key="frame" x="20" y="214" width="16" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="7sE-2Z-7qF"/>
+                                    <constraint firstAttribute="width" constant="16" id="tm3-H8-Kb3"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Mbd-am-FMv" firstAttribute="leading" secondItem="qaZ-qT-4al" secondAttribute="leading" constant="20" id="2b9-Rf-ahB"/>
                             <constraint firstItem="wuF-HM-g4Q" firstAttribute="centerX" secondItem="qaZ-qT-4al" secondAttribute="centerX" id="539-Tc-TE7"/>
                             <constraint firstItem="vNv-ia-J9t" firstAttribute="top" secondItem="wuF-HM-g4Q" secondAttribute="bottom" constant="50" id="Qse-UK-jWT"/>
                             <constraint firstItem="wuF-HM-g4Q" firstAttribute="top" secondItem="GgG-Du-nnv" secondAttribute="bottom" constant="60" id="Vwo-Bt-bFY"/>
                             <constraint firstItem="vNv-ia-J9t" firstAttribute="leading" secondItem="qaZ-qT-4al" secondAttribute="leading" id="gwR-k6-SfI"/>
                             <constraint firstAttribute="trailing" secondItem="vNv-ia-J9t" secondAttribute="trailing" id="isx-ty-MED"/>
+                            <constraint firstItem="Mbd-am-FMv" firstAttribute="centerY" secondItem="vNv-ia-J9t" secondAttribute="centerY" id="lFM-fH-wAv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="注册" id="8bP-Qu-kMM">
@@ -117,7 +129,7 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="验证码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pBe-LM-7ue" customClass="BorderTextField" customModule="Zeus" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="验证码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pBe-LM-7ue" customClass="BorderTextField" customModule="Zeus" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="196" width="375" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -129,12 +141,22 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="enabledTopLine" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="enabledBottomLine" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftTextInset">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="textFieldDidChanged:" destination="u62-Qs-Cj1" eventType="editingChanged" id="roy-ZU-avI"/>
                                     <outlet property="delegate" destination="u62-Qs-Cj1" id="MfM-hc-Pey"/>
                                 </connections>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_verificationcode" translatesAutoresizingMaskIntoConstraints="NO" id="ubW-cB-M9m">
+                                <rect key="frame" x="20" y="214" width="16" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="NF7-jv-i3f"/>
+                                    <constraint firstAttribute="height" constant="23" id="YOz-OR-ROl"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -142,6 +164,8 @@
                             <constraint firstItem="pSq-Y5-KJN" firstAttribute="centerX" secondItem="EdZ-YI-hDc" secondAttribute="centerX" id="6zM-ib-Of0"/>
                             <constraint firstItem="EdZ-YI-hDc" firstAttribute="centerX" secondItem="sMu-lr-quQ" secondAttribute="centerX" id="W9k-Uo-fJZ"/>
                             <constraint firstItem="EdZ-YI-hDc" firstAttribute="top" secondItem="Uj3-uV-c8f" secondAttribute="bottom" constant="60" id="adA-96-0Ij"/>
+                            <constraint firstItem="ubW-cB-M9m" firstAttribute="leading" secondItem="sMu-lr-quQ" secondAttribute="leading" constant="20" id="baR-3B-5Xu"/>
+                            <constraint firstItem="ubW-cB-M9m" firstAttribute="centerY" secondItem="pBe-LM-7ue" secondAttribute="centerY" id="l9k-Mc-eXI"/>
                             <constraint firstItem="pBe-LM-7ue" firstAttribute="top" secondItem="EdZ-YI-hDc" secondAttribute="bottom" constant="50.5" id="tf8-ox-rrJ"/>
                             <constraint firstAttribute="trailing" secondItem="pBe-LM-7ue" secondAttribute="trailing" id="u3y-gw-iKI"/>
                             <constraint firstItem="pSq-Y5-KJN" firstAttribute="top" secondItem="EdZ-YI-hDc" secondAttribute="bottom" constant="4.5" id="zqw-Ly-gZK"/>
@@ -204,6 +228,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="enabledTopLine" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="enabledBottomLine" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftTextInset">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="职位名称（选填）" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Irt-Fq-oKo" customClass="BorderTextField" customModule="Zeus" customModuleProvider="target">
@@ -218,6 +245,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="enabledTopLine" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="enabledBottomLine" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftTextInset">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入姓名，方便您的同事查找" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ygH-1W-MaU" customClass="BorderTextField" customModule="Zeus" customModuleProvider="target">
@@ -232,25 +262,55 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="enabledTopLine" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="enabledBottomLine" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftTextInset">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="nameTextFieldChanged:" destination="11e-n6-hB4" eventType="editingChanged" id="sXa-gR-Yva"/>
                                     <outlet property="delegate" destination="11e-n6-hB4" id="SrZ-Y4-jLG"/>
                                 </connections>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_registered_name" translatesAutoresizingMaskIntoConstraints="NO" id="VnB-WL-p9X">
+                                <rect key="frame" x="20" y="214" width="16" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="pRL-eX-2FQ"/>
+                                    <constraint firstAttribute="width" constant="16" id="tA5-kB-lH5"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_registered_company" translatesAutoresizingMaskIntoConstraints="NO" id="Soo-qM-b0b">
+                                <rect key="frame" x="20" y="274" width="16" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="Su9-Mc-0YH"/>
+                                    <constraint firstAttribute="width" constant="16" id="sZw-5Q-Cv1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_registered_position" translatesAutoresizingMaskIntoConstraints="NO" id="JhR-yX-5cq">
+                                <rect key="frame" x="20" y="334" width="16" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="SHC-jo-Qby"/>
+                                    <constraint firstAttribute="height" constant="23" id="f2S-N1-Y8n"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ygH-1W-MaU" secondAttribute="trailing" id="7U9-Sw-MJZ"/>
                             <constraint firstItem="Irt-Fq-oKo" firstAttribute="top" secondItem="yGl-Q2-p7h" secondAttribute="bottom" id="DPC-F1-fsg"/>
+                            <constraint firstItem="JhR-yX-5cq" firstAttribute="centerY" secondItem="Irt-Fq-oKo" secondAttribute="centerY" id="K8Z-wI-RGG"/>
+                            <constraint firstItem="Soo-qM-b0b" firstAttribute="leading" secondItem="jGe-MS-qx7" secondAttribute="leading" constant="20" id="ONm-FB-pJp"/>
                             <constraint firstItem="Rc4-oC-Q2I" firstAttribute="top" secondItem="36H-dv-kY6" secondAttribute="bottom" constant="60" id="POY-iB-av9"/>
                             <constraint firstItem="ygH-1W-MaU" firstAttribute="top" secondItem="Rc4-oC-Q2I" secondAttribute="bottom" constant="50.5" id="UrC-e5-smL"/>
+                            <constraint firstItem="VnB-WL-p9X" firstAttribute="leading" secondItem="jGe-MS-qx7" secondAttribute="leading" constant="20" id="YgP-Mk-olp"/>
                             <constraint firstItem="Irt-Fq-oKo" firstAttribute="leading" secondItem="jGe-MS-qx7" secondAttribute="leading" id="Z4o-Yc-R8j"/>
                             <constraint firstAttribute="trailing" secondItem="Irt-Fq-oKo" secondAttribute="trailing" id="fR6-Vz-w6v"/>
                             <constraint firstItem="ygH-1W-MaU" firstAttribute="leading" secondItem="jGe-MS-qx7" secondAttribute="leading" id="gax-3d-3MF"/>
+                            <constraint firstItem="Soo-qM-b0b" firstAttribute="centerY" secondItem="yGl-Q2-p7h" secondAttribute="centerY" id="h3G-Ub-cwQ"/>
                             <constraint firstItem="yGl-Q2-p7h" firstAttribute="top" secondItem="ygH-1W-MaU" secondAttribute="bottom" id="hyb-JZ-8Ig"/>
                             <constraint firstItem="yGl-Q2-p7h" firstAttribute="leading" secondItem="jGe-MS-qx7" secondAttribute="leading" id="lQf-HZ-ekL"/>
+                            <constraint firstItem="VnB-WL-p9X" firstAttribute="centerY" secondItem="ygH-1W-MaU" secondAttribute="centerY" id="p1m-f0-7cW"/>
                             <constraint firstItem="Rc4-oC-Q2I" firstAttribute="centerX" secondItem="jGe-MS-qx7" secondAttribute="centerX" id="sBa-fg-0cQ"/>
+                            <constraint firstItem="JhR-yX-5cq" firstAttribute="leading" secondItem="jGe-MS-qx7" secondAttribute="leading" constant="20" id="sGz-za-tsZ"/>
                             <constraint firstAttribute="trailing" secondItem="yGl-Q2-p7h" secondAttribute="trailing" id="u6N-Al-6eP"/>
                         </constraints>
                     </view>
@@ -360,4 +420,11 @@
             <point key="canvasLocation" x="508.5" y="765.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="login_phonenumber" width="16" height="23"/>
+        <image name="login_registered_company" width="16" height="23"/>
+        <image name="login_registered_name" width="16" height="23"/>
+        <image name="login_registered_position" width="16" height="23"/>
+        <image name="login_verificationcode" width="16" height="23"/>
+    </resources>
 </document>
