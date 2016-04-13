@@ -7,6 +7,7 @@ def pods
     pod 'Kingfisher'
     pod 'SnapKit'
     pod 'Proposer'
+    pod 'KeyboardMan'
     
     #Objc
     pod 'YYCategories'

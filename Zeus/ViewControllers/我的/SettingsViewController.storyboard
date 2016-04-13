@@ -12,7 +12,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="50" sectionHeaderHeight="18" sectionFooterHeight="18" id="D2Z-hV-DzG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection id="JkC-ww-rJJ">
                                 <cells>
@@ -163,11 +163,11 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e62-OV-TKq">
-                            <rect key="frame" x="48" y="44" width="200" height="40"/>
+                            <rect key="frame" x="-2" y="44" width="300" height="40"/>
                             <color key="backgroundColor" red="0.33725490200000002" green="0.58039215690000001" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="Ovo-x3-bBv"/>
-                                <constraint firstAttribute="width" constant="200" id="g97-cV-tBG"/>
+                                <constraint firstAttribute="width" constant="300" id="g97-cV-tBG"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <state key="normal" title="退出登录">

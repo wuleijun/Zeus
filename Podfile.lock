@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (3.3.1)
   - FXBlurView (1.6.4)
+  - KeyboardMan (0.6.0)
   - Kingfisher (2.2.2)
   - Proposer (0.8.0)
   - SnapKit (0.20.0)
@@ -12,6 +13,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - FXBlurView
+  - KeyboardMan
   - Kingfisher
   - Proposer
   - SnapKit
@@ -21,6 +23,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
   FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
+  KeyboardMan: 665211f180093f5bb3c6ff7e8b7f858c432c6ccf
   Kingfisher: 7e8de5b0cf7b5dc8ec559d193029a0859df93ef1
   Proposer: 17cd7fd2509b0d8d7c9e33815d648087c7dcaa81
   SnapKit: 5fce3c1bbbf1fbd31de9aa92f33eb9fa03f15650
