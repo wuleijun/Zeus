@@ -10,10 +10,18 @@ import UIKit
 
 class VerifyMobileVC: BaseViewController {
     
-    @IBOutlet private weak var nextButton: UIButton!
+    @IBOutlet private weak var nextButton: UIButton!{
+        didSet{
+            nextButton.enabled = false
+        }
+    }
     @IBOutlet private weak var mobileLabel: UILabel!
     @IBOutlet private weak var codeTextField: BorderTextField!
-    @IBOutlet private weak var resendButton: UIButton!
+    @IBOutlet private weak var resendButton: UIButton!{
+        didSet{
+            resendButton.enabled = false
+        }
+    }
     
     var mobile:String?
     var haveAppropriateInput = false {
@@ -35,18 +43,12 @@ class VerifyMobileVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         mobileLabel.text = mobile
-        nextButton.enabled = false
         // Do any additional setup after loading the view.
     }
 
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
         timer.invalidate()
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        resendButton.enabled = false
     }
     
     override func viewDidAppear(animated: Bool) {
