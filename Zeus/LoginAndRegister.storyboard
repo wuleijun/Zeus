@@ -80,11 +80,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="注册" id="8bP-Qu-kMM">
                         <barButtonItem key="backBarButtonItem" title="返回" id="Lyq-Ox-8zw"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="8NU-OE-MNr">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="8NU-OE-MNr">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="crn-Yg-ZS7">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="下一步"/>
                                 <connections>
                                     <action selector="next_Touch:" destination="CJ4-do-fvx" eventType="touchUpInside" id="tg2-zK-f2a"/>
@@ -202,11 +202,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="注册" id="neV-ln-TDU">
                         <barButtonItem key="backBarButtonItem" title="返回" id="CEN-kx-QXq"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="jLw-Cq-PhF">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="jLw-Cq-PhF">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MU6-Ha-PZP">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="下一步"/>
                                 <connections>
                                     <action selector="next_Touch:" destination="u62-Qs-Cj1" eventType="touchUpInside" id="2nf-po-nkO"/>
@@ -227,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mN3-Ux-hz0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="831.5" y="-52.5"/>
+            <point key="canvasLocation" x="868.5" y="-33.5"/>
         </scene>
         <!--注册-->
         <scene sceneID="FMK-P2-LCt">
@@ -346,11 +346,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="注册" id="NsP-x6-AvJ">
                         <barButtonItem key="backBarButtonItem" title="返回" id="WzY-hm-Rww"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="kXz-Rf-WQK">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="kXz-Rf-WQK">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UB7-i8-DJH">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="完成"/>
                                 <connections>
                                     <action selector="completeRegister_Touch:" destination="11e-n6-hB4" eventType="touchUpInside" id="Pq7-O9-4r4"/>

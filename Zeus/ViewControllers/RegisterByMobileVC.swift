@@ -13,11 +13,12 @@ class RegisterByMobileVC: BaseViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var mobileTextField: BorderTextField!
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         nextButton.enabled = false
         self.navigationController?.setNavigationBarHidden(false, animated: true)
-
         // Do any additional setup after loading the view.
+        
     }
 
     override func viewDidAppear(animated: Bool) {
