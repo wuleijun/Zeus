@@ -15,6 +15,8 @@
 		4507EB601CBBB54C007F3A5F /* AboutViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4507EB5F1CBBB54C007F3A5F /* AboutViewController.storyboard */; };
 		45175A971CAE0A9400D42A47 /* PublishButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45175A961CAE0A9400D42A47 /* PublishButtonView.swift */; };
 		4519C0DE1CBDEB7700217C24 /* LoginVerifyMobileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0DD1CBDEB7700217C24 /* LoginVerifyMobileVC.swift */; };
+		4519C0E01CBE48C700217C24 /* ZeusHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0DF1CBE48C700217C24 /* ZeusHud.swift */; };
+		4519C0E21CBE4F4100217C24 /* ZeusHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0E11CBE4F4100217C24 /* ZeusHelper.swift */; };
 		451EA0021CB4F2F2004FE212 /* CellBaseContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EA0011CB4F2F2004FE212 /* CellBaseContainerView.swift */; };
 		451EA0071CB4FD68004FE212 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EA0061CB4FD68004FE212 /* InfoViewController.swift */; };
 		451EA00A1CB4FEA0004FE212 /* InfoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451EA0081CB4FEA0004FE212 /* InfoViewController.storyboard */; };
@@ -84,6 +86,8 @@
 		4507EB5F1CBBB54C007F3A5F /* AboutViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutViewController.storyboard; sourceTree = "<group>"; };
 		45175A961CAE0A9400D42A47 /* PublishButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishButtonView.swift; sourceTree = "<group>"; };
 		4519C0DD1CBDEB7700217C24 /* LoginVerifyMobileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVerifyMobileVC.swift; sourceTree = "<group>"; };
+		4519C0DF1CBE48C700217C24 /* ZeusHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusHud.swift; sourceTree = "<group>"; };
+		4519C0E11CBE4F4100217C24 /* ZeusHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusHelper.swift; sourceTree = "<group>"; };
 		451EA0011CB4F2F2004FE212 /* CellBaseContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellBaseContainerView.swift; sourceTree = "<group>"; };
 		451EA0061CB4FD68004FE212 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		451EA0091CB4FEA0004FE212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/InfoViewController.storyboard; sourceTree = "<group>"; };
@@ -456,6 +460,8 @@
 			isa = PBXGroup;
 			children = (
 				45E71ACF1CBB937300FC26CF /* ZeusAlert.swift */,
+				4519C0DF1CBE48C700217C24 /* ZeusHud.swift */,
+				4519C0E11CBE4F4100217C24 /* ZeusHelper.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -686,7 +692,9 @@
 				457C6AD61CB655B90065E883 /* UIViewController+Zeus.swift in Sources */,
 				458C271A1CAA6E24004575FC /* ProfileViewController.swift in Sources */,
 				458C27131CAA6D8E004575FC /* ActivityViewController.swift in Sources */,
+				4519C0E21CBE4F4100217C24 /* ZeusHelper.swift in Sources */,
 				4507EB5A1CBBB3CC007F3A5F /* FeedbackViewController.swift in Sources */,
+				4519C0E01CBE48C700217C24 /* ZeusHud.swift in Sources */,
 				451EA0021CB4F2F2004FE212 /* CellBaseContainerView.swift in Sources */,
 				4523B3FC1CACFD8A00811E50 /* AddActivityVC.swift in Sources */,
 				4523B3EF1CACBB9F00811E50 /* UIColor+Zeus.swift in Sources */,

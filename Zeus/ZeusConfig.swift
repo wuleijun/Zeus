@@ -10,6 +10,17 @@ import UIKit
 
 class ZeusConfig {
     
+    /**
+     *  网络服务相关
+     */
+    struct HttpService {
+        /**
+         请求超时时间
+         
+         - returns: NSTimeInterval
+         */
+        static let timeoutInterval:NSTimeInterval = 15
+    }
     
     
     /**

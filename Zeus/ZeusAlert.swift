@@ -45,6 +45,10 @@ class ZeusAlert {
             viewController?.presentViewController(alertController, animated: true, completion: nil)
         }
     }
+    
+    class func alertSorry(message message: String?, inViewController viewController: UIViewController?) {
+        alert(title: "抱歉", message: message, dismissTitle: "确定", inViewController: viewController, withDismissAction: nil)
+    }
 }
 
 extension UIViewController {

@@ -48,10 +48,14 @@ class FeedbackViewController: BaseViewController {
     @IBAction func done_Touch(sender: AnyObject) {
 
         feedBackTextView.resignFirstResponder()
-        ZeusAlert.alert(title: "成功", message: "感谢您的反馈，EMM已记录！", dismissTitle: "确定", inViewController: self) {
-            self.navigationController?.popViewControllerAnimated(true)
-        }
         
+        ZeusHud.showActivityIndicator()
+        delay(20) {
+            ZeusHud.hideActivityIndicator()
+            ZeusAlert.alert(title: "成功", message: "感谢您的反馈，EMM已记录！", dismissTitle: "确定", inViewController: self) {
+                self.navigationController?.popViewControllerAnimated(true)
+            }
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
