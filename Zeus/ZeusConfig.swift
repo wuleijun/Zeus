@@ -10,13 +10,17 @@ import UIKit
 
 class ZeusConfig {
     
+    
+    
     /**
      重新获取验证的时间
      
      - returns: Int
      */
     class func resendVerifyCodeSeconds() -> Int {
-        return 50
+        return 5
     }
-    
+    class func verifyCodeLength()-> Int {
+        return 4
+    }
 }

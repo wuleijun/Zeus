@@ -14,6 +14,7 @@
 		4507EB5E1CBBB51E007F3A5F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507EB5D1CBBB51E007F3A5F /* AboutViewController.swift */; };
 		4507EB601CBBB54C007F3A5F /* AboutViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4507EB5F1CBBB54C007F3A5F /* AboutViewController.storyboard */; };
 		45175A971CAE0A9400D42A47 /* PublishButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45175A961CAE0A9400D42A47 /* PublishButtonView.swift */; };
+		4519C0DE1CBDEB7700217C24 /* LoginVerifyMobileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0DD1CBDEB7700217C24 /* LoginVerifyMobileVC.swift */; };
 		451EA0021CB4F2F2004FE212 /* CellBaseContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EA0011CB4F2F2004FE212 /* CellBaseContainerView.swift */; };
 		451EA0071CB4FD68004FE212 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EA0061CB4FD68004FE212 /* InfoViewController.swift */; };
 		451EA00A1CB4FEA0004FE212 /* InfoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451EA0081CB4FEA0004FE212 /* InfoViewController.storyboard */; };
@@ -82,6 +83,7 @@
 		4507EB5D1CBBB51E007F3A5F /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		4507EB5F1CBBB54C007F3A5F /* AboutViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutViewController.storyboard; sourceTree = "<group>"; };
 		45175A961CAE0A9400D42A47 /* PublishButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishButtonView.swift; sourceTree = "<group>"; };
+		4519C0DD1CBDEB7700217C24 /* LoginVerifyMobileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVerifyMobileVC.swift; sourceTree = "<group>"; };
 		451EA0011CB4F2F2004FE212 /* CellBaseContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellBaseContainerView.swift; sourceTree = "<group>"; };
 		451EA0061CB4FD68004FE212 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		451EA0091CB4FEA0004FE212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/InfoViewController.storyboard; sourceTree = "<group>"; };
@@ -160,9 +162,9 @@
 		4507EB501CBB971E007F3A5F /* 登录注册 */ = {
 			isa = PBXGroup;
 			children = (
-				451FF6DE1CBCF1D700E31344 /* 注册 */,
 				4507EB531CBB980F007F3A5F /* LoginRegisterVC.swift */,
-				451FF6D61CBCE68F00E31344 /* LoginByMobileVC.swift */,
+				451FF6DE1CBCF1D700E31344 /* 注册 */,
+				4519C0DC1CBDEB5000217C24 /* 登录 */,
 			);
 			name = "登录注册";
 			sourceTree = "<group>";
@@ -191,6 +193,15 @@
 				45175A961CAE0A9400D42A47 /* PublishButtonView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		4519C0DC1CBDEB5000217C24 /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				451FF6D61CBCE68F00E31344 /* LoginByMobileVC.swift */,
+				4519C0DD1CBDEB7700217C24 /* LoginVerifyMobileVC.swift */,
+			);
+			name = "登录";
 			sourceTree = "<group>";
 		};
 		451EA0001CB4F2A7004FE212 /* 我的 */ = {
@@ -688,6 +699,7 @@
 				458C27181CAA6E05004575FC /* ClientViewController.swift in Sources */,
 				4507EB5E1CBBB51E007F3A5F /* AboutViewController.swift in Sources */,
 				451FF6DB1CBCEC9C00E31344 /* VerifyMobileVC.swift in Sources */,
+				4519C0DE1CBDEB7700217C24 /* LoginVerifyMobileVC.swift in Sources */,
 				451FF6CF1CBCD68000E31344 /* BorderButton.swift in Sources */,
 				451FF6D91CBCE6C300E31344 /* RegisterByMobileVC.swift in Sources */,
 			);

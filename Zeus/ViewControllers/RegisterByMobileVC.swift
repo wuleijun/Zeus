@@ -10,10 +10,10 @@ import UIKit
 
 class RegisterByMobileVC: BaseViewController {
 
-    @IBOutlet weak var nextButton: UIButton!
-    @IBOutlet weak var mobileTextField: BorderTextField!
+    @IBOutlet private weak var nextButton: UIButton!
+    @IBOutlet private weak var mobileTextField: BorderTextField!
+    
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         nextButton.enabled = false
         self.navigationController?.setNavigationBarHidden(false, animated: true)

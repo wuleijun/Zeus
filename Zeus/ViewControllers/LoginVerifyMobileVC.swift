@@ -1,21 +1,21 @@
 //
-//  VerifyMobileVC.swift
+//  LoginVerifyMobileVC.swift
 //  Zeus
 //
-//  Created by 吴蕾君 on 16/4/12.
+//  Created by 吴蕾君 on 16/4/13.
 //  Copyright © 2016年 rayjuneWu. All rights reserved.
 //
 
 import UIKit
 
-class VerifyMobileVC: BaseViewController {
-    
+class LoginVerifyMobileVC: BaseViewController {
+
     @IBOutlet private weak var nextButton: UIButton!
-    @IBOutlet private weak var mobileLabel: UILabel!
-    @IBOutlet private weak var codeTextField: BorderTextField!
     @IBOutlet private weak var resendButton: UIButton!
+    @IBOutlet private weak var codeTextField: BorderTextField!
+    @IBOutlet private weak var mobileLabel: UILabel!
     
-    var mobile:String?
+    var second = ZeusConfig.resendVerifyCodeSeconds()
     var haveAppropriateInput = false {
         willSet{
             nextButton.enabled = newValue
@@ -24,21 +24,20 @@ class VerifyMobileVC: BaseViewController {
             }
         }
     }
-    
-    
-    private var second = ZeusConfig.resendVerifyCodeSeconds()
-    private lazy var timer:NSTimer = {
-        let timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(timerFired), userInfo: nil, repeats: true)
+    lazy var timer: NSTimer = {
+        let timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(timeFired), userInfo: nil, repeats: true)
         return timer
     }()
     
+    var mobile:String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        mobileLabel.text = mobile
         nextButton.enabled = false
         // Do any additional setup after loading the view.
+        mobileLabel.text = mobile
     }
-
+    
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
         timer.invalidate()
@@ -46,24 +45,24 @@ class VerifyMobileVC: BaseViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        resendButton.enabled = false
+        timer.fire()
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         codeTextField.becomeFirstResponder()
-        timer.fire()
     }
     
-    func timerFired() {
+    // MARK: Actions
+    func timeFired() {
         if second > 1 {
-            second = second - 1
-            resendButton.enabled = false
             UIView.performWithoutAnimation({ 
-                self.resendButton.setTitle("重新获取(\(self.second))", forState: .Normal)
+                self.resendButton.setTitle("重新获取（\(self.second)）", forState: .Normal)
                 self.resendButton.layoutIfNeeded()
             })
             
+            resendButton.enabled = false
+            second -= 1
         }else{
             UIView.performWithoutAnimation({ 
                 self.resendButton.setTitle("重新获取", forState: .Normal)
@@ -73,26 +72,24 @@ class VerifyMobileVC: BaseViewController {
         }
     }
     
-    // MARK: Actions
-    @IBAction func next_Touch(sender: AnyObject) {
-       verifyMobile()
-    }
-    
-    @IBAction func resendVerifyCode_Touch(sender: AnyObject) {
-        second = ZeusConfig.resendVerifyCodeSeconds()
-        
-    }
-    
-    @IBAction func textFieldDidChanged(textField: UITextField) {
+    @IBAction func textFieldChanged(textField: UITextField) {
         guard let text = textField.text else {
             return
         }
         haveAppropriateInput = text.characters.count == ZeusConfig.verifyCodeLength()
     }
     
+    @IBAction func resend_Touch(sender: AnyObject) {
+        second = ZeusConfig.resendVerifyCodeSeconds()
+    }
+
+    @IBAction func finishLogin_Touch(sender: AnyObject) {
+        verifyMobile()
+    }
     
     func verifyMobile() {
-        self.performSegueWithIdentifier("showRegisterUserInfoVC", sender: nil)
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.startMainStory()
     }
     
     override func didReceiveMemoryWarning() {

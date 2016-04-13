@@ -10,10 +10,10 @@ import UIKit
 
 class RegisterUserInfoVC: BaseViewController {
 
-    @IBOutlet weak var finishButton: UIBarButtonItem!
-    @IBOutlet weak var positionTextField: BorderTextField!
-    @IBOutlet weak var companyTextField: BorderTextField!
-    @IBOutlet weak var nameTextField: BorderTextField!
+    @IBOutlet private weak var finishButton: UIBarButtonItem!
+    @IBOutlet private weak var positionTextField: BorderTextField!
+    @IBOutlet private weak var companyTextField: BorderTextField!
+    @IBOutlet private weak var nameTextField: BorderTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
