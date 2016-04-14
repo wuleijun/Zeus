@@ -16,6 +16,16 @@
 		451562EC1CBF2C8F005CE865 /* ShowFirstStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451562EB1CBF2C8F005CE865 /* ShowFirstStepVC.swift */; };
 		451562EE1CBF2CA4005CE865 /* ShowSecondStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451562ED1CBF2CA4005CE865 /* ShowSecondStepVC.swift */; };
 		451562F01CBF2CB5005CE865 /* ShowThirdStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451562EF1CBF2CB5005CE865 /* ShowThirdStepVC.swift */; };
+		451562F31CBF6A94005CE865 /* MyRelatedUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451562F21CBF6A94005CE865 /* MyRelatedUserVC.swift */; };
+		451562F51CBF6AAC005CE865 /* MyRelatedUserVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451562F41CBF6AAC005CE865 /* MyRelatedUserVC.storyboard */; };
+		451562F71CBF6FD8005CE865 /* RelateEachOtherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451562F61CBF6FD8005CE865 /* RelateEachOtherVC.swift */; };
+		451562F91CBF702B005CE865 /* RelateEachOtherVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451562F81CBF702B005CE865 /* RelateEachOtherVC.storyboard */; };
+		451562FB1CBF705C005CE865 /* AddRelatedUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451562FA1CBF705C005CE865 /* AddRelatedUserVC.swift */; };
+		451562FD1CBF707C005CE865 /* AddRelatedUserVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451562FC1CBF707C005CE865 /* AddRelatedUserVC.storyboard */; };
+		451563011CBF73C9005CE865 /* MyRelatedUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451562FF1CBF73C9005CE865 /* MyRelatedUserCell.swift */; };
+		451563021CBF73C9005CE865 /* MyRelatedUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451563001CBF73C9005CE865 /* MyRelatedUserCell.xib */; };
+		451563071CBF79C5005CE865 /* RelateEachOtherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451563051CBF79C5005CE865 /* RelateEachOtherCell.swift */; };
+		451563081CBF79C5005CE865 /* RelateEachOtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451563061CBF79C5005CE865 /* RelateEachOtherCell.xib */; };
 		45175A971CAE0A9400D42A47 /* PublishButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45175A961CAE0A9400D42A47 /* PublishButtonView.swift */; };
 		4519C0DE1CBDEB7700217C24 /* LoginVerifyMobileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0DD1CBDEB7700217C24 /* LoginVerifyMobileVC.swift */; };
 		4519C0E01CBE48C700217C24 /* ZeusHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0DF1CBE48C700217C24 /* ZeusHud.swift */; };
@@ -90,6 +100,16 @@
 		451562EB1CBF2C8F005CE865 /* ShowFirstStepVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowFirstStepVC.swift; sourceTree = "<group>"; };
 		451562ED1CBF2CA4005CE865 /* ShowSecondStepVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowSecondStepVC.swift; sourceTree = "<group>"; };
 		451562EF1CBF2CB5005CE865 /* ShowThirdStepVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowThirdStepVC.swift; sourceTree = "<group>"; };
+		451562F21CBF6A94005CE865 /* MyRelatedUserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRelatedUserVC.swift; sourceTree = "<group>"; };
+		451562F41CBF6AAC005CE865 /* MyRelatedUserVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyRelatedUserVC.storyboard; sourceTree = "<group>"; };
+		451562F61CBF6FD8005CE865 /* RelateEachOtherVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelateEachOtherVC.swift; sourceTree = "<group>"; };
+		451562F81CBF702B005CE865 /* RelateEachOtherVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RelateEachOtherVC.storyboard; sourceTree = "<group>"; };
+		451562FA1CBF705C005CE865 /* AddRelatedUserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRelatedUserVC.swift; sourceTree = "<group>"; };
+		451562FC1CBF707C005CE865 /* AddRelatedUserVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddRelatedUserVC.storyboard; sourceTree = "<group>"; };
+		451562FF1CBF73C9005CE865 /* MyRelatedUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRelatedUserCell.swift; sourceTree = "<group>"; };
+		451563001CBF73C9005CE865 /* MyRelatedUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyRelatedUserCell.xib; sourceTree = "<group>"; };
+		451563051CBF79C5005CE865 /* RelateEachOtherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelateEachOtherCell.swift; sourceTree = "<group>"; };
+		451563061CBF79C5005CE865 /* RelateEachOtherCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RelateEachOtherCell.xib; sourceTree = "<group>"; };
 		45175A961CAE0A9400D42A47 /* PublishButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishButtonView.swift; sourceTree = "<group>"; };
 		4519C0DD1CBDEB7700217C24 /* LoginVerifyMobileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVerifyMobileVC.swift; sourceTree = "<group>"; };
 		4519C0DF1CBE48C700217C24 /* ZeusHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusHud.swift; sourceTree = "<group>"; };
@@ -206,6 +226,31 @@
 				451562EF1CBF2CB5005CE865 /* ShowThirdStepVC.swift */,
 			);
 			name = "宣传页";
+			sourceTree = "<group>";
+		};
+		451562F11CBF6A56005CE865 /* 我的关联 */ = {
+			isa = PBXGroup;
+			children = (
+				451562FE1CBF73A4005CE865 /* Cells */,
+				451562F21CBF6A94005CE865 /* MyRelatedUserVC.swift */,
+				451562F41CBF6AAC005CE865 /* MyRelatedUserVC.storyboard */,
+				451562F61CBF6FD8005CE865 /* RelateEachOtherVC.swift */,
+				451562F81CBF702B005CE865 /* RelateEachOtherVC.storyboard */,
+				451562FA1CBF705C005CE865 /* AddRelatedUserVC.swift */,
+				451562FC1CBF707C005CE865 /* AddRelatedUserVC.storyboard */,
+			);
+			name = "我的关联";
+			sourceTree = "<group>";
+		};
+		451562FE1CBF73A4005CE865 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				451562FF1CBF73C9005CE865 /* MyRelatedUserCell.swift */,
+				451563001CBF73C9005CE865 /* MyRelatedUserCell.xib */,
+				451563051CBF79C5005CE865 /* RelateEachOtherCell.swift */,
+				451563061CBF79C5005CE865 /* RelateEachOtherCell.xib */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		45175A951CAE0A8400D42A47 /* Views */ = {
@@ -377,6 +422,7 @@
 			isa = PBXGroup;
 			children = (
 				458C27191CAA6E24004575FC /* ProfileViewController.swift */,
+				451562F11CBF6A56005CE865 /* 我的关联 */,
 				45E71AC71CBB7C1500FC26CF /* 系统设置 */,
 				451EA00B1CB4FF35004FE212 /* 个人信息 */,
 				457C6ACE1CB6420E0065E883 /* 编辑个人信息 */,
@@ -614,12 +660,17 @@
 				4507EB601CBBB54C007F3A5F /* AboutViewController.storyboard in Resources */,
 				4523B4141CAD253B00811E50 /* AddItemCell.xib in Resources */,
 				4507EB521CBB9796007F3A5F /* LoginAndRegister.storyboard in Resources */,
+				451563021CBF73C9005CE865 /* MyRelatedUserCell.xib in Resources */,
 				4523B3F91CACD1CA00811E50 /* HistoryActivityVC.storyboard in Resources */,
 				4523B40F1CAD16B700811E50 /* ClientTypeVC.storyboard in Resources */,
 				45D052361CAA594400BB1738 /* LaunchScreen.storyboard in Resources */,
 				457C6AD11CB642AE0065E883 /* EditInfoViewController.storyboard in Resources */,
 				4523B3FF1CACFDD500811E50 /* AddActivityVC.storyboard in Resources */,
 				45D052331CAA594400BB1738 /* Assets.xcassets in Resources */,
+				451562F91CBF702B005CE865 /* RelateEachOtherVC.storyboard in Resources */,
+				451563081CBF79C5005CE865 /* RelateEachOtherCell.xib in Resources */,
+				451562F51CBF6AAC005CE865 /* MyRelatedUserVC.storyboard in Resources */,
+				451562FD1CBF707C005CE865 /* AddRelatedUserVC.storyboard in Resources */,
 				458C27211CAA7AFE004575FC /* ActivityCell.xib in Resources */,
 				45D052311CAA594400BB1738 /* Main.storyboard in Resources */,
 			);
@@ -706,6 +757,7 @@
 				45E71AD01CBB937300FC26CF /* ZeusAlert.swift in Sources */,
 				45E71AC91CBB7C4C00FC26CF /* SettingsViewController.swift in Sources */,
 				457C6AD31CB642CF0065E883 /* EditInfoViewController.swift in Sources */,
+				451563071CBF79C5005CE865 /* RelateEachOtherCell.swift in Sources */,
 				4523B4041CAD12EA00811E50 /* ClientTypeVC.swift in Sources */,
 				451562EE1CBF2CA4005CE865 /* ShowSecondStepVC.swift in Sources */,
 				457C6AD61CB655B90065E883 /* UIViewController+Zeus.swift in Sources */,
@@ -716,13 +768,17 @@
 				4519C0E01CBE48C700217C24 /* ZeusHud.swift in Sources */,
 				451EA0021CB4F2F2004FE212 /* CellBaseContainerView.swift in Sources */,
 				4523B3FC1CACFD8A00811E50 /* AddActivityVC.swift in Sources */,
+				451562FB1CBF705C005CE865 /* AddRelatedUserVC.swift in Sources */,
 				4523B3EF1CACBB9F00811E50 /* UIColor+Zeus.swift in Sources */,
+				451562F71CBF6FD8005CE865 /* RelateEachOtherVC.swift in Sources */,
 				4523B3F41CACD0ED00811E50 /* HistoryActivityVC.swift in Sources */,
+				451562F31CBF6A94005CE865 /* MyRelatedUserVC.swift in Sources */,
 				451FF6E11CBD009400E31344 /* ZeusConfig.swift in Sources */,
 				451FF6D51CBCE4E100E31344 /* BorderTextField.swift in Sources */,
 				458C27231CAA7C04004575FC /* BaseTableViewCell.swift in Sources */,
 				458C271F1CAA7AF0004575FC /* ActivityCell.swift in Sources */,
 				451EA0071CB4FD68004FE212 /* InfoViewController.swift in Sources */,
+				451563011CBF73C9005CE865 /* MyRelatedUserCell.swift in Sources */,
 				458C27181CAA6E05004575FC /* ClientViewController.swift in Sources */,
 				4507EB5E1CBBB51E007F3A5F /* AboutViewController.swift in Sources */,
 				451FF6DB1CBCEC9C00E31344 /* VerifyMobileVC.swift in Sources */,

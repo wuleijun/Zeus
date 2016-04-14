@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LPD-gi-k8q">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--我的关联-->
+        <scene sceneID="k0N-bY-67S">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="LPD-gi-k8q" customClass="MyRelatedUserVC" customModule="Zeus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BBg-He-zVj"/>
+                        <viewControllerLayoutGuide type="bottom" id="CwA-5M-nQZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uiz-w0-a3W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cd5-Nn-vfG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="LPD-gi-k8q" id="5D3-Bw-Phz"/>
+                                    <outlet property="delegate" destination="LPD-gi-k8q" id="77A-70-sx4"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cd5-Nn-vfG" firstAttribute="leading" secondItem="uiz-w0-a3W" secondAttribute="leading" id="Q4D-T7-4nj"/>
+                            <constraint firstItem="CwA-5M-nQZ" firstAttribute="top" secondItem="cd5-Nn-vfG" secondAttribute="bottom" id="UiE-kI-HVn"/>
+                            <constraint firstAttribute="trailing" secondItem="cd5-Nn-vfG" secondAttribute="trailing" id="bFq-xV-Ohb"/>
+                            <constraint firstItem="cd5-Nn-vfG" firstAttribute="top" secondItem="uiz-w0-a3W" secondAttribute="top" id="cCk-ES-NAT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="我的关联" id="1Pw-fl-q0Q">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="fE1-mV-CZX">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="86Q-FX-eWA">
+                                <rect key="frame" x="338" y="11" width="21" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="associated_add"/>
+                                <connections>
+                                    <action selector="addRelatedUser_Touch:" destination="LPD-gi-k8q" eventType="touchUpInside" id="pPy-T5-1WI"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="R6T-10-cbw" id="FdJ-Dy-edg"/>
+                        <outlet property="tableView" destination="cd5-Nn-vfG" id="4K3-WJ-qNT"/>
+                        <segue destination="rsM-2k-ECT" kind="show" identifier="showRelateEachOtherVC" id="ges-GZ-9QX"/>
+                        <segue destination="a6B-sL-omc" kind="show" identifier="showAddRelatedUserVC" id="3PE-9W-Wd4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3jM-p1-2f0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="R6T-10-cbw">
+                    <connections>
+                        <outlet property="delegate" destination="LPD-gi-k8q" id="W15-B9-moZ"/>
+                        <outlet property="searchContentsController" destination="LPD-gi-k8q" id="dT6-rU-Qqm"/>
+                        <outlet property="searchResultsDataSource" destination="LPD-gi-k8q" id="dzV-Az-Ews"/>
+                        <outlet property="searchResultsDelegate" destination="LPD-gi-k8q" id="hN1-hj-bus"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="258.5" y="246.5"/>
+        </scene>
+        <!--RelateEachOtherVC-->
+        <scene sceneID="Z32-4w-wOw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RelateEachOtherVC" id="rsM-2k-ECT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QbW-f7-WEA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750.5" y="68.5"/>
+        </scene>
+        <!--AddRelatedUserVC-->
+        <scene sceneID="Kb8-Gq-2Vj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddRelatedUserVC" id="a6B-sL-omc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z8D-aC-S9N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="758" y="485"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="associated_add" width="21" height="17"/>
+    </resources>
+</document>

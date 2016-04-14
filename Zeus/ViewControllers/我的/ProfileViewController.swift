@@ -14,6 +14,7 @@ class ProfileViewController: BaseViewController {
     @IBOutlet weak var infoViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var settingsView: CellBaseContainerView!
     
+    @IBOutlet weak var myRelatedUserView: CellBaseContainerView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +22,10 @@ class ProfileViewController: BaseViewController {
 
         infoView.tapAction = { [weak self] in
             self?.performSegueWithIdentifier("showInfoViewController", sender: nil)
+        }
+        
+        myRelatedUserView.tapAction = { [weak self] in
+            self?.performSegueWithIdentifier("showMyRelatedUserVC", sender: nil)
         }
         
         settingsView.tapAction = { [weak self] in

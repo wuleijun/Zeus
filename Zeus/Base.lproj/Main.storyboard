@@ -81,7 +81,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我的关联" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJf-OA-eeI">
                                                 <rect key="frame" x="42" y="15" width="98" height="20"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -105,7 +105,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="系统设置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohh-Sn-GZo">
                                                 <rect key="frame" x="40" y="15" width="98" height="20"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -146,9 +146,11 @@
                     <connections>
                         <outlet property="infoView" destination="iJO-nh-Np2" id="GrF-Nu-VS4"/>
                         <outlet property="infoViewBottomConstraint" destination="oXK-OE-EyO" id="khq-AG-hmg"/>
+                        <outlet property="myRelatedUserView" destination="esP-mO-ezM" id="8R8-Mz-MIi"/>
                         <outlet property="settingsView" destination="7Vv-my-LPg" id="Arb-en-u8Q"/>
                         <segue destination="Mz7-Fn-NKz" kind="show" identifier="showInfoViewController" id="Yq6-E8-aVi"/>
                         <segue destination="NVd-el-Wkw" kind="show" identifier="showSettingsViewController" id="Lr2-mL-bhc"/>
+                        <segue destination="mWc-rp-xCH" kind="show" identifier="showMyRelatedUserVC" id="zgR-dz-OYf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zdg-iV-5FF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -342,7 +344,7 @@
                 <viewControllerPlaceholder storyboardName="SettingsViewController" id="NVd-el-Wkw" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I2C-aQ-fuX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="615.5" y="721"/>
+            <point key="canvasLocation" x="522.5" y="1163"/>
         </scene>
         <!--InfoViewController-->
         <scene sceneID="kRB-63-jMn">
@@ -350,7 +352,15 @@
                 <viewControllerPlaceholder storyboardName="InfoViewController" id="Mz7-Fn-NKz" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PKW-3a-3mg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="638.5" y="1000"/>
+            <point key="canvasLocation" x="508.5" y="618"/>
+        </scene>
+        <!--MyRelatedUserVC-->
+        <scene sceneID="5mn-VQ-hMC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MyRelatedUserVC" id="mWc-rp-xCH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nc7-Vw-1Ar" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="916"/>
         </scene>
     </scenes>
     <resources>
