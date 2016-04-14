@@ -30,9 +30,15 @@
                         <constraints>
                             <constraint firstItem="cd5-Nn-vfG" firstAttribute="leading" secondItem="uiz-w0-a3W" secondAttribute="leading" id="Q4D-T7-4nj"/>
                             <constraint firstItem="CwA-5M-nQZ" firstAttribute="top" secondItem="cd5-Nn-vfG" secondAttribute="bottom" id="UiE-kI-HVn"/>
+                            <constraint firstAttribute="bottom" secondItem="cd5-Nn-vfG" secondAttribute="bottom" id="WPG-qQ-p3M"/>
                             <constraint firstAttribute="trailing" secondItem="cd5-Nn-vfG" secondAttribute="trailing" id="bFq-xV-Ohb"/>
                             <constraint firstItem="cd5-Nn-vfG" firstAttribute="top" secondItem="uiz-w0-a3W" secondAttribute="top" id="cCk-ES-NAT"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UiE-kI-HVn"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="我的关联" id="1Pw-fl-q0Q">
                         <barButtonItem key="rightBarButtonItem" style="done" id="fE1-mV-CZX">

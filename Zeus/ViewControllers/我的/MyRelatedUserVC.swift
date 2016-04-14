@@ -82,6 +82,7 @@ extension MyRelatedUserVC : UITableViewDataSource {
             return firstCell
         }
         let relatedUserCell = tableView.dequeueReusableCellWithIdentifier(myRelatedUserCellId) as! MyRelatedUserCell
+        relatedUserCell.relatedEachOtherFlag.hidden = indexPath.row%2==0
         return relatedUserCell
     }
     

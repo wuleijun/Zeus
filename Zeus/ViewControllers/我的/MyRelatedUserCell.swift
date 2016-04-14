@@ -10,6 +10,7 @@ import UIKit
 
 class MyRelatedUserCell: UITableViewCell {
     
+    @IBOutlet weak var relatedEachOtherFlag: UIImageView!
     @IBOutlet private weak var userName_Lbl: UILabel!
     @IBOutlet private weak var mobile_Lbl: UILabel!
     @IBOutlet private weak var headImageView: UIImageView!

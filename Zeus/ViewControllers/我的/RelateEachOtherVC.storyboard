@@ -16,13 +16,32 @@
                     <view key="view" contentMode="scaleToFill" id="Fc9-wk-ow7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tEH-DB-lbU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="2Ci-7b-hCB" id="ngf-76-mbC"/>
+                                    <outlet property="delegate" destination="2Ci-7b-hCB" id="EX6-Oa-Qt0"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tEH-DB-lbU" firstAttribute="top" secondItem="Fc9-wk-ow7" secondAttribute="top" id="3OJ-C5-AQV"/>
+                            <constraint firstItem="tEH-DB-lbU" firstAttribute="leading" secondItem="Fc9-wk-ow7" secondAttribute="leading" id="ITk-Wg-RA3"/>
+                            <constraint firstAttribute="bottom" secondItem="tEH-DB-lbU" secondAttribute="bottom" id="POb-4M-kQv"/>
+                            <constraint firstAttribute="trailing" secondItem="tEH-DB-lbU" secondAttribute="trailing" id="amT-pa-qeO"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="相互关联" id="H9B-Ia-Aff">
                         <barButtonItem key="backBarButtonItem" title="返回" id="H9T-1z-mni"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="tEH-DB-lbU" id="G19-st-9zb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jcq-AS-p4q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
