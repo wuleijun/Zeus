@@ -16,6 +16,27 @@ class MyRelatedUserVC: BaseViewController {
         }
     }
     
+    lazy var searchController:UISearchController = {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.delegate = self;
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.hidesNavigationBarDuringPresentation = false
+        
+        searchController.searchBar.searchBarStyle = .Minimal
+        searchController.searchBar.backgroundColor = UIColor.whiteColor()
+        searchController.searchBar.barTintColor = UIColor.whiteColor()
+        
+        searchController.searchBar.placeholder = NSLocalizedString("搜索我的关联", comment: "")
+        searchController.searchBar.sizeToFit()
+        
+        searchController.searchBar.delegate = self
+        return searchController
+    }()
+    private var searchControllerIsActive: Bool {
+        return searchController.active ?? false
+    }
+    
     let relatedEachotherCellId = "RelateEachOtherCell"
     let myRelatedUserCellId = "MyRelatedUserCell"
     
@@ -24,11 +45,24 @@ class MyRelatedUserVC: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.whiteColor()
         tableView.registerNib(UINib(nibName: relatedEachotherCellId, bundle: nil), forCellReuseIdentifier: relatedEachotherCellId)
         tableView.registerNib(UINib(nibName: myRelatedUserCellId, bundle: nil), forCellReuseIdentifier: myRelatedUserCellId)
         // Do any additional setup after loading the view.
+        tableView.tableHeaderView = searchController.searchBar
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        //设置UISearchBar取消按钮颜色
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.zeusNavigationBarTintColor()], forState: .Normal)
     }
 
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.zeusTintColor()], forState: .Normal)
+    }
+    
     // MARK: Actions
     @IBAction func addRelatedUser_Touch(sender: AnyObject) {
         self.performSegueWithIdentifier("showAddRelatedUserVC", sender: nil)
@@ -62,14 +96,20 @@ extension MyRelatedUserVC : UITableViewDataSource {
     }
     
     func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
-        return sectionTitles
+        return searchControllerIsActive ? nil:sectionTitles
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        if searchControllerIsActive {
+            return 1
+        }
         return sectionTitles.count + 1
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if searchControllerIsActive {
+            return 10
+        }
         if section == Section.EachOther.rawValue {
             return 1
         }
@@ -77,7 +117,8 @@ extension MyRelatedUserVC : UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if indexPath.section == Section.EachOther.rawValue {
+
+        if indexPath.section == Section.EachOther.rawValue && !searchControllerIsActive {
             let firstCell = tableView.dequeueReusableCellWithIdentifier(relatedEachotherCellId) as! RelateEachOtherCell
             return firstCell
         }
@@ -101,7 +142,8 @@ extension MyRelatedUserVC : UITableViewDataSource {
 extension MyRelatedUserVC : UITableViewDelegate {
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if indexPath.section == 0 {
+
+        if indexPath.section == 0 && !searchController.active {
             return 50
         }
         return 80
@@ -111,11 +153,51 @@ extension MyRelatedUserVC : UITableViewDelegate {
         defer {
             tableView.deselectRowAtIndexPath(indexPath, animated: true)
         }
-        switch indexPath.section {
-        case Section.EachOther.rawValue:
-            self.performSegueWithIdentifier("showRelateEachOtherVC", sender: nil)
-        default:
-            break
+        if searchControllerIsActive {
+            
+        }else{
+            switch indexPath.section {
+            case Section.EachOther.rawValue:
+                self.performSegueWithIdentifier("showRelateEachOtherVC", sender: nil)
+            default:
+                break
+            }
         }
     }
 }
+
+// MARK: - UISearchResultsUpdating
+
+extension MyRelatedUserVC: UISearchResultsUpdating {
+    
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        
+        guard let searchText = searchController.searchBar.text else {
+            return
+        }
+        tableView.reloadData()
+    }
+}
+
+// MARK: - UISearchBarDelegate
+
+extension MyRelatedUserVC: UISearchBarDelegate {
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        updateSearchResultsForSearchController(searchController)
+        
+    }
+}
+
+extension MyRelatedUserVC: UISearchControllerDelegate {
+    
+    func didPresentSearchController(searchController: UISearchController) {
+        
+    }
+    
+    func willDismissSearchController(searchController: UISearchController) {
+        
+    }
+}
+
