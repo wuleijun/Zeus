@@ -28,6 +28,15 @@ extension UIColor{
     }
     
     /**
+     注册按钮背景
+     
+     - returns: UIColor
+     */
+    class func zeusRegisterButtonTintColor() -> UIColor {
+        return UIColor(red:86/255.0,  green:148/255.0,  blue:224/255.0, alpha:1)
+    }
+    
+    /**
      导航栏TitleColor
      
      - returns: UIColor
@@ -46,7 +55,7 @@ extension UIColor{
     }
     
     /**
-     导航栏背景颜色
+     Tab栏背景颜色
      
      - returns: UIColor
      */

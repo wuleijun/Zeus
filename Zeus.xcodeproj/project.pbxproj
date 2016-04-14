@@ -13,6 +13,9 @@
 		4507EB5C1CBBB3E5007F3A5F /* FeedbackViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4507EB5B1CBBB3E5007F3A5F /* FeedbackViewController.storyboard */; };
 		4507EB5E1CBBB51E007F3A5F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507EB5D1CBBB51E007F3A5F /* AboutViewController.swift */; };
 		4507EB601CBBB54C007F3A5F /* AboutViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4507EB5F1CBBB54C007F3A5F /* AboutViewController.storyboard */; };
+		451562EC1CBF2C8F005CE865 /* ShowFirstStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451562EB1CBF2C8F005CE865 /* ShowFirstStepVC.swift */; };
+		451562EE1CBF2CA4005CE865 /* ShowSecondStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451562ED1CBF2CA4005CE865 /* ShowSecondStepVC.swift */; };
+		451562F01CBF2CB5005CE865 /* ShowThirdStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451562EF1CBF2CB5005CE865 /* ShowThirdStepVC.swift */; };
 		45175A971CAE0A9400D42A47 /* PublishButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45175A961CAE0A9400D42A47 /* PublishButtonView.swift */; };
 		4519C0DE1CBDEB7700217C24 /* LoginVerifyMobileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0DD1CBDEB7700217C24 /* LoginVerifyMobileVC.swift */; };
 		4519C0E01CBE48C700217C24 /* ZeusHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0DF1CBE48C700217C24 /* ZeusHud.swift */; };
@@ -84,6 +87,9 @@
 		4507EB5B1CBBB3E5007F3A5F /* FeedbackViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FeedbackViewController.storyboard; sourceTree = "<group>"; };
 		4507EB5D1CBBB51E007F3A5F /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		4507EB5F1CBBB54C007F3A5F /* AboutViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutViewController.storyboard; sourceTree = "<group>"; };
+		451562EB1CBF2C8F005CE865 /* ShowFirstStepVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowFirstStepVC.swift; sourceTree = "<group>"; };
+		451562ED1CBF2CA4005CE865 /* ShowSecondStepVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowSecondStepVC.swift; sourceTree = "<group>"; };
+		451562EF1CBF2CB5005CE865 /* ShowThirdStepVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowThirdStepVC.swift; sourceTree = "<group>"; };
 		45175A961CAE0A9400D42A47 /* PublishButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishButtonView.swift; sourceTree = "<group>"; };
 		4519C0DD1CBDEB7700217C24 /* LoginVerifyMobileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVerifyMobileVC.swift; sourceTree = "<group>"; };
 		4519C0DF1CBE48C700217C24 /* ZeusHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusHud.swift; sourceTree = "<group>"; };
@@ -166,6 +172,7 @@
 		4507EB501CBB971E007F3A5F /* 登录注册 */ = {
 			isa = PBXGroup;
 			children = (
+				451562EA1CBF2B71005CE865 /* 宣传页 */,
 				4507EB531CBB980F007F3A5F /* LoginRegisterVC.swift */,
 				451FF6DE1CBCF1D700E31344 /* 注册 */,
 				4519C0DC1CBDEB5000217C24 /* 登录 */,
@@ -189,6 +196,16 @@
 				4507EB5F1CBBB54C007F3A5F /* AboutViewController.storyboard */,
 			);
 			name = "关于";
+			sourceTree = "<group>";
+		};
+		451562EA1CBF2B71005CE865 /* 宣传页 */ = {
+			isa = PBXGroup;
+			children = (
+				451562EB1CBF2C8F005CE865 /* ShowFirstStepVC.swift */,
+				451562ED1CBF2CA4005CE865 /* ShowSecondStepVC.swift */,
+				451562EF1CBF2CB5005CE865 /* ShowThirdStepVC.swift */,
+			);
+			name = "宣传页";
 			sourceTree = "<group>";
 		};
 		45175A951CAE0A8400D42A47 /* Views */ = {
@@ -681,6 +698,7 @@
 				4507EB541CBB980F007F3A5F /* LoginRegisterVC.swift in Sources */,
 				45175A971CAE0A9400D42A47 /* PublishButtonView.swift in Sources */,
 				4523B3F11CACBDDC00811E50 /* UIFont+Zeus.swift in Sources */,
+				451562EC1CBF2C8F005CE865 /* ShowFirstStepVC.swift in Sources */,
 				451FF6D71CBCE68F00E31344 /* LoginByMobileVC.swift in Sources */,
 				458C27161CAA6DB9004575FC /* BaseViewController.swift in Sources */,
 				45D0522A1CAA594400BB1738 /* AppDelegate.swift in Sources */,
@@ -689,6 +707,7 @@
 				45E71AC91CBB7C4C00FC26CF /* SettingsViewController.swift in Sources */,
 				457C6AD31CB642CF0065E883 /* EditInfoViewController.swift in Sources */,
 				4523B4041CAD12EA00811E50 /* ClientTypeVC.swift in Sources */,
+				451562EE1CBF2CA4005CE865 /* ShowSecondStepVC.swift in Sources */,
 				457C6AD61CB655B90065E883 /* UIViewController+Zeus.swift in Sources */,
 				458C271A1CAA6E24004575FC /* ProfileViewController.swift in Sources */,
 				458C27131CAA6D8E004575FC /* ActivityViewController.swift in Sources */,
@@ -708,6 +727,7 @@
 				4507EB5E1CBBB51E007F3A5F /* AboutViewController.swift in Sources */,
 				451FF6DB1CBCEC9C00E31344 /* VerifyMobileVC.swift in Sources */,
 				4519C0DE1CBDEB7700217C24 /* LoginVerifyMobileVC.swift in Sources */,
+				451562F01CBF2CB5005CE865 /* ShowThirdStepVC.swift in Sources */,
 				451FF6CF1CBCD68000E31344 /* BorderButton.swift in Sources */,
 				451FF6D91CBCE6C300E31344 /* RegisterByMobileVC.swift in Sources */,
 			);
