@@ -16,6 +16,7 @@ class RelateEachOtherVC: BaseViewController {
             tableView.sectionIndexBackgroundColor = UIColor.clearColor()
         }
     }
+    lazy private var userCountFooterView = UserCountLabel(title: "20位关联成员")
     
     let relatedUserCellId = "MyRelatedUserCell"
     let sectionTitles = ["A","B","C","D","E","F","G","H"]
@@ -24,6 +25,7 @@ class RelateEachOtherVC: BaseViewController {
         super.viewDidLoad()
         tableView.registerNib(UINib(nibName: relatedUserCellId, bundle: nil), forCellReuseIdentifier: relatedUserCellId)
         // Do any additional setup after loading the view.
+        tableView.tableFooterView = userCountFooterView
     }
 
     override func viewDidAppear(animated: Bool) {

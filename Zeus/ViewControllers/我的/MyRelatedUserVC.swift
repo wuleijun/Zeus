@@ -16,6 +16,8 @@ class MyRelatedUserVC: BaseViewController {
         }
     }
     
+    lazy private var userCountFooterView = UserCountLabel(title: "20位关联成员")
+    
     let relatedEachotherCellId = "RelateEachOtherCell"
     let myRelatedUserCellId = "MyRelatedUserCell"
     
@@ -24,10 +26,10 @@ class MyRelatedUserVC: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.whiteColor()
         tableView.registerNib(UINib(nibName: relatedEachotherCellId, bundle: nil), forCellReuseIdentifier: relatedEachotherCellId)
         tableView.registerNib(UINib(nibName: myRelatedUserCellId, bundle: nil), forCellReuseIdentifier: myRelatedUserCellId)
         // Do any additional setup after loading the view.
+        tableView.tableFooterView = userCountFooterView
     }
     
     override func viewDidAppear(animated: Bool) {

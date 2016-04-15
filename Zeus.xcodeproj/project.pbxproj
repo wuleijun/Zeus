@@ -30,7 +30,7 @@
 		4519C0DE1CBDEB7700217C24 /* LoginVerifyMobileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0DD1CBDEB7700217C24 /* LoginVerifyMobileVC.swift */; };
 		4519C0E01CBE48C700217C24 /* ZeusHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0DF1CBE48C700217C24 /* ZeusHud.swift */; };
 		4519C0E21CBE4F4100217C24 /* ZeusHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0E11CBE4F4100217C24 /* ZeusHelper.swift */; };
-		451C47CD1CC0C64600F197DA /* SearchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C47CC1CC0C64600F197DA /* SearchHeaderView.swift */; };
+		451C47CF1CC0CBCB00F197DA /* UserCountLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C47CE1CC0CBCB00F197DA /* UserCountLabel.swift */; };
 		451EA0021CB4F2F2004FE212 /* CellBaseContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EA0011CB4F2F2004FE212 /* CellBaseContainerView.swift */; };
 		451EA0071CB4FD68004FE212 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EA0061CB4FD68004FE212 /* InfoViewController.swift */; };
 		451EA00A1CB4FEA0004FE212 /* InfoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451EA0081CB4FEA0004FE212 /* InfoViewController.storyboard */; };
@@ -115,7 +115,7 @@
 		4519C0DD1CBDEB7700217C24 /* LoginVerifyMobileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVerifyMobileVC.swift; sourceTree = "<group>"; };
 		4519C0DF1CBE48C700217C24 /* ZeusHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusHud.swift; sourceTree = "<group>"; };
 		4519C0E11CBE4F4100217C24 /* ZeusHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusHelper.swift; sourceTree = "<group>"; };
-		451C47CC1CC0C64600F197DA /* SearchHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHeaderView.swift; sourceTree = "<group>"; };
+		451C47CE1CC0CBCB00F197DA /* UserCountLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCountLabel.swift; sourceTree = "<group>"; };
 		451EA0011CB4F2F2004FE212 /* CellBaseContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellBaseContainerView.swift; sourceTree = "<group>"; };
 		451EA0061CB4FD68004FE212 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		451EA0091CB4FEA0004FE212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/InfoViewController.storyboard; sourceTree = "<group>"; };
@@ -393,7 +393,7 @@
 		458C270E1CAA6915004575FC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				451C47CC1CC0C64600F197DA /* SearchHeaderView.swift */,
+				451C47CE1CC0CBCB00F197DA /* UserCountLabel.swift */,
 				451FF6D41CBCE4E100E31344 /* BorderTextField.swift */,
 				451EA0031CB4FB88004FE212 /* Buttons */,
 				451EA0001CB4F2A7004FE212 /* 我的 */,
@@ -749,6 +749,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				451FF6DD1CBCEFE200E31344 /* RegisterUserInfoVC.swift in Sources */,
+				451C47CF1CC0CBCB00F197DA /* UserCountLabel.swift in Sources */,
 				4507EB541CBB980F007F3A5F /* LoginRegisterVC.swift in Sources */,
 				45175A971CAE0A9400D42A47 /* PublishButtonView.swift in Sources */,
 				4523B3F11CACBDDC00811E50 /* UIFont+Zeus.swift in Sources */,
@@ -787,7 +788,6 @@
 				451FF6DB1CBCEC9C00E31344 /* VerifyMobileVC.swift in Sources */,
 				4519C0DE1CBDEB7700217C24 /* LoginVerifyMobileVC.swift in Sources */,
 				451562F01CBF2CB5005CE865 /* ShowThirdStepVC.swift in Sources */,
-				451C47CD1CC0C64600F197DA /* SearchHeaderView.swift in Sources */,
 				451FF6CF1CBCD68000E31344 /* BorderButton.swift in Sources */,
 				451FF6D91CBCE6C300E31344 /* RegisterByMobileVC.swift in Sources */,
 			);
