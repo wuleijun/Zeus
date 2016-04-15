@@ -13,28 +13,8 @@ class RelateEachOtherVC: BaseViewController {
     @IBOutlet weak var tableView: UITableView!{
         didSet{
             tableView.rowHeight = 80
+            tableView.sectionIndexBackgroundColor = UIColor.clearColor()
         }
-    }
-    
-    lazy var searchController:UISearchController = {
-        let searchController = UISearchController(searchResultsController: nil)
-        searchController.delegate = self;
-        searchController.searchResultsUpdater = self
-        searchController.dimsBackgroundDuringPresentation = false
-        searchController.hidesNavigationBarDuringPresentation = false
-        
-        searchController.searchBar.searchBarStyle = .Minimal
-        searchController.searchBar.backgroundColor = UIColor.whiteColor()
-        searchController.searchBar.barTintColor = UIColor.whiteColor()
-        
-        searchController.searchBar.placeholder = NSLocalizedString("搜索我的关联", comment: "")
-        searchController.searchBar.sizeToFit()
-        
-        searchController.searchBar.delegate = self
-        return searchController
-    }()
-    private var searchControllerIsActive: Bool {
-        return searchController.active ?? false
     }
     
     let relatedUserCellId = "MyRelatedUserCell"
@@ -44,7 +24,6 @@ class RelateEachOtherVC: BaseViewController {
         super.viewDidLoad()
         tableView.registerNib(UINib(nibName: relatedUserCellId, bundle: nil), forCellReuseIdentifier: relatedUserCellId)
         // Do any additional setup after loading the view.
-        tableView.tableHeaderView = searchController.searchBar
     }
 
     override func viewDidAppear(animated: Bool) {
@@ -112,39 +91,3 @@ extension RelateEachOtherVC : UITableViewDelegate {
         }
     }
 }
-
-// MARK: - UISearchResultsUpdating
-
-extension RelateEachOtherVC: UISearchResultsUpdating {
-    
-    func updateSearchResultsForSearchController(searchController: UISearchController) {
-        
-        guard let searchText = searchController.searchBar.text else {
-            return
-        }
-        tableView.reloadData()
-    }
-}
-
-// MARK: - UISearchBarDelegate
-
-extension RelateEachOtherVC: UISearchBarDelegate {
-    
-    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
-        
-        updateSearchResultsForSearchController(searchController)
-        
-    }
-}
-
-extension RelateEachOtherVC: UISearchControllerDelegate {
-    
-    func didPresentSearchController(searchController: UISearchController) {
-        
-    }
-    
-    func willDismissSearchController(searchController: UISearchController) {
-        
-    }
-}
-

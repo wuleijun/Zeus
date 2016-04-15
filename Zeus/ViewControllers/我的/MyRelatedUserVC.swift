@@ -16,25 +16,6 @@ class MyRelatedUserVC: BaseViewController {
         }
     }
     
-//    lazy var searchController:UISearchController = {
-//        
-//        let searchController = UISearchController(searchResultsController: nil)
-//        searchController.delegate = self;
-//        searchController.searchResultsUpdater = self
-//        searchController.dimsBackgroundDuringPresentation = false
-//        searchController.hidesNavigationBarDuringPresentation = false
-//        
-//        searchController.searchBar.searchBarStyle = .Minimal
-//        searchController.searchBar.backgroundColor = UIColor.whiteColor()
-//        searchController.searchBar.barTintColor = UIColor.whiteColor()
-//        
-//        searchController.searchBar.placeholder = NSLocalizedString("搜索我的关联", comment: "")
-//        searchController.searchBar.sizeToFit()
-//        
-//        searchController.searchBar.delegate = self
-//        return searchController
-//    }()
-    
     let relatedEachotherCellId = "RelateEachOtherCell"
     let myRelatedUserCellId = "MyRelatedUserCell"
     
@@ -154,3 +135,4 @@ extension MyRelatedUserVC : UITableViewDelegate {
         
     }
 }
+
