@@ -16,6 +16,27 @@ class RelateEachOtherVC: BaseViewController {
         }
     }
     
+    lazy var searchController:UISearchController = {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.delegate = self;
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.hidesNavigationBarDuringPresentation = false
+        
+        searchController.searchBar.searchBarStyle = .Minimal
+        searchController.searchBar.backgroundColor = UIColor.whiteColor()
+        searchController.searchBar.barTintColor = UIColor.whiteColor()
+        
+        searchController.searchBar.placeholder = NSLocalizedString("搜索我的关联", comment: "")
+        searchController.searchBar.sizeToFit()
+        
+        searchController.searchBar.delegate = self
+        return searchController
+    }()
+    private var searchControllerIsActive: Bool {
+        return searchController.active ?? false
+    }
+    
     let relatedUserCellId = "MyRelatedUserCell"
     let sectionTitles = ["A","B","C","D","E","F","G","H"]
     
@@ -23,8 +44,20 @@ class RelateEachOtherVC: BaseViewController {
         super.viewDidLoad()
         tableView.registerNib(UINib(nibName: relatedUserCellId, bundle: nil), forCellReuseIdentifier: relatedUserCellId)
         // Do any additional setup after loading the view.
+        tableView.tableHeaderView = searchController.searchBar
     }
 
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        //设置UISearchBar取消按钮颜色
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.zeusNavigationBarTintColor()], forState: .Normal)
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.zeusTintColor()], forState: .Normal)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -77,6 +110,41 @@ extension RelateEachOtherVC : UITableViewDelegate {
         defer {
             tableView.deselectRowAtIndexPath(indexPath, animated: true)
         }
+    }
+}
+
+// MARK: - UISearchResultsUpdating
+
+extension RelateEachOtherVC: UISearchResultsUpdating {
+    
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        
+        guard let searchText = searchController.searchBar.text else {
+            return
+        }
+        tableView.reloadData()
+    }
+}
+
+// MARK: - UISearchBarDelegate
+
+extension RelateEachOtherVC: UISearchBarDelegate {
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        updateSearchResultsForSearchController(searchController)
+        
+    }
+}
+
+extension RelateEachOtherVC: UISearchControllerDelegate {
+    
+    func didPresentSearchController(searchController: UISearchController) {
+        
+    }
+    
+    func willDismissSearchController(searchController: UISearchController) {
+        
     }
 }
 

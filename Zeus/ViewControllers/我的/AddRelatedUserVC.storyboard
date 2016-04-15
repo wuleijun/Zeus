@@ -8,7 +8,7 @@
         <!--新建关联-->
         <scene sceneID="xZm-9W-aad">
             <objects>
-                <viewController id="3cz-o1-aFc" customClass="AddRelatedUserVC" customModule="Zeus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddRelatedUserVC" id="3cz-o1-aFc" customClass="AddRelatedUserVC" customModule="Zeus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bdY-B2-ZEs"/>
                         <viewControllerLayoutGuide type="bottom" id="pWb-3N-a3c"/>

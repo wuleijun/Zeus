@@ -56,8 +56,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: Private
     private func setupAppearance(){
+    
         
-
         UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.zeusTintColor()], forState: .Normal)
         UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.zeusTintColor().colorWithAlphaComponent(0.3)], forState: .Disabled)
         
