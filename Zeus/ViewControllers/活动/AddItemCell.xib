@@ -16,7 +16,7 @@
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6j-Xz-gVp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
-                        <state key="normal" image="add_btn"/>
+                        <state key="normal" image="newactivities_add"/>
                         <connections>
                             <action selector="addItem_Touch:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Q5i-B5-Ecv"/>
                         </connections>
@@ -32,6 +32,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="add_btn" width="24" height="24"/>
+        <image name="newactivities_add" width="24" height="24"/>
     </resources>
 </document>

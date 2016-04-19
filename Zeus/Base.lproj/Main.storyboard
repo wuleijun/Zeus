@@ -213,11 +213,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="活动" id="WAo-Mg-G4m">
                         <barButtonItem key="leftBarButtonItem" id="fF3-mu-n9p">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dTE-vt-h9m">
-                                <rect key="frame" x="20" y="11" width="60" height="22"/>
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dTE-vt-h9m">
+                                <rect key="frame" x="20" y="10" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="历史活动"/>
+                                <state key="normal" image="activity_historyactivity"/>
                                 <connections>
                                     <segue destination="AHZ-8D-gqc" kind="show" id="jsr-Ir-yzS"/>
                                 </connections>
@@ -227,7 +226,7 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7w3-rc-nH2">
                                 <rect key="frame" x="556" y="10" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="add_btn"/>
+                                <state key="normal" image="activity_add"/>
                                 <connections>
                                     <segue destination="B1q-YU-oVr" kind="show" id="Wsh-6A-Q36"/>
                                 </connections>
@@ -364,8 +363,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="activity_add" width="24" height="24"/>
         <image name="activity_h" width="29" height="29"/>
-        <image name="add_btn" width="24" height="24"/>
+        <image name="activity_historyactivity" width="24" height="24"/>
         <image name="customer_h" width="29" height="29"/>
         <image name="my_associated" width="22" height="22"/>
         <image name="my_h" width="29" height="29"/>
