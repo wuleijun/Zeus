@@ -21,16 +21,41 @@ class AddActivityVC: XLFormViewController {
         static let StartTime = "startTime"
         static let EndTime = "endTime"
         static let Address = "address"
+        
         static let Theme = "theme"
-        static let ChairMan = "chairMan"
-        static let Speaker = "Speaker"
-        static let Topic = "topic"
+        static func ChairMan(index:Int)->String {
+            if index > 1 {
+                return "chairMan\(index)"
+            }else{
+                return "chairMan"
+            }
+        }
+
+        static func Speaker(index:Int)->String {
+            if index > 1 {
+                return "Speaker\(index)"
+            }else{
+                return "Speaker"
+            }
+        }
+        static func Topic(index:Int)->String {
+            if index > 1 {
+                return "topic\(index)"
+            }else{
+                return "topic"
+            }
+        }
         /// 落款
         static let Sign = "sign"
+        
+        
+        
     }
     
     var lastChairManRow:XLFormRowDescriptor!
     var lastTopicRow:XLFormRowDescriptor!
+    var currentChairmanCount:Int = 1
+    var currentTopicCount:Int = 1
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -103,15 +128,17 @@ class AddActivityVC: XLFormViewController {
         row.cellConfigAtConfigure["textField.textAlignment"] = NSTextAlignment.Right.rawValue
         section.addFormRow(row)
         
+
         //主题
-        row = XLFormRowDescriptor(tag: Tags.Theme, rowType: XLFormRowDescriptorTypeText, title: "大会主题")
+        row = XLFormRowDescriptor(tag: Tags.Theme, rowType: XLFormRowDescriptorTypeText, title:title)
         row.required = true
         row.cellConfigAtConfigure["textField.placeholder"] = "请输入"
         row.cellConfigAtConfigure["textField.textAlignment"] = NSTextAlignment.Right.rawValue
         section.addFormRow(row)
         
+        
         //主席
-        row = XLFormRowDescriptor(tag: Tags.ChairMan,rowType: XLFormRowDescriptorTypeSelectorPush,title: "大会主席")
+        row = XLFormRowDescriptor(tag: Tags.ChairMan(1),rowType: XLFormRowDescriptorTypeSelectorPush,title: "大会主席")
         row.noValueDisplayText = "请选择"
         lastChairManRow = row
         section.addFormRow(row)
@@ -126,12 +153,12 @@ class AddActivityVC: XLFormViewController {
         
         //讲者
         section = XLFormSectionDescriptor()
-        row = XLFormRowDescriptor(tag: Tags.Speaker,rowType: XLFormRowDescriptorTypeSelectorPush,title: "讲者")
+        row = XLFormRowDescriptor(tag: Tags.Speaker(1),rowType: XLFormRowDescriptorTypeSelectorPush,title: "讲者")
         row.noValueDisplayText = "请选择"
         section.addFormRow(row)
         
         //讲题
-        row = XLFormRowDescriptor(tag: Tags.Topic, rowType: XLFormRowDescriptorTypeText, title: "讲题")
+        row = XLFormRowDescriptor(tag: Tags.Topic(1), rowType: XLFormRowDescriptorTypeText, title: "讲题")
         row.required = true
         row.cellConfigAtConfigure["textField.placeholder"] = "请输入"
         row.cellConfigAtConfigure["textField.textAlignment"] = NSTextAlignment.Right.rawValue
@@ -163,10 +190,18 @@ class AddActivityVC: XLFormViewController {
     }
     
     func addTopic(){
-        let row = XLFormRowDescriptor(tag: Tags.Speaker,rowType: XLFormRowDescriptorTypeSelectorPush,title: "讲者")
+        
+        guard currentTopicCount < ZeusConfig.AddNewActivity.maxTopic else {
+            ZeusAlert.alertSorry(message: "您最多只能添加\(currentTopicCount)个讲题", inViewController: self)
+            return
+        }
+        
+        currentTopicCount += 1
+        
+        let row = XLFormRowDescriptor(tag: Tags.Speaker(currentTopicCount),rowType: XLFormRowDescriptorTypeSelectorPush,title: "讲者\(currentTopicCount)")
         self.form.addFormRow(row, afterRow: lastTopicRow)
         
-        let topicRow = XLFormRowDescriptor(tag: Tags.Topic, rowType: XLFormRowDescriptorTypeText, title: "讲题")
+        let topicRow = XLFormRowDescriptor(tag: Tags.Topic(currentTopicCount), rowType: XLFormRowDescriptorTypeText, title: "讲题\(currentTopicCount)")
         topicRow.required = true
         topicRow.cellConfigAtConfigure["textField.placeholder"] = "请输入"
         topicRow.cellConfigAtConfigure["textField.textAlignment"] = NSTextAlignment.Right.rawValue
@@ -176,8 +211,14 @@ class AddActivityVC: XLFormViewController {
     }
     
     func addChairMan() {
-        let row = XLFormRowDescriptor(tag: Tags.ChairMan,rowType: XLFormRowDescriptorTypeSelectorPush,title: "大会主席")
-        
+
+        guard currentChairmanCount < ZeusConfig.AddNewActivity.maxChairManCount else {
+            ZeusAlert.alertSorry(message: "您最多只能添加\(currentChairmanCount)位主席", inViewController: self)
+            return
+        }
+        currentChairmanCount += 1
+        let row = XLFormRowDescriptor(tag: Tags.ChairMan(currentChairmanCount),rowType: XLFormRowDescriptorTypeSelectorPush,title: "大会主席\(currentChairmanCount)")
+        row.noValueDisplayText = "请选择"
         self.form.addFormRow(row, afterRow: lastChairManRow)
         lastChairManRow = row
     }
@@ -204,6 +245,6 @@ class AddActivityVC: XLFormViewController {
 extension AddActivityVC:PublishButtonViewDelegate{
     // MARK: Publish Action
     func publishButtonViewDidTouchButton() {
-        print("publish");
+        print(self.form.formValues());
     }
 }

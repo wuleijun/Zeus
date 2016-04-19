@@ -16,6 +16,7 @@ class AddRelatedUserVC: UITableViewController {
         let searchBar = UISearchBar()
         searchBar.searchBarStyle = .Minimal
         searchBar.placeholder = "请输入手机号，搜索用户"
+
         var textFieldInsideSearchBar = searchBar.valueForKey("searchField") as? UITextField
         textFieldInsideSearchBar?.textColor = UIColor.whiteColor()
         textFieldInsideSearchBar?.keyboardType = .NumberPad

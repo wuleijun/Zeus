@@ -27,7 +27,7 @@ class PublishButtonView: UIView {
     weak var delegate:PublishButtonViewDelegate?
     lazy var publishButton : UIButton = {
         let button = UIButton()
-        button.backgroundColor = UIColor.zeusPublishButtonBackgroundColor()
+        button.setBackgroundImage(UIImage(color: UIColor.zeusPublishButtonBackgroundColor()), forState: .Normal)
         button.addTarget(self, action: #selector(publishAction), forControlEvents: .TouchUpInside)
         button.setTitle("发布", forState: .Normal)
         return button

@@ -22,6 +22,35 @@ class ZeusConfig {
         static let timeoutInterval:NSTimeInterval = 15
     }
     
+    /**
+     *  发布活动相关
+     */
+    struct AddNewActivity {
+        /**
+         最大主席数
+         
+         - returns:
+         */
+        static let maxChairManCount:Int = 5
+        /**
+         最大主题数
+         
+         - returns:
+         */
+        static let maxThemeCount:Int = 5
+        /**
+         最大讲题数
+         
+         - returns:
+         */
+        static let maxTopic:Int = 5
+        /**
+         最大讲者数
+         
+         - returns:
+         */
+        static let maxSpeaker:Int = 5
+    }
     
     /**
      重新获取验证的时间

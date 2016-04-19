@@ -9,6 +9,19 @@
 import UIKit
 import XLForm
 
+class Test:NSObject,XLFormOptionObject {
+    var name = "name"
+    init(name:String){
+        self.name = name
+    }
+    func formDisplayText() -> String {
+        return "test"
+    }
+    
+    func formValue() -> AnyObject {
+        return self
+    }
+}
 class ClientTypeVC: UIViewController,XLFormRowDescriptorViewController {
 
     var rowDescriptor: XLFormRowDescriptor?
@@ -16,6 +29,7 @@ class ClientTypeVC: UIViewController,XLFormRowDescriptorViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        rowDescriptor?.value = Test(name: "test")
     }
 
     override func didReceiveMemoryWarning() {
