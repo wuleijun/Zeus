@@ -12,7 +12,7 @@ class RelateEachOtherVC: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!{
         didSet{
-            tableView.rowHeight = 80
+            tableView.rowHeight = MyRelatedUserCell.heightOfCell()
             tableView.sectionIndexBackgroundColor = UIColor.clearColor()
         }
     }

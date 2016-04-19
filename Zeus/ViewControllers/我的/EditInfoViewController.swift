@@ -24,7 +24,7 @@ struct EditInfo {
     }
 }
 
-protocol EditInfoViewControllerDelegate {
+protocol EditInfoViewControllerDelegate: class {
     func editInfoViewControllerDidSaveEditInfo(editInfo:EditInfo)
 }
 
@@ -34,7 +34,7 @@ class EditInfoViewController: BaseViewController {
     @IBOutlet weak var textField: UITextField!
     
     var editInfo:EditInfo?
-    var delegate:EditInfoViewControllerDelegate?
+    weak var delegate:EditInfoViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()

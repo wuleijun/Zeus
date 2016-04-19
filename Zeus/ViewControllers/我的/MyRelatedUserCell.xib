@@ -40,15 +40,32 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSs-KS-wke">
+                        <rect key="frame" x="251" y="25" width="49" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="pHJ-2h-JoV"/>
+                            <constraint firstAttribute="width" constant="49" id="rJ8-Ow-3nE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="关联" backgroundImage="associated_addbutton">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="addButton_Touch:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Xkc-gj-0gI"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="BxV-e9-TCT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="2Nr-tb-8GM"/>
                     <constraint firstItem="BxV-e9-TCT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BGr-KW-DNV"/>
+                    <constraint firstItem="SSs-KS-wke" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="I7f-rg-6av"/>
                     <constraint firstItem="uDj-GG-Tce" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Nie-lQ-V4D"/>
+                    <constraint firstAttribute="trailing" secondItem="SSs-KS-wke" secondAttribute="trailing" constant="20" id="SWC-CD-9lC"/>
                     <constraint firstAttribute="trailing" secondItem="uDj-GG-Tce" secondAttribute="trailing" constant="20" id="WBb-g8-6WW"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="addButton" destination="SSs-KS-wke" id="g5g-OS-i4o"/>
                 <outlet property="headImageView" destination="BxV-e9-TCT" id="oMg-AT-toD"/>
                 <outlet property="mobile_Lbl" destination="00G-8v-g99" id="nzs-yZ-sEj"/>
                 <outlet property="relatedEachOtherFlag" destination="uDj-GG-Tce" id="KEo-51-F9H"/>
@@ -58,6 +75,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="associated_addbutton" width="49" height="28"/>
         <image name="associated_mutual" width="20" height="20"/>
     </resources>
 </document>

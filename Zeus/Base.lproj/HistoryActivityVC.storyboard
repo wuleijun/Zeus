@@ -33,10 +33,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="aJe-ll-oVf" firstAttribute="leading" secondItem="F7k-il-wdG" secondAttribute="leading" id="9Lo-yo-lUx"/>
-                            <constraint firstItem="aJe-ll-oVf" firstAttribute="top" secondItem="F7k-il-wdG" secondAttribute="top" id="9kg-7Y-leo"/>
-                            <constraint firstAttribute="trailing" secondItem="aJe-ll-oVf" secondAttribute="trailing" id="C3g-I4-Uve"/>
-                            <constraint firstItem="IUK-3a-7WX" firstAttribute="top" secondItem="aJe-ll-oVf" secondAttribute="bottom" id="hIb-se-Znb"/>
+                            <constraint firstAttribute="trailing" secondItem="aJe-ll-oVf" secondAttribute="trailing" id="aK2-sf-UFW"/>
+                            <constraint firstItem="aJe-ll-oVf" firstAttribute="leading" secondItem="F7k-il-wdG" secondAttribute="leading" id="g95-wG-PdO"/>
+                            <constraint firstItem="aJe-ll-oVf" firstAttribute="top" secondItem="F7k-il-wdG" secondAttribute="top" id="qCQ-SE-gCA"/>
+                            <constraint firstAttribute="bottom" secondItem="aJe-ll-oVf" secondAttribute="bottom" id="x7Z-yv-E2h"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="历史活动" id="ORz-oV-TTf"/>

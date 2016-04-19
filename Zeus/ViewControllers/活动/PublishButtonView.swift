@@ -13,7 +13,7 @@ import SnapKit
 /**
  *  PublishButtonViewDelegate
  */
-protocol PublishButtonViewDelegate: NSObjectProtocol {
+protocol PublishButtonViewDelegate: class {
     
     /**
      点击了发布按钮

@@ -97,7 +97,11 @@ extension MyRelatedUserVC : UITableViewDataSource {
             return firstCell
         }
         let relatedUserCell = tableView.dequeueReusableCellWithIdentifier(myRelatedUserCellId) as! MyRelatedUserCell
-        relatedUserCell.relatedEachOtherFlag.hidden = indexPath.row%2==0
+        if indexPath.row%2 == 0 {
+            relatedUserCell.cellType = RelatedUserCellType.relatedEachOther
+        }else{
+            relatedUserCell.cellType = RelatedUserCellType.nomal
+        }
         return relatedUserCell
     }
     
@@ -116,11 +120,11 @@ extension MyRelatedUserVC : UITableViewDataSource {
 extension MyRelatedUserVC : UITableViewDelegate {
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-
+        let heightOfRelateEachOtherCell:CGFloat = 50
         if indexPath.section == 0 {
-            return 50
+            return heightOfRelateEachOtherCell
         }
-        return 80
+        return MyRelatedUserCell.heightOfCell()
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
