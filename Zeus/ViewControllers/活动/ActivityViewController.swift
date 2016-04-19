@@ -18,6 +18,7 @@ class ActivityViewController: BaseViewController {
     override func viewDidLoad() {
         tableView.registerNib(UINib.init(nibName: activityCellId, bundle: nil), forCellReuseIdentifier:activityCellId)
         tableView.rowHeight = ActivityCell.heightOfCell()
+        tableView.keyboardDismissMode = .OnDrag
     }
 }
 
@@ -25,10 +26,6 @@ extension ActivityViewController:UITableViewDelegate{
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-    }
-    
-    func scrollViewDidScroll(scrollView: UIScrollView) {
-        view.endEditing(true)
     }
     
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

@@ -17,6 +17,7 @@ class HistoryActivityVC: BaseViewController {
         super.viewDidLoad()
         tableView.registerNib(UINib(nibName: activityCellId, bundle:nil), forCellReuseIdentifier: activityCellId)
         tableView.rowHeight = ActivityCell.heightOfCell()
+        tableView.keyboardDismissMode = .OnDrag
     }
 }
 
