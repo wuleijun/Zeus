@@ -28,10 +28,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="associated_mutual" translatesAutoresizingMaskIntoConstraints="NO" id="uDj-GG-Tce">
-                        <rect key="frame" x="282" y="31" width="18" height="18"/>
+                        <rect key="frame" x="280" y="30" width="20" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="18" id="1o6-bn-rDl"/>
-                            <constraint firstAttribute="height" constant="18" id="hbj-ev-OT9"/>
+                            <constraint firstAttribute="width" constant="20" id="1o6-bn-rDl"/>
+                            <constraint firstAttribute="height" constant="20" id="hbj-ev-OT9"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="rayjune" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpz-S7-1L8">
