@@ -41,6 +41,8 @@
 		451FF6DB1CBCEC9C00E31344 /* VerifyMobileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FF6DA1CBCEC9C00E31344 /* VerifyMobileVC.swift */; };
 		451FF6DD1CBCEFE200E31344 /* RegisterUserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FF6DC1CBCEFE200E31344 /* RegisterUserInfoVC.swift */; };
 		451FF6E11CBD009400E31344 /* ZeusConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FF6E01CBD009400E31344 /* ZeusConfig.swift */; };
+		45224B8E1CC7595700DE3054 /* ClientTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45224B8C1CC7595700DE3054 /* ClientTableCell.swift */; };
+		45224B8F1CC7595700DE3054 /* ClientTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45224B8D1CC7595700DE3054 /* ClientTableCell.xib */; };
 		4523B3EF1CACBB9F00811E50 /* UIColor+Zeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523B3EE1CACBB9F00811E50 /* UIColor+Zeus.swift */; };
 		4523B3F11CACBDDC00811E50 /* UIFont+Zeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523B3F01CACBDDC00811E50 /* UIFont+Zeus.swift */; };
 		4523B3F41CACD0ED00811E50 /* HistoryActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4523B3F31CACD0ED00811E50 /* HistoryActivityVC.swift */; };
@@ -126,6 +128,8 @@
 		451FF6DA1CBCEC9C00E31344 /* VerifyMobileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyMobileVC.swift; sourceTree = "<group>"; };
 		451FF6DC1CBCEFE200E31344 /* RegisterUserInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterUserInfoVC.swift; sourceTree = "<group>"; };
 		451FF6E01CBD009400E31344 /* ZeusConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusConfig.swift; sourceTree = "<group>"; };
+		45224B8C1CC7595700DE3054 /* ClientTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientTableCell.swift; sourceTree = "<group>"; };
+		45224B8D1CC7595700DE3054 /* ClientTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientTableCell.xib; sourceTree = "<group>"; };
 		4523B3EE1CACBB9F00811E50 /* UIColor+Zeus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Zeus.swift"; sourceTree = "<group>"; };
 		4523B3F01CACBDDC00811E50 /* UIFont+Zeus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Zeus.swift"; sourceTree = "<group>"; };
 		4523B3F31CACD0ED00811E50 /* HistoryActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryActivityVC.swift; sourceTree = "<group>"; };
@@ -315,6 +319,15 @@
 			name = Configs;
 			sourceTree = "<group>";
 		};
+		45224B8B1CC7593500DE3054 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				45224B8C1CC7595700DE3054 /* ClientTableCell.swift */,
+				45224B8D1CC7595700DE3054 /* ClientTableCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		4523B3F21CACD0CE00811E50 /* 历史活动 */ = {
 			isa = PBXGroup;
 			children = (
@@ -415,6 +428,7 @@
 		458C27101CAA698F004575FC /* 客户 */ = {
 			isa = PBXGroup;
 			children = (
+				45224B8B1CC7593500DE3054 /* Cells */,
 				4523B4011CAD12CD00811E50 /* 客户类型 */,
 				458C27171CAA6E05004575FC /* ClientViewController.swift */,
 			);
@@ -664,6 +678,7 @@
 				4523B4141CAD253B00811E50 /* AddItemCell.xib in Resources */,
 				4507EB521CBB9796007F3A5F /* LoginAndRegister.storyboard in Resources */,
 				451563021CBF73C9005CE865 /* MyRelatedUserCell.xib in Resources */,
+				45224B8F1CC7595700DE3054 /* ClientTableCell.xib in Resources */,
 				4523B3F91CACD1CA00811E50 /* HistoryActivityVC.storyboard in Resources */,
 				4523B40F1CAD16B700811E50 /* ClientTypeVC.storyboard in Resources */,
 				45D052361CAA594400BB1738 /* LaunchScreen.storyboard in Resources */,
@@ -755,6 +770,7 @@
 				4523B3F11CACBDDC00811E50 /* UIFont+Zeus.swift in Sources */,
 				451562EC1CBF2C8F005CE865 /* ShowFirstStepVC.swift in Sources */,
 				451FF6D71CBCE68F00E31344 /* LoginByMobileVC.swift in Sources */,
+				45224B8E1CC7595700DE3054 /* ClientTableCell.swift in Sources */,
 				458C27161CAA6DB9004575FC /* BaseViewController.swift in Sources */,
 				45D0522A1CAA594400BB1738 /* AppDelegate.swift in Sources */,
 				4523B4131CAD253B00811E50 /* AddItemCell.swift in Sources */,
