@@ -77,7 +77,7 @@ extension AddRelatedUserVC {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let userCell = tableView.dequeueReusableCellWithIdentifier(relatedUserCellId) as! MyRelatedUserCell
-        userCell.cellType = .hasAddButton
+        userCell.cellType = .HasAddButton
         userCell.delegate = self
         return userCell
     }

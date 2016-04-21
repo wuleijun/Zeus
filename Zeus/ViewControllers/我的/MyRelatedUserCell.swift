@@ -11,14 +11,14 @@ import UIKit
 /**
  类型
  
- - nomal:            正常
- - relatedEachOther: 互相关联（含有互相关联的图标）
- - hasAddButton:     搜索结果，含有添加按钮
+ - Nomal:            正常
+ - RelatedEachOther: 互相关联（含有互相关联的图标）
+ - HasAddButton:     搜索结果，含有添加按钮
  */
 enum RelatedUserCellType {
-    case nomal
-    case relatedEachOther
-    case hasAddButton
+    case Nomal
+    case RelatedEachOther
+    case HasAddButton
 }
 
 
@@ -41,10 +41,10 @@ class MyRelatedUserCell: BaseTableViewCell {
     
     weak var delegate:MyRelatedUserCellDelegate?
     
-    var cellType:RelatedUserCellType = .nomal {
+    var cellType:RelatedUserCellType = .Nomal {
         didSet{
-            self.relatedEachOtherFlag.hidden = cellType != .relatedEachOther
-            self.addButton.hidden = cellType != .hasAddButton
+            self.relatedEachOtherFlag.hidden = cellType != .RelatedEachOther
+            self.addButton.hidden = cellType != .HasAddButton
         }
     }
     

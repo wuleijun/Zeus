@@ -87,9 +87,9 @@ extension MyRelatedUserVC : UITableViewDataSource {
         }
         let relatedUserCell = tableView.dequeueReusableCellWithIdentifier(myRelatedUserCellId) as! MyRelatedUserCell
         if indexPath.row%2 == 0 {
-            relatedUserCell.cellType = RelatedUserCellType.relatedEachOther
+            relatedUserCell.cellType = RelatedUserCellType.RelatedEachOther
         }else{
-            relatedUserCell.cellType = RelatedUserCellType.nomal
+            relatedUserCell.cellType = RelatedUserCellType.Nomal
         }
         return relatedUserCell
     }
