@@ -13,6 +13,7 @@ def pods
     pod 'YYCategories'
     pod 'XLForm'
     pod 'FXBlurView'
+    pod 'ASProgressPopUpView'
 end
 
 target 'Zeus' do

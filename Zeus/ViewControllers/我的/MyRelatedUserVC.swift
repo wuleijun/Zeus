@@ -32,17 +32,6 @@ class MyRelatedUserVC: BaseViewController {
         tableView.tableFooterView = userCountFooterView
     }
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        //设置UISearchBar取消按钮颜色
-        UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.zeusNavigationBarTintColor()], forState: .Normal)
-    }
-
-    override func viewDidDisappear(animated: Bool) {
-        super.viewDidDisappear(animated)
-        UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.zeusTintColor()], forState: .Normal)
-    }
-    
     // MARK: Actions
     @IBAction func addRelatedUser_Touch(sender: AnyObject) {
         self.performSegueWithIdentifier("showAddRelatedUserVC", sender: nil)
