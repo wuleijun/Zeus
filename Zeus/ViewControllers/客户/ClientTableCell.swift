@@ -10,7 +10,14 @@ import UIKit
 
 class ClientTableCell: BaseTableViewCell {
     
+    @IBOutlet weak var name_Lbl: UILabel!
     @IBOutlet weak var headImageView: UIImageView!
+    
+    var client:Client? {
+        didSet {
+            name_Lbl.text = client?.name
+        }
+    }
     
     override class func heightOfCell()->CGFloat {
         return 100

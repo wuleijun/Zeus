@@ -27,6 +27,8 @@
 		451563071CBF79C5005CE865 /* RelateEachOtherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451563051CBF79C5005CE865 /* RelateEachOtherCell.swift */; };
 		451563081CBF79C5005CE865 /* RelateEachOtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451563061CBF79C5005CE865 /* RelateEachOtherCell.xib */; };
 		45175A971CAE0A9400D42A47 /* PublishButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45175A961CAE0A9400D42A47 /* PublishButtonView.swift */; };
+		45186B911CC8A9990023BE4C /* EditClientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45186B901CC8A9990023BE4C /* EditClientVC.swift */; };
+		45186B971CC8AD9F0023BE4C /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45186B961CC8AD9F0023BE4C /* Client.swift */; };
 		4519C0DE1CBDEB7700217C24 /* LoginVerifyMobileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0DD1CBDEB7700217C24 /* LoginVerifyMobileVC.swift */; };
 		4519C0E01CBE48C700217C24 /* ZeusHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0DF1CBE48C700217C24 /* ZeusHud.swift */; };
 		4519C0E21CBE4F4100217C24 /* ZeusHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0E11CBE4F4100217C24 /* ZeusHelper.swift */; };
@@ -114,6 +116,8 @@
 		451563051CBF79C5005CE865 /* RelateEachOtherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelateEachOtherCell.swift; sourceTree = "<group>"; };
 		451563061CBF79C5005CE865 /* RelateEachOtherCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RelateEachOtherCell.xib; sourceTree = "<group>"; };
 		45175A961CAE0A9400D42A47 /* PublishButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishButtonView.swift; sourceTree = "<group>"; };
+		45186B901CC8A9990023BE4C /* EditClientVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditClientVC.swift; sourceTree = "<group>"; };
+		45186B961CC8AD9F0023BE4C /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		4519C0DD1CBDEB7700217C24 /* LoginVerifyMobileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVerifyMobileVC.swift; sourceTree = "<group>"; };
 		4519C0DF1CBE48C700217C24 /* ZeusHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusHud.swift; sourceTree = "<group>"; };
 		4519C0E11CBE4F4100217C24 /* ZeusHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusHelper.swift; sourceTree = "<group>"; };
@@ -265,6 +269,22 @@
 				45175A961CAE0A9400D42A47 /* PublishButtonView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		45186B8F1CC8A9200023BE4C /* 客户详情 */ = {
+			isa = PBXGroup;
+			children = (
+				45186B901CC8A9990023BE4C /* EditClientVC.swift */,
+			);
+			name = "客户详情";
+			sourceTree = "<group>";
+		};
+		45186B921CC8AC400023BE4C /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				45186B961CC8AD9F0023BE4C /* Client.swift */,
+			);
+			name = Realm;
 			sourceTree = "<group>";
 		};
 		4519C0DC1CBDEB5000217C24 /* 登录 */ = {
@@ -429,6 +449,7 @@
 			isa = PBXGroup;
 			children = (
 				45224B8B1CC7593500DE3054 /* Cells */,
+				45186B8F1CC8A9200023BE4C /* 客户详情 */,
 				4523B4011CAD12CD00811E50 /* 客户类型 */,
 				458C27171CAA6E05004575FC /* ClientViewController.swift */,
 			);
@@ -490,6 +511,7 @@
 		45D052281CAA594400BB1738 /* Zeus */ = {
 			isa = PBXGroup;
 			children = (
+				45186B921CC8AC400023BE4C /* Realm */,
 				451FF6DF1CBD006400E31344 /* Configs */,
 				45E71ACE1CBB935700FC26CF /* Helpers */,
 				458C270D1CAA6915004575FC /* ViewControllers */,
@@ -771,6 +793,7 @@
 				451562EC1CBF2C8F005CE865 /* ShowFirstStepVC.swift in Sources */,
 				451FF6D71CBCE68F00E31344 /* LoginByMobileVC.swift in Sources */,
 				45224B8E1CC7595700DE3054 /* ClientTableCell.swift in Sources */,
+				45186B971CC8AD9F0023BE4C /* Client.swift in Sources */,
 				458C27161CAA6DB9004575FC /* BaseViewController.swift in Sources */,
 				45D0522A1CAA594400BB1738 /* AppDelegate.swift in Sources */,
 				4523B4131CAD253B00811E50 /* AddItemCell.swift in Sources */,
@@ -798,6 +821,7 @@
 				458C27231CAA7C04004575FC /* BaseTableViewCell.swift in Sources */,
 				458C271F1CAA7AF0004575FC /* ActivityCell.swift in Sources */,
 				451EA0071CB4FD68004FE212 /* InfoViewController.swift in Sources */,
+				45186B911CC8A9990023BE4C /* EditClientVC.swift in Sources */,
 				451563011CBF73C9005CE865 /* MyRelatedUserCell.swift in Sources */,
 				458C27181CAA6E05004575FC /* ClientViewController.swift in Sources */,
 				4507EB5E1CBBB51E007F3A5F /* AboutViewController.swift in Sources */,

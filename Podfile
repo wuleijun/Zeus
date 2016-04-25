@@ -8,11 +8,11 @@ def pods
     pod 'SnapKit'
     pod 'Proposer'
     pod 'KeyboardMan'
+    pod 'RealmSwift'
     
     #Objc
     pod 'YYCategories'
     pod 'XLForm'
-    pod 'FXBlurView'
     pod 'ASProgressPopUpView'
 end
 

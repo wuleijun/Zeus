@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ClientViewController: BaseViewController {
 
@@ -26,36 +27,55 @@ class ClientViewController: BaseViewController {
     }
     
     let clientTableCellId = "ClientTableCell"
-    let sectionTitles = ["A","B","C","D","E","F","G"]
+    
+    var clientSections:ClientSection?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.registerNib(UINib(nibName: clientTableCellId, bundle: nil), forCellReuseIdentifier: clientTableCellId)
+        
+        clientSections = clientsWithInitLetter()
     }
 }
 
 extension ClientViewController : UITableViewDataSource {
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return sectionTitles.count
+        if let clientSections = clientSections {
+            return clientSections.sectionCount()
+        }
+        return 0
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        if let clientSections = clientSections {
+            return clientSections.numberOfRowsInSection(section)
+        }
+        return 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let clientCell = tableView.dequeueReusableCellWithIdentifier(clientTableCellId) as! ClientTableCell
+        if let clientSections = clientSections {
+            let client = clientSections.clientForIndexPath(indexPath)
+            clientCell.client = client
+        }
         return clientCell
     }
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sectionTitles[section]
+        if let clientSections = clientSections {
+            return clientSections.titleForHeaderSection(section)
+        }
+        return ""
     }
     
     func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
-        return sectionTitles
+        if let clientSections = clientSections {
+            return clientSections.sectionTitles
+        }
+        return [""]
     }
     
     func tableView(tableView: UITableView, sectionForSectionIndexTitle title: String, atIndex index: Int) -> Int {

@@ -5,11 +5,16 @@ PODS:
   - KeyboardMan (0.6.0)
   - Kingfisher (2.2.2)
   - Proposer (0.8.0)
+  - Realm (0.98.8):
+    - Realm/Headers (= 0.98.8)
+  - Realm/Headers (0.98.8)
+  - RealmSwift (0.98.8):
+    - Realm (= 0.98.8)
   - SnapKit (0.20.0)
   - XLForm (3.1.1)
-  - YYCategories (1.0.1):
-    - YYCategories/no-arc (= 1.0.1)
-  - YYCategories/no-arc (1.0.1)
+  - YYCategories (1.0.2):
+    - YYCategories/no-arc (= 1.0.2)
+  - YYCategories/no-arc (1.0.2)
 
 DEPENDENCIES:
   - Alamofire
@@ -18,6 +23,7 @@ DEPENDENCIES:
   - KeyboardMan
   - Kingfisher
   - Proposer
+  - RealmSwift
   - SnapKit
   - XLForm
   - YYCategories
@@ -29,8 +35,10 @@ SPEC CHECKSUMS:
   KeyboardMan: 665211f180093f5bb3c6ff7e8b7f858c432c6ccf
   Kingfisher: 7e8de5b0cf7b5dc8ec559d193029a0859df93ef1
   Proposer: 17cd7fd2509b0d8d7c9e33815d648087c7dcaa81
+  Realm: 0e293bb62999730599efc3048896bbd4f2e43bcd
+  RealmSwift: 064262d38113f23ff3508fb20a0a922e696bec01
   SnapKit: 5fce3c1bbbf1fbd31de9aa92f33eb9fa03f15650
   XLForm: c9ee7e0f859341279bfd894f9589a9d25c23e4df
-  YYCategories: ebd2d2d473de67a29fbfb83e812c350966cc256f
+  YYCategories: 7319e4ba4f4d4dbcec0094abaab540e98f04a65f
 
 COCOAPODS: 0.39.0
