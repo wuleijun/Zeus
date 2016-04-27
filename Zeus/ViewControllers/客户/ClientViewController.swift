@@ -32,7 +32,7 @@ class ClientViewController: BaseViewController {
     
     let clientTableCellId = "ClientTableCell"
     
-    var clientSections:ClientSection?
+    var clientSections = ClientSection()
     var searchClients:Results<Client>!
     
     
@@ -50,20 +50,14 @@ extension ClientViewController : UITableViewDataSource {
         if isSearch {
             return 1
         }
-        if let clientSections = clientSections {
-            return clientSections.sectionCount()
-        }
-        return 0
+        return clientSections.sectionCount()
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if isSearch {
             return searchClients.count
         }
-        if let clientSections = clientSections {
-            return clientSections.numberOfRowsInSection(section)
-        }
-        return 0
+        return clientSections.numberOfRowsInSection(section)
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -72,9 +66,7 @@ extension ClientViewController : UITableViewDataSource {
         if isSearch {
             client = searchClients[indexPath.row]
         }else{
-            if let clientSections = clientSections {
-                client = clientSections.clientForIndexPath(indexPath)
-            }
+            client = clientSections.clientForIndexPath(indexPath)
         }
         clientCell.client = client
         return clientCell
@@ -84,20 +76,14 @@ extension ClientViewController : UITableViewDataSource {
         if isSearch {
             return ""
         }
-        if let clientSections = clientSections {
-            return clientSections.titleForHeaderSection(section)
-        }
-        return ""
+        return clientSections.titleForHeaderSection(section)
     }
     
     func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
         if isSearch {
             return [""]
         }
-        if let clientSections = clientSections {
-            return clientSections.sectionTitles
-        }
-        return [""]
+        return clientSections.sectionTitles
     }
     
     func tableView(tableView: UITableView, sectionForSectionIndexTitle title: String, atIndex index: Int) -> Int {
