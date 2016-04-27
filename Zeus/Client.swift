@@ -79,3 +79,8 @@ func clientsWithInitLetter() -> ClientSection{
     return clientSection
 }
 
+func clientsWith(searchText text:String) -> Results<Client> {
+    let realm = try!Realm()
+    let searchedClients = realm.objects(Client).filter("name CONTAINS '\(text)'").sorted("firstLetter")
+    return searchedClients
+}
