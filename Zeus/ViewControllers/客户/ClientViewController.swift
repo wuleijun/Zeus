@@ -42,8 +42,23 @@ class ClientViewController: BaseViewController {
         
         clientSections = clientsWithInitLetter()
     }
+    
+    // MARK: Actions
+    @IBAction func addClient_Touch(sender: AnyObject) {
+        performSegueWithIdentifier("showEditClientVC", sender:nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showEditClientVC" {
+            if let client = sender as? Client {
+                let vc = segue.destinationViewController as! EditClientVC
+                vc.client = client
+            }
+        }
+    }
 }
 
+// MARK: TableView DataSource
 extension ClientViewController : UITableViewDataSource {
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -91,16 +106,25 @@ extension ClientViewController : UITableViewDataSource {
     }
 }
 
+// MARK: TableView Delegate
 extension ClientViewController : UITableViewDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         defer{
             tableView.deselectRowAtIndexPath(indexPath, animated: true)
         }
+        var client:Client?
+        if isSearch {
+            client = searchClients[indexPath.row]
+        }else{
+            client = clientSections.clientForIndexPath(indexPath)
+        }
+        performSegueWithIdentifier("showEditClientVC", sender:client)
     }
     
 }
 
+// MARK: SearchBar Delegate
 extension ClientViewController : UISearchBarDelegate {
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
         defer {

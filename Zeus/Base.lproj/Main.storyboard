@@ -296,10 +296,24 @@
                             <constraint firstAttribute="bottom" secondItem="c9n-MU-3Ik" secondAttribute="bottom" id="wWo-e7-73v"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="我的客户" id="2NA-zw-ZDe"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="我的客户" id="2NA-zw-ZDe">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="wtR-MK-CXB">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="r34-dU-wa0" userLabel="AddButton">
+                                <rect key="frame" x="556" y="10" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="activity_add"/>
+                                <connections>
+                                    <action selector="addClient_Touch:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="74w-Vb-kn4"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="searchBar" destination="NRQ-SO-ipr" id="Fye-PR-5ff"/>
                         <outlet property="tableView" destination="c9n-MU-3Ik" id="04r-8v-hyp"/>
+                        <segue destination="JH8-X0-xVe" kind="show" identifier="showEditClientVC" id="AIz-C3-rid"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -343,6 +357,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5KG-RQ-rak" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-995" y="1384"/>
+        </scene>
+        <!--EditClientVC-->
+        <scene sceneID="Gwo-bm-HNf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EditClientVC" id="JH8-X0-xVe" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tCi-Ga-vlN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-524.5" y="1529"/>
         </scene>
         <!--SettingsViewController-->
         <scene sceneID="PpR-7K-La2">
