@@ -20,6 +20,8 @@ enum ControllerType {
 
 class EditClientVC: UITableViewController {
 
+    let sectionHeaderHeight:CGFloat = 44
+    
     @IBOutlet weak var editButton: UIButton!
     
     @IBOutlet weak var nameTxtField: UITextField!
@@ -124,18 +126,18 @@ extension EditClientVC {
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = TableHeaderView()
-        headerView.frame = CGRect(x: 0, y: 0, width: self.view.width, height: 44)
+        headerView.frame = CGRect(x: 0, y: 0, width: self.view.width, height: sectionHeaderHeight)
         headerView.headerTitle = headerTitles[section]
         return headerView
     }
     
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 44
+        return sectionHeaderHeight
     }
     
     //固定住HeaderView
     override func scrollViewDidScroll(scrollView: UIScrollView) {
-        let sectionHeaderHeight:CGFloat = 44;
+
         if (scrollView.contentOffset.y<=sectionHeaderHeight&&scrollView.contentOffset.y>=0) {
             scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0, 0);
         } else if (scrollView.contentOffset.y>=sectionHeaderHeight) {
