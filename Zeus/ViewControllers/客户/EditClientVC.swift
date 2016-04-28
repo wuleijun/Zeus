@@ -57,6 +57,14 @@ class EditClientVC: UITableViewController {
     @IBAction func save_Touch(sender: AnyObject) {
     }
     
+    /**
+     职称
+     */
+    @IBAction func position_Touch(sender: AnyObject) {
+        let editVC = EditBaseVC()
+        self.navigationController?.pushViewController(editVC, animated: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

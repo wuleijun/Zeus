@@ -35,6 +35,7 @@
 		4519C0E01CBE48C700217C24 /* ZeusHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0DF1CBE48C700217C24 /* ZeusHud.swift */; };
 		4519C0E21CBE4F4100217C24 /* ZeusHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0E11CBE4F4100217C24 /* ZeusHelper.swift */; };
 		451C47CF1CC0CBCB00F197DA /* UserCountLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C47CE1CC0CBCB00F197DA /* UserCountLabel.swift */; };
+		451DAE721CD1AD5F00B0B8EC /* EditBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DAE711CD1AD5F00B0B8EC /* EditBaseVC.swift */; };
 		451EA0021CB4F2F2004FE212 /* CellBaseContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EA0011CB4F2F2004FE212 /* CellBaseContainerView.swift */; };
 		451EA0071CB4FD68004FE212 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EA0061CB4FD68004FE212 /* InfoViewController.swift */; };
 		451EA00A1CB4FEA0004FE212 /* InfoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451EA0081CB4FEA0004FE212 /* InfoViewController.storyboard */; };
@@ -126,6 +127,7 @@
 		4519C0DF1CBE48C700217C24 /* ZeusHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusHud.swift; sourceTree = "<group>"; };
 		4519C0E11CBE4F4100217C24 /* ZeusHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusHelper.swift; sourceTree = "<group>"; };
 		451C47CE1CC0CBCB00F197DA /* UserCountLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCountLabel.swift; sourceTree = "<group>"; };
+		451DAE711CD1AD5F00B0B8EC /* EditBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditBaseVC.swift; sourceTree = "<group>"; };
 		451EA0011CB4F2F2004FE212 /* CellBaseContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellBaseContainerView.swift; sourceTree = "<group>"; };
 		451EA0061CB4FD68004FE212 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		451EA0091CB4FEA0004FE212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/InfoViewController.storyboard; sourceTree = "<group>"; };
@@ -310,6 +312,14 @@
 			name = "登录";
 			sourceTree = "<group>";
 		};
+		451DAE701CD1ACF500B0B8EC /* 科室职务职称 */ = {
+			isa = PBXGroup;
+			children = (
+				451DAE711CD1AD5F00B0B8EC /* EditBaseVC.swift */,
+			);
+			name = "科室职务职称";
+			sourceTree = "<group>";
+		};
 		451EA0001CB4F2A7004FE212 /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,6 +472,7 @@
 		458C27101CAA698F004575FC /* 客户 */ = {
 			isa = PBXGroup;
 			children = (
+				451DAE701CD1ACF500B0B8EC /* 科室职务职称 */,
 				45224B8B1CC7593500DE3054 /* Cells */,
 				45186B8F1CC8A9200023BE4C /* 客户详情 */,
 				4523B4011CAD12CD00811E50 /* 客户类型 */,
@@ -843,6 +854,7 @@
 				45167BC01CD069F2000C8FEE /* TableHeaderView.swift in Sources */,
 				451FF6DB1CBCEC9C00E31344 /* VerifyMobileVC.swift in Sources */,
 				4519C0DE1CBDEB7700217C24 /* LoginVerifyMobileVC.swift in Sources */,
+				451DAE721CD1AD5F00B0B8EC /* EditBaseVC.swift in Sources */,
 				451562F01CBF2CB5005CE865 /* ShowThirdStepVC.swift in Sources */,
 				451FF6CF1CBCD68000E31344 /* BorderButton.swift in Sources */,
 				451FF6D91CBCE6C300E31344 /* RegisterByMobileVC.swift in Sources */,

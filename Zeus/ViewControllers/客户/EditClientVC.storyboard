@@ -96,11 +96,25 @@
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7y-G6-HOf">
+                                                            <rect key="frame" x="51" y="0.0" width="286" height="44"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                            <state key="normal" title="请输入">
+                                                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="position_Touch:" destination="h5z-Zd-f7B" eventType="touchUpInside" id="Uz4-2N-FfR"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="DHq-fg-y2n" firstAttribute="centerY" secondItem="V8S-61-McB" secondAttribute="centerY" id="5EI-hO-W2s"/>
                                                         <constraint firstItem="DHq-fg-y2n" firstAttribute="leading" secondItem="V8S-61-McB" secondAttribute="leading" constant="15" id="9is-M0-dCp"/>
+                                                        <constraint firstItem="N7y-G6-HOf" firstAttribute="leading" secondItem="DHq-fg-y2n" secondAttribute="trailing" constant="8" id="ONt-hE-4fP"/>
+                                                        <constraint firstItem="N7y-G6-HOf" firstAttribute="top" secondItem="V8S-61-McB" secondAttribute="top" id="eCR-wL-6Qr"/>
+                                                        <constraint firstAttribute="trailing" secondItem="N7y-G6-HOf" secondAttribute="trailing" constant="8" id="l45-u6-aNL"/>
+                                                        <constraint firstAttribute="bottom" secondItem="N7y-G6-HOf" secondAttribute="bottom" id="p6V-5c-d1a"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
