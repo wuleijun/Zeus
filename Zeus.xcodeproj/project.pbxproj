@@ -324,9 +324,9 @@
 			isa = PBXGroup;
 			children = (
 				451DAE711CD1AD5F00B0B8EC /* EditBaseVC.swift */,
+				451DAE7A1CD1F7EE00B0B8EC /* EditTitleVC.swift */,
 				451DAE761CD1F4B200B0B8EC /* EditSectionVC.swift */,
 				451DAE781CD1F7BC00B0B8EC /* EditPositionVC.swift */,
-				451DAE7A1CD1F7EE00B0B8EC /* EditTitleVC.swift */,
 			);
 			name = "科室职务职称";
 			sourceTree = "<group>";

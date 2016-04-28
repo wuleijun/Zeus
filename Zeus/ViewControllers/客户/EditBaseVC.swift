@@ -8,12 +8,14 @@
 
 import UIKit
 
+typealias Action = (value:String?)->Void
+
 class EditBaseVC: BaseViewController {
     
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
-    
+
     private lazy var tableView:UITableView = {
         let tableView = UITableView()
         tableView.dataSource = self
@@ -37,6 +39,8 @@ class EditBaseVC: BaseViewController {
     
     private var value:String?
     
+    var didSaveAction:Action?
+    
     lazy var textField:BorderTextField = {
         let textField = BorderTextField()
         textField.clearButtonMode = .Always
@@ -46,10 +50,10 @@ class EditBaseVC: BaseViewController {
         return textField
     }()
     
-    convenience init(title:String,value:String?){
+    convenience init(value:String?,didSaveAction:Action?){
         self.init()
         self.value = value
-        self.title = title
+        self.didSaveAction = didSaveAction
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -89,7 +93,10 @@ class EditBaseVC: BaseViewController {
     }
     
     func save_Touch() {
-        
+        if let didSaveAction = didSaveAction {
+            didSaveAction(value:textField.text)
+        }
+        self.navigationController?.popViewControllerAnimated(true)
     }
 
     func textFieldDidChanged() {

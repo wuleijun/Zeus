@@ -103,7 +103,7 @@
                                                                 <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
                                                             <connections>
-                                                                <action selector="position_Touch:" destination="h5z-Zd-f7B" eventType="touchUpInside" id="Uz4-2N-FfR"/>
+                                                                <action selector="title_Touch:" destination="h5z-Zd-f7B" eventType="touchUpInside" id="5O2-97-a9G"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -284,9 +284,23 @@
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRF-gu-ahb">
+                                                            <rect key="frame" x="51" y="0.0" width="286" height="44"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                            <state key="normal" title="请输入">
+                                                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="section_Touch:" destination="h5z-Zd-f7B" eventType="touchUpInside" id="yez-GX-V3M"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
+                                                        <constraint firstItem="zRF-gu-ahb" firstAttribute="top" secondItem="8eQ-eY-3d5" secondAttribute="top" id="AnW-qa-GoN"/>
+                                                        <constraint firstAttribute="bottom" secondItem="zRF-gu-ahb" secondAttribute="bottom" id="N0x-z3-Sfd"/>
+                                                        <constraint firstItem="zRF-gu-ahb" firstAttribute="leading" secondItem="oyu-dC-TUF" secondAttribute="trailing" constant="8" id="ir2-xO-UaT"/>
+                                                        <constraint firstAttribute="trailing" secondItem="zRF-gu-ahb" secondAttribute="trailing" constant="8" id="pD5-Gq-BIn"/>
                                                         <constraint firstItem="oyu-dC-TUF" firstAttribute="leading" secondItem="8eQ-eY-3d5" secondAttribute="leading" constant="15" id="tnn-NV-87J"/>
                                                         <constraint firstItem="oyu-dC-TUF" firstAttribute="centerY" secondItem="8eQ-eY-3d5" secondAttribute="centerY" id="z53-Bz-f8p"/>
                                                     </constraints>
@@ -318,11 +332,25 @@
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAz-Bd-0Gm">
+                                                            <rect key="frame" x="51" y="0.0" width="286" height="44"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                            <state key="normal" title="请输入">
+                                                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="position_Touch:" destination="h5z-Zd-f7B" eventType="touchUpInside" id="xlI-RS-tsc"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="SAz-Bd-0Gm" secondAttribute="bottom" id="Gbo-nt-wjs"/>
+                                                        <constraint firstAttribute="trailing" secondItem="SAz-Bd-0Gm" secondAttribute="trailing" constant="8" id="OYF-m6-fpb"/>
+                                                        <constraint firstItem="SAz-Bd-0Gm" firstAttribute="top" secondItem="Ba1-Hk-ubh" secondAttribute="top" id="UIO-WC-jNa"/>
                                                         <constraint firstItem="7Tc-ug-AIk" firstAttribute="centerY" secondItem="Ba1-Hk-ubh" secondAttribute="centerY" id="l4i-nH-zJf"/>
                                                         <constraint firstItem="7Tc-ug-AIk" firstAttribute="leading" secondItem="Ba1-Hk-ubh" secondAttribute="leading" constant="15" id="vk6-vP-J90"/>
+                                                        <constraint firstItem="SAz-Bd-0Gm" firstAttribute="leading" secondItem="7Tc-ug-AIk" secondAttribute="trailing" constant="8" id="zNy-Nf-IoR"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -407,7 +435,7 @@
                                                                 <constraint firstAttribute="height" constant="30" id="aHK-oA-hkd"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <textInputTraits key="textInputTraits"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                         </textField>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -452,7 +480,7 @@
                                                                 <constraint firstAttribute="height" constant="30" id="3Nd-hY-Pwf"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <textInputTraits key="textInputTraits"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                                         </textField>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

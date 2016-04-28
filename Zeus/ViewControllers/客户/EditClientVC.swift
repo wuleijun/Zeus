@@ -60,9 +60,11 @@ class EditClientVC: UITableViewController {
     /**
      职称
      */
-    @IBAction func position_Touch(sender: AnyObject) {
-        let editVC = EditSectionVC(title: "职称",value: "职称喔")
-        self.navigationController?.pushViewController(editVC, animated: true)
+    @IBAction func title_Touch(sender: UIButton) {
+        let editTitleVC = EditTitleVC(value: "职称例子啊"){ (value:String?) in
+            sender.setTitle(value, forState: .Normal)
+        }
+        self.navigationController?.pushViewController(editTitleVC, animated: true)
     }
     
     /**
@@ -78,6 +80,26 @@ class EditClientVC: UITableViewController {
             }
             
         };
+    }
+    
+    /**
+     科室
+     */
+    @IBAction func section_Touch(sender: UIButton){
+        let editSectionVC = EditSectionVC(value: "骨科"){ (value:String?) in
+            sender.setTitle(value, forState: .Normal)
+        }
+        self.navigationController?.pushViewController(editSectionVC, animated: true)
+    }
+    
+    /**
+     职务
+     */
+    @IBAction func position_Touch(sender: UIButton) {
+        let editPositionVC = EditPositionVC(value: "职务例子"){ (value:String?) in
+            sender.setTitle(value, forState: .Normal)
+        }
+        self.navigationController?.pushViewController(editPositionVC, animated: true)
     }
     
     override func didReceiveMemoryWarning() {

@@ -14,7 +14,6 @@ class EditTitleVC: EditBaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "职称"
-        self.textField.text = "职称"
         // Do any additional setup after loading the view.
     }
 

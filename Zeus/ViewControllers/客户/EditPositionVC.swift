@@ -13,9 +13,8 @@ class EditPositionVC: EditBaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "职务"
-        self.textField.text = "职务"
         // Do any additional setup after loading the view.
+        self.title = "职务"
     }
 
     override func didReceiveMemoryWarning() {
