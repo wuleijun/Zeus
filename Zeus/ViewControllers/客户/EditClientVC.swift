@@ -61,8 +61,23 @@ class EditClientVC: UITableViewController {
      职称
      */
     @IBAction func position_Touch(sender: AnyObject) {
-        let editVC = EditBaseVC()
+        let editVC = EditSectionVC(title: "职称",value: "职称喔")
         self.navigationController?.pushViewController(editVC, animated: true)
+    }
+    
+    /**
+     性别
+     */
+    @IBAction func gender_Touch(sender: UIButton)
+    {
+        let genders = ["男","女"]
+        ZeusActionSheet.showActionSheet(title: "请选择性别", message: nil, titles: genders, dismissTitle: "取消", inViewController: self) { (index) in
+            
+            if let index = index {
+                sender.setTitle(genders[index], forState: .Normal)
+            }
+            
+        };
     }
     
     override func didReceiveMemoryWarning() {

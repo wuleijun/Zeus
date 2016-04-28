@@ -10,6 +10,10 @@ import UIKit
 
 class EditBaseVC: BaseViewController {
     
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
     private lazy var tableView:UITableView = {
         let tableView = UITableView()
         tableView.dataSource = self
@@ -18,25 +22,52 @@ class EditBaseVC: BaseViewController {
         tableView.tableFooterView = UIView()
         tableView.separatorInset = UIEdgeInsetsZero
         tableView.layoutMargins = UIEdgeInsetsZero
+        tableView.keyboardDismissMode = .OnDrag
         return tableView
     }()
+    
+    private lazy var tableViewHeaderView:UILabel = {
+        let label = UILabel()
+        label.backgroundColor = UIColor.clearColor()
+        label.textColor = UIColor.darkGrayColor()
+        label.font = UIFont.systemFontOfSize(14)
+        label.text = "    历史使用"
+       return label
+    }()
+    
+    private var value:String?
     
     lazy var textField:BorderTextField = {
         let textField = BorderTextField()
         textField.clearButtonMode = .Always
         textField.backgroundColor = UIColor.whiteColor()
+        textField.leftTextInset = 15
+        textField.text = self.value
         return textField
     }()
     
+    convenience init(title:String,value:String?){
+        self.init()
+        self.value = value
+        self.title = title
+    }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         textField.becomeFirstResponder()
     }
     
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        textField.resignFirstResponder()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(textFieldDidChanged), name: UITextFieldTextDidChangeNotification, object: nil)
+        
         view.addSubview(textField)
         textField.snp_makeConstraints { (make) in
             make.left.right.equalTo(self.view)
@@ -50,6 +81,9 @@ class EditBaseVC: BaseViewController {
             make.bottom.equalTo(self.view)
         }
         
+        tableViewHeaderView.height = 30
+        tableView.tableHeaderView = tableViewHeaderView
+        
         addRightButton()
         // Do any additional setup after loading the view.
     }
@@ -58,6 +92,14 @@ class EditBaseVC: BaseViewController {
         
     }
 
+    func textFieldDidChanged() {
+        if textField.text?.characters.count > 0 {
+            tableView.tableHeaderView = nil
+        }else{
+            tableView.tableHeaderView = tableViewHeaderView
+        }
+    }
+    
     private func addRightButton() {
         let button = UIButton(type: .System)
         button.setTitle("保存", forState: .Normal)
@@ -102,7 +144,8 @@ extension EditBaseVC : UITableViewDataSource {
         return cell
     }
     
-    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+    //为了让线从x=0开始
+    private func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         cell.separatorInset = UIEdgeInsetsZero
         cell.layoutMargins = UIEdgeInsetsZero
     }
@@ -111,7 +154,9 @@ extension EditBaseVC : UITableViewDataSource {
 extension EditBaseVC : UITableViewDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+        defer {
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        }
     }
     
 }

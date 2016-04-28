@@ -36,6 +36,10 @@
 		4519C0E21CBE4F4100217C24 /* ZeusHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0E11CBE4F4100217C24 /* ZeusHelper.swift */; };
 		451C47CF1CC0CBCB00F197DA /* UserCountLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C47CE1CC0CBCB00F197DA /* UserCountLabel.swift */; };
 		451DAE721CD1AD5F00B0B8EC /* EditBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DAE711CD1AD5F00B0B8EC /* EditBaseVC.swift */; };
+		451DAE771CD1F4B200B0B8EC /* EditSectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DAE761CD1F4B200B0B8EC /* EditSectionVC.swift */; };
+		451DAE791CD1F7BC00B0B8EC /* EditPositionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DAE781CD1F7BC00B0B8EC /* EditPositionVC.swift */; };
+		451DAE7B1CD1F7EE00B0B8EC /* EditTitleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DAE7A1CD1F7EE00B0B8EC /* EditTitleVC.swift */; };
+		451DAE7D1CD1FC3500B0B8EC /* ZeusActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DAE7C1CD1FC3500B0B8EC /* ZeusActionSheet.swift */; };
 		451EA0021CB4F2F2004FE212 /* CellBaseContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EA0011CB4F2F2004FE212 /* CellBaseContainerView.swift */; };
 		451EA0071CB4FD68004FE212 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EA0061CB4FD68004FE212 /* InfoViewController.swift */; };
 		451EA00A1CB4FEA0004FE212 /* InfoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451EA0081CB4FEA0004FE212 /* InfoViewController.storyboard */; };
@@ -128,6 +132,10 @@
 		4519C0E11CBE4F4100217C24 /* ZeusHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusHelper.swift; sourceTree = "<group>"; };
 		451C47CE1CC0CBCB00F197DA /* UserCountLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCountLabel.swift; sourceTree = "<group>"; };
 		451DAE711CD1AD5F00B0B8EC /* EditBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditBaseVC.swift; sourceTree = "<group>"; };
+		451DAE761CD1F4B200B0B8EC /* EditSectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditSectionVC.swift; sourceTree = "<group>"; };
+		451DAE781CD1F7BC00B0B8EC /* EditPositionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPositionVC.swift; sourceTree = "<group>"; };
+		451DAE7A1CD1F7EE00B0B8EC /* EditTitleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTitleVC.swift; sourceTree = "<group>"; };
+		451DAE7C1CD1FC3500B0B8EC /* ZeusActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusActionSheet.swift; sourceTree = "<group>"; };
 		451EA0011CB4F2F2004FE212 /* CellBaseContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellBaseContainerView.swift; sourceTree = "<group>"; };
 		451EA0061CB4FD68004FE212 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		451EA0091CB4FEA0004FE212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/InfoViewController.storyboard; sourceTree = "<group>"; };
@@ -316,6 +324,9 @@
 			isa = PBXGroup;
 			children = (
 				451DAE711CD1AD5F00B0B8EC /* EditBaseVC.swift */,
+				451DAE761CD1F4B200B0B8EC /* EditSectionVC.swift */,
+				451DAE781CD1F7BC00B0B8EC /* EditPositionVC.swift */,
+				451DAE7A1CD1F7EE00B0B8EC /* EditTitleVC.swift */,
 			);
 			name = "科室职务职称";
 			sourceTree = "<group>";
@@ -589,6 +600,7 @@
 				45E71ACF1CBB937300FC26CF /* ZeusAlert.swift */,
 				4519C0DF1CBE48C700217C24 /* ZeusHud.swift */,
 				4519C0E11CBE4F4100217C24 /* ZeusHelper.swift */,
+				451DAE7C1CD1FC3500B0B8EC /* ZeusActionSheet.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -830,21 +842,25 @@
 				4523B4041CAD12EA00811E50 /* ClientTypeVC.swift in Sources */,
 				451562EE1CBF2CA4005CE865 /* ShowSecondStepVC.swift in Sources */,
 				457C6AD61CB655B90065E883 /* UIViewController+Zeus.swift in Sources */,
+				451DAE7D1CD1FC3500B0B8EC /* ZeusActionSheet.swift in Sources */,
 				458C271A1CAA6E24004575FC /* ProfileViewController.swift in Sources */,
 				458C27131CAA6D8E004575FC /* ActivityViewController.swift in Sources */,
 				4519C0E21CBE4F4100217C24 /* ZeusHelper.swift in Sources */,
 				4507EB5A1CBBB3CC007F3A5F /* FeedbackViewController.swift in Sources */,
+				451DAE791CD1F7BC00B0B8EC /* EditPositionVC.swift in Sources */,
 				4519C0E01CBE48C700217C24 /* ZeusHud.swift in Sources */,
 				451EA0021CB4F2F2004FE212 /* CellBaseContainerView.swift in Sources */,
 				4523B3FC1CACFD8A00811E50 /* AddActivityVC.swift in Sources */,
 				451562FB1CBF705C005CE865 /* AddRelatedUserVC.swift in Sources */,
 				4523B3EF1CACBB9F00811E50 /* UIColor+Zeus.swift in Sources */,
+				451DAE7B1CD1F7EE00B0B8EC /* EditTitleVC.swift in Sources */,
 				451562F71CBF6FD8005CE865 /* RelateEachOtherVC.swift in Sources */,
 				4523B3F41CACD0ED00811E50 /* HistoryActivityVC.swift in Sources */,
 				451562F31CBF6A94005CE865 /* MyRelatedUserVC.swift in Sources */,
 				451FF6E11CBD009400E31344 /* ZeusConfig.swift in Sources */,
 				451FF6D51CBCE4E100E31344 /* BorderTextField.swift in Sources */,
 				458C27231CAA7C04004575FC /* BaseTableViewCell.swift in Sources */,
+				451DAE771CD1F4B200B0B8EC /* EditSectionVC.swift in Sources */,
 				458C271F1CAA7AF0004575FC /* ActivityCell.swift in Sources */,
 				451EA0071CB4FD68004FE212 /* InfoViewController.swift in Sources */,
 				45186B911CC8A9990023BE4C /* EditClientVC.swift in Sources */,
@@ -1044,7 +1060,7 @@
 			baseConfigurationReference = 054A9FFFFB89F87101B7258A /* Pods-Zeus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Jin Tao (88EZ8AQ3C7)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jin Tao (88EZ8AQ3C7)";
 				INFOPLIST_FILE = Zeus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1060,7 +1076,7 @@
 			baseConfigurationReference = 7F03FDE68F71AC8018F8842C /* Pods-Zeus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Jin Tao (88EZ8AQ3C7)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jin Tao (88EZ8AQ3C7)";
 				INFOPLIST_FILE = Zeus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

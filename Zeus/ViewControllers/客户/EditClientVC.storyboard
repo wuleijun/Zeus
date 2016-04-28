@@ -144,10 +144,24 @@
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4b-Lm-hva">
+                                                            <rect key="frame" x="51" y="0.0" width="286" height="44"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                            <state key="normal" title="请选择">
+                                                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="gender_Touch:" destination="h5z-Zd-f7B" eventType="touchUpInside" id="Tc9-sZ-7Oo"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="m4b-Lm-hva" secondAttribute="bottom" id="Cwx-ja-ffc"/>
+                                                        <constraint firstItem="m4b-Lm-hva" firstAttribute="top" secondItem="h6M-Iv-kXo" secondAttribute="top" id="NVH-Uw-RM9"/>
                                                         <constraint firstItem="hgc-GA-6Pq" firstAttribute="leading" secondItem="h6M-Iv-kXo" secondAttribute="leading" constant="15" id="Sz5-rW-Xgb"/>
+                                                        <constraint firstItem="m4b-Lm-hva" firstAttribute="leading" secondItem="hgc-GA-6Pq" secondAttribute="trailing" constant="8" id="Tm3-IE-Y4g"/>
+                                                        <constraint firstAttribute="trailing" secondItem="m4b-Lm-hva" secondAttribute="trailing" constant="8" id="cZB-yH-oiT"/>
                                                         <constraint firstItem="hgc-GA-6Pq" firstAttribute="centerY" secondItem="h6M-Iv-kXo" secondAttribute="centerY" id="py0-rm-uVs"/>
                                                     </constraints>
                                                 </view>
@@ -178,10 +192,19 @@
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KXg-pb-6VL">
+                                                            <rect key="frame" x="74" y="0.0" width="263" height="44"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        </textField>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="KXg-pb-6VL" secondAttribute="bottom" id="20P-ly-XpG"/>
+                                                        <constraint firstAttribute="trailing" secondItem="KXg-pb-6VL" secondAttribute="trailing" constant="8" id="45t-th-IlN"/>
                                                         <constraint firstItem="2ax-xr-zuv" firstAttribute="leading" secondItem="KFT-dR-ozN" secondAttribute="leading" constant="15" id="9oE-8I-XfX"/>
+                                                        <constraint firstItem="KXg-pb-6VL" firstAttribute="top" secondItem="KFT-dR-ozN" secondAttribute="top" id="pbS-EC-iyh"/>
+                                                        <constraint firstItem="KXg-pb-6VL" firstAttribute="leading" secondItem="2ax-xr-zuv" secondAttribute="trailing" constant="31" id="pyy-yZ-Dpe"/>
                                                         <constraint firstItem="2ax-xr-zuv" firstAttribute="centerY" secondItem="KFT-dR-ozN" secondAttribute="centerY" id="vcW-cm-NWA"/>
                                                     </constraints>
                                                 </view>
