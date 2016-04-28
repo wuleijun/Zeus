@@ -29,14 +29,6 @@ class FeedbackViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        keyboardMan.animateWhenKeyboardAppear = { [weak self] _, keyboardHeight, _ in
-            self?.textViewBottomConstraint.constant = keyboardHeight
-            self?.view.layoutIfNeeded()
-        }
-        keyboardMan.animateWhenKeyboardDisappear = { [weak self] keyboardHeight in
-            self?.textViewBottomConstraint.constant = 60
-            self?.view.layoutIfNeeded()
-        }
         // Do any additional setup after loading the view.
     }
 

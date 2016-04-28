@@ -60,9 +60,9 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="IQLayoutGuideConstraint" destination="h69-qy-OJz" id="W23-AV-AGY"/>
                         <outlet property="doneButton" destination="A0d-8k-VYo" id="FsS-2m-w6N"/>
                         <outlet property="feedBackTextView" destination="3eW-QK-0pZ" id="xVx-54-1Wr"/>
-                        <outlet property="textViewBottomConstraint" destination="h69-qy-OJz" id="uqw-Ra-El2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDA-65-aJz" userLabel="First Responder" sceneMemberID="firstResponder"/>

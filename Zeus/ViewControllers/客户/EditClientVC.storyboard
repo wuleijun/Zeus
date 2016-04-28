@@ -530,7 +530,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="客户详情" id="Urr-tn-luw">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="jga-pj-TiW">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="jga-pj-TiW">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bIk-OG-IPM">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

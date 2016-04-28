@@ -7,7 +7,7 @@ def pods
     pod 'Kingfisher'
     pod 'SnapKit'
     pod 'Proposer'
-    pod 'KeyboardMan'
+    pod 'IQKeyboardManagerSwift'
     pod 'RealmSwift'
     
     #Objc

@@ -38,7 +38,7 @@ class TableHeaderView: UIView {
         titleLabel.snp_makeConstraints { (make) in
             make.left.equalTo(20)
             make.right.equalTo(self)
-            make.centerY.equalTo(self)
+            make.bottomMargin.equalTo(-10)
         }
         
         addSubview(bottomLine)
