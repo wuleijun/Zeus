@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Proposer
 
 extension UIViewController{
     var statusBarHeight: CGFloat {
@@ -45,5 +46,49 @@ extension UIViewController{
         let storyboard = UIStoryboard.init(name: storyboardName, bundle: nil)
         let vc = storyboard.instantiateViewControllerWithIdentifier(viewControllerId)
         return vc
+    }
+}
+
+extension UIViewController {
+    
+    func showImagePickerController(delegate delegate:protocol<UIImagePickerControllerDelegate, UINavigationControllerDelegate>?) ->Void  {
+        
+        let imagePickerVC = UIImagePickerController()
+        imagePickerVC.allowsEditing = true
+        imagePickerVC.delegate = delegate
+        imagePickerVC.sourceType = .PhotoLibrary
+        
+        let alertViewController = UIAlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
+        alertViewController.addAction(UIAlertAction(title: "拍照", style: .Default, handler: { (action:UIAlertAction) in
+            
+            proposeToAccess(.Camera, agreed: {
+                guard UIImagePickerController.isSourceTypeAvailable(.Camera) else {
+                    self.alertCanNotOpenCamera()
+                    return
+                }
+                imagePickerVC.sourceType = .Camera
+                self.presentViewController(imagePickerVC, animated: true, completion: nil)
+                }, rejected: {
+                    self.alertCanNotOpenCamera()
+            })
+        }))
+        alertViewController.addAction(UIAlertAction(title: "从手机相册选择", style: .Default, handler: { [weak self](action:UIAlertAction) in
+            
+            proposeToAccess(.Photos, agreed: {
+                
+                guard UIImagePickerController.isSourceTypeAvailable(.PhotoLibrary) else {
+                    self?.alertCanNotAccessCameraRoll()
+                    return
+                }
+                self?.presentViewController(imagePickerVC, animated: true, completion: nil)
+                }, rejected: {
+                    self?.alertCanNotAccessCameraRoll()
+            })
+            
+            
+            }))
+        alertViewController.addAction(UIAlertAction(title: "取消", style: .Cancel, handler: nil))
+        
+        self.presentViewController(alertViewController, animated: true, completion: nil)
     }
 }

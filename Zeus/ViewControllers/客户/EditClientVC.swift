@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Proposer
 
 /**
  视图类型
@@ -23,6 +24,7 @@ class EditClientVC: UITableViewController {
     let sectionHeaderHeight:CGFloat = 44
     
     @IBOutlet weak var editButton: UIButton!
+    @IBOutlet weak var avatarButton: UIButton!
     
     @IBOutlet weak var nameTxtField: UITextField!
     
@@ -57,8 +59,15 @@ class EditClientVC: UITableViewController {
     
     // MARK: Action
     @IBAction func save_Touch(sender: AnyObject) {
+        
     }
-    
+    /**
+     头像
+    */
+    @IBAction func avatar_Touch(sender: AnyObject) {
+        
+        showImagePickerController(delegate:self)
+    }
     /**
      职称
      */
@@ -145,4 +154,13 @@ extension EditClientVC {
         }
     }
     
+}
+
+extension EditClientVC:UIImagePickerControllerDelegate,UINavigationControllerDelegate{
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        
+        let clipedImage = image.imageByRoundCornerRadius(image.size.width/2)
+        avatarButton.setBackgroundImage(clipedImage, forState: .Normal)
+        picker.dismissViewControllerAnimated(true, completion: nil)
+    }
 }
