@@ -31,6 +31,7 @@
 		45175A971CAE0A9400D42A47 /* PublishButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45175A961CAE0A9400D42A47 /* PublishButtonView.swift */; };
 		45186B911CC8A9990023BE4C /* EditClientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45186B901CC8A9990023BE4C /* EditClientVC.swift */; };
 		45186B971CC8AD9F0023BE4C /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45186B961CC8AD9F0023BE4C /* Client.swift */; };
+		4518E16F1CD3335E00B69277 /* EditHospitalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4518E16E1CD3335E00B69277 /* EditHospitalVC.swift */; };
 		4519C0DE1CBDEB7700217C24 /* LoginVerifyMobileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0DD1CBDEB7700217C24 /* LoginVerifyMobileVC.swift */; };
 		4519C0E01CBE48C700217C24 /* ZeusHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0DF1CBE48C700217C24 /* ZeusHud.swift */; };
 		4519C0E21CBE4F4100217C24 /* ZeusHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0E11CBE4F4100217C24 /* ZeusHelper.swift */; };
@@ -127,6 +128,7 @@
 		45175A961CAE0A9400D42A47 /* PublishButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishButtonView.swift; sourceTree = "<group>"; };
 		45186B901CC8A9990023BE4C /* EditClientVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditClientVC.swift; sourceTree = "<group>"; };
 		45186B961CC8AD9F0023BE4C /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		4518E16E1CD3335E00B69277 /* EditHospitalVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditHospitalVC.swift; sourceTree = "<group>"; };
 		4519C0DD1CBDEB7700217C24 /* LoginVerifyMobileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVerifyMobileVC.swift; sourceTree = "<group>"; };
 		4519C0DF1CBE48C700217C24 /* ZeusHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusHud.swift; sourceTree = "<group>"; };
 		4519C0E11CBE4F4100217C24 /* ZeusHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusHelper.swift; sourceTree = "<group>"; };
@@ -320,15 +322,16 @@
 			name = "登录";
 			sourceTree = "<group>";
 		};
-		451DAE701CD1ACF500B0B8EC /* 科室职务职称 */ = {
+		451DAE701CD1ACF500B0B8EC /* 医院科室职务职称 */ = {
 			isa = PBXGroup;
 			children = (
 				451DAE711CD1AD5F00B0B8EC /* EditBaseVC.swift */,
 				451DAE7A1CD1F7EE00B0B8EC /* EditTitleVC.swift */,
 				451DAE761CD1F4B200B0B8EC /* EditSectionVC.swift */,
 				451DAE781CD1F7BC00B0B8EC /* EditPositionVC.swift */,
+				4518E16E1CD3335E00B69277 /* EditHospitalVC.swift */,
 			);
-			name = "科室职务职称";
+			name = "医院科室职务职称";
 			sourceTree = "<group>";
 		};
 		451EA0001CB4F2A7004FE212 /* 我的 */ = {
@@ -483,7 +486,7 @@
 		458C27101CAA698F004575FC /* 客户 */ = {
 			isa = PBXGroup;
 			children = (
-				451DAE701CD1ACF500B0B8EC /* 科室职务职称 */,
+				451DAE701CD1ACF500B0B8EC /* 医院科室职务职称 */,
 				45224B8B1CC7593500DE3054 /* Cells */,
 				45186B8F1CC8A9200023BE4C /* 客户详情 */,
 				4523B4011CAD12CD00811E50 /* 客户类型 */,
@@ -825,6 +828,7 @@
 			files = (
 				451FF6DD1CBCEFE200E31344 /* RegisterUserInfoVC.swift in Sources */,
 				451C47CF1CC0CBCB00F197DA /* UserCountLabel.swift in Sources */,
+				4518E16F1CD3335E00B69277 /* EditHospitalVC.swift in Sources */,
 				4507EB541CBB980F007F3A5F /* LoginRegisterVC.swift in Sources */,
 				45175A971CAE0A9400D42A47 /* PublishButtonView.swift in Sources */,
 				4523B3F11CACBDDC00811E50 /* UIFont+Zeus.swift in Sources */,

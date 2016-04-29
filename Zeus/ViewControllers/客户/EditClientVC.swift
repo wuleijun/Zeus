@@ -68,6 +68,15 @@ class EditClientVC: UITableViewController {
         
         showImagePickerController(delegate:self)
     }
+    
+    @IBAction func hospital_Touch(sender: UIButton) {
+        
+        let editHospitalVC = EditHospitalVC(value: "浙江省邵逸夫医院") { (value) in
+            sender.setTitle(value, forState: .Normal)
+        }
+        navigationController?.pushViewController(editHospitalVC, animated: true)
+    }
+    
     /**
      职称
      */
@@ -75,7 +84,7 @@ class EditClientVC: UITableViewController {
         let editTitleVC = EditTitleVC(value: "职称例子啊"){ (value:String?) in
             sender.setTitle(value, forState: .Normal)
         }
-        self.navigationController?.pushViewController(editTitleVC, animated: true)
+        navigationController?.pushViewController(editTitleVC, animated: true)
     }
     
     /**
@@ -100,7 +109,7 @@ class EditClientVC: UITableViewController {
         let editSectionVC = EditSectionVC(value: "骨科"){ (value:String?) in
             sender.setTitle(value, forState: .Normal)
         }
-        self.navigationController?.pushViewController(editSectionVC, animated: true)
+        navigationController?.pushViewController(editSectionVC, animated: true)
     }
     
     /**
@@ -110,7 +119,7 @@ class EditClientVC: UITableViewController {
         let editPositionVC = EditPositionVC(value: "职务例子"){ (value:String?) in
             sender.setTitle(value, forState: .Normal)
         }
-        self.navigationController?.pushViewController(editPositionVC, animated: true)
+        navigationController?.pushViewController(editPositionVC, animated: true)
     }
     
     override func didReceiveMemoryWarning() {
