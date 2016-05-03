@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="K42-8U-rPh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--签到-->
+        <scene sceneID="4ep-AI-sP8">
+            <objects>
+                <viewController storyboardIdentifier="SignViewController" title="签到" hidesBottomBarWhenPushed="YES" id="K42-8U-rPh" customClass="SignViewController" customModule="Zeus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w89-AS-wMQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zxc-n8-uFk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HMw-hg-foA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4g-4D-AmV">
+                                <rect key="frame" x="0.0" y="64" width="375" height="40"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="KUL-nc-hNl">
+                                        <rect key="frame" x="20" y="10" width="335" height="2"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="sss-J2-8to"/>
+                                        </constraints>
+                                        <color key="progressTintColor" red="0.33725490200000002" green="0.58039215690000001" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="签到进度25/50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brQ-Qu-B7n">
+                                        <rect key="frame" x="286" y="17" width="69" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="KUL-nc-hNl" firstAttribute="top" secondItem="n4g-4D-AmV" secondAttribute="top" constant="10" id="1kJ-vr-4wE"/>
+                                    <constraint firstAttribute="height" constant="40" id="RYj-EL-rHZ"/>
+                                    <constraint firstItem="brQ-Qu-B7n" firstAttribute="top" secondItem="KUL-nc-hNl" secondAttribute="bottom" constant="5" id="Vok-kX-Jgz"/>
+                                    <constraint firstItem="KUL-nc-hNl" firstAttribute="leading" secondItem="n4g-4D-AmV" secondAttribute="leading" constant="20" id="Wxy-Ah-0yI"/>
+                                    <constraint firstAttribute="trailing" secondItem="brQ-Qu-B7n" secondAttribute="trailing" constant="20" id="b50-2N-UI9"/>
+                                    <constraint firstAttribute="trailing" secondItem="KUL-nc-hNl" secondAttribute="trailing" constant="20" id="w2P-4z-J1m"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8BK-zW-gHA">
+                                <rect key="frame" x="0.0" y="104" width="375" height="563"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" placeholder="搜索" id="vca-WT-nR7">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                                <connections>
+                                    <outlet property="dataSource" destination="K42-8U-rPh" id="cQU-AC-Hb2"/>
+                                    <outlet property="delegate" destination="K42-8U-rPh" id="ZGr-qc-7EU"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8BK-zW-gHA" firstAttribute="top" secondItem="n4g-4D-AmV" secondAttribute="bottom" id="4Jw-QO-mLg"/>
+                            <constraint firstItem="n4g-4D-AmV" firstAttribute="leading" secondItem="HMw-hg-foA" secondAttribute="leading" id="HVF-Sg-bfM"/>
+                            <constraint firstItem="Zxc-n8-uFk" firstAttribute="top" secondItem="8BK-zW-gHA" secondAttribute="bottom" id="QnZ-8r-ffs"/>
+                            <constraint firstAttribute="trailing" secondItem="8BK-zW-gHA" secondAttribute="trailing" id="SDe-Tp-xy7"/>
+                            <constraint firstItem="8BK-zW-gHA" firstAttribute="leading" secondItem="HMw-hg-foA" secondAttribute="leading" id="VbT-z7-KWj"/>
+                            <constraint firstAttribute="trailing" secondItem="n4g-4D-AmV" secondAttribute="trailing" id="kKo-mh-PPt"/>
+                            <constraint firstItem="n4g-4D-AmV" firstAttribute="top" secondItem="w89-AS-wMQ" secondAttribute="bottom" id="vmW-P1-SOD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="签到" id="M6y-M8-XeG">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="MBM-W0-IVk">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="i6c-L9-Mn0">
+                                <rect key="frame" x="338" y="11" width="21" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="more"/>
+                                <connections>
+                                    <action selector="moreOperation_Touch:" destination="K42-8U-rPh" eventType="touchUpInside" id="zjm-Pt-CMg"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="progressHeightConstraint" destination="sss-J2-8to" id="aee-nW-uQs"/>
+                        <outlet property="progressLabel" destination="brQ-Qu-B7n" id="KCG-4a-Bob"/>
+                        <outlet property="progressView" destination="KUL-nc-hNl" id="Osx-gj-DMZ"/>
+                        <outlet property="tableView" destination="8BK-zW-gHA" id="QZt-UT-oAV"/>
+                        <outlet property="topView" destination="n4g-4D-AmV" id="9oH-MC-8lB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4aH-p0-dku" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.5" y="352.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="more" width="21" height="6"/>
+    </resources>
+</document>

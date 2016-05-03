@@ -10,14 +10,25 @@ import UIKit
 
 class ActivityDetailVC: BaseViewController {
 
+    private lazy var moreOperationView:MoreOperationsView = {
+        let moreOperationView = MoreOperationsView()
+        moreOperationView.createSignAction = { [weak self] in
+            
+            if let strongSelf = self {
+                let signVC = UIViewController.controllerWith(storyboardName: "SignViewController", viewControllerId: "SignViewController") as! SignViewController
+                strongSelf.navigationController?.pushViewController(signVC, animated: true)
+            }
+        }
+        return moreOperationView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
     @IBAction func more_Touch(sender: AnyObject) {
-        let moreOperationView = MoreOperationsView()
         if let view = view.window {
             moreOperationView.showInView(view)
         }

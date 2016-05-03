@@ -33,10 +33,10 @@ class MoreOperationsView: UIView {
         return view
     }()
     
-    var createTextAndPhotosFeedAction: (() -> Void)?
-    var createVoiceFeedAction: (() -> Void)?
-    var createShortMovieFeedAction: (() -> Void)?
-    var createLocationFeedAction: (() -> Void)?
+    var createAllocationAction: (() -> Void)?
+    var createClientInviteAction: (() -> Void)?
+    var createAuthSignAction: (() -> Void)?
+    var createSignAction: (() -> Void)?
     
     var tableViewBottomConstraint: NSLayoutConstraint?
     
@@ -250,22 +250,21 @@ extension MoreOperationsView: UITableViewDataSource, UITableViewDelegate {
             switch row {
                 
             case .Allocation:
-                createTextAndPhotosFeedAction?()
+                createAllocationAction?()
                 hide()
                 
             case .ClientInvite:
-                createVoiceFeedAction?()
+                createClientInviteAction?()
                 hide()
-                
-                //case .ShortMovie:
-                //    createShortMovieFeedAction?()
-                //    hide()
-                
+    
             case .AuthSign:
-                createLocationFeedAction?()
+                createAuthSignAction?()
                 hide()
+                
             case .Sign:
+                createSignAction?()
                 hide()
+                
             case .Cancel:
                 hide()
             }

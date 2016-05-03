@@ -37,6 +37,11 @@
 		4519351D1CD8872B001C3790 /* MoreOperationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519351C1CD8872B001C3790 /* MoreOperationsView.swift */; };
 		4519351F1CD88AF5001C3790 /* OperationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519351E1CD88AF5001C3790 /* OperationCell.swift */; };
 		451935211CD88C41001C3790 /* CancelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451935201CD88C41001C3790 /* CancelCell.swift */; };
+		451935241CD893AA001C3790 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451935231CD893AA001C3790 /* SignViewController.swift */; };
+		451935261CD893BE001C3790 /* SignViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451935251CD893BE001C3790 /* SignViewController.storyboard */; };
+		4519352A1CD8A487001C3790 /* SignClientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451935281CD8A487001C3790 /* SignClientCell.swift */; };
+		4519352B1CD8A487001C3790 /* SignClientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451935291CD8A487001C3790 /* SignClientCell.xib */; };
+		4519352F1CD8B1F6001C3790 /* SeprateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519352E1CD8B1F6001C3790 /* SeprateView.swift */; };
 		4519C0DE1CBDEB7700217C24 /* LoginVerifyMobileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0DD1CBDEB7700217C24 /* LoginVerifyMobileVC.swift */; };
 		4519C0E01CBE48C700217C24 /* ZeusHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0DF1CBE48C700217C24 /* ZeusHud.swift */; };
 		4519C0E21CBE4F4100217C24 /* ZeusHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0E11CBE4F4100217C24 /* ZeusHelper.swift */; };
@@ -139,6 +144,11 @@
 		4519351C1CD8872B001C3790 /* MoreOperationsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreOperationsView.swift; sourceTree = "<group>"; };
 		4519351E1CD88AF5001C3790 /* OperationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationCell.swift; sourceTree = "<group>"; };
 		451935201CD88C41001C3790 /* CancelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelCell.swift; sourceTree = "<group>"; };
+		451935231CD893AA001C3790 /* SignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		451935251CD893BE001C3790 /* SignViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignViewController.storyboard; sourceTree = "<group>"; };
+		451935281CD8A487001C3790 /* SignClientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignClientCell.swift; sourceTree = "<group>"; };
+		451935291CD8A487001C3790 /* SignClientCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignClientCell.xib; sourceTree = "<group>"; };
+		4519352E1CD8B1F6001C3790 /* SeprateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeprateView.swift; sourceTree = "<group>"; };
 		4519C0DD1CBDEB7700217C24 /* LoginVerifyMobileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVerifyMobileVC.swift; sourceTree = "<group>"; };
 		4519C0DF1CBE48C700217C24 /* ZeusHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusHud.swift; sourceTree = "<group>"; };
 		4519C0E11CBE4F4100217C24 /* ZeusHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusHelper.swift; sourceTree = "<group>"; };
@@ -326,6 +336,7 @@
 		451935161CD88286001C3790 /* 活动详情 */ = {
 			isa = PBXGroup;
 			children = (
+				451935221CD8938E001C3790 /* 签到 */,
 				451935171CD882A6001C3790 /* ActivityDetailVC.swift */,
 				451935191CD882BE001C3790 /* ActivityDetailVC.storyboard */,
 			);
@@ -340,6 +351,25 @@
 				451935201CD88C41001C3790 /* CancelCell.swift */,
 			);
 			name = "活动详情";
+			sourceTree = "<group>";
+		};
+		451935221CD8938E001C3790 /* 签到 */ = {
+			isa = PBXGroup;
+			children = (
+				451935271CD8A469001C3790 /* Cell */,
+				451935231CD893AA001C3790 /* SignViewController.swift */,
+				451935251CD893BE001C3790 /* SignViewController.storyboard */,
+			);
+			name = "签到";
+			sourceTree = "<group>";
+		};
+		451935271CD8A469001C3790 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				451935281CD8A487001C3790 /* SignClientCell.swift */,
+				451935291CD8A487001C3790 /* SignClientCell.xib */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		4519C0DC1CBDEB5000217C24 /* 登录 */ = {
@@ -493,6 +523,7 @@
 		458C270E1CAA6915004575FC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4519352E1CD8B1F6001C3790 /* SeprateView.swift */,
 				4519351B1CD8870E001C3790 /* 活动详情 */,
 				451C47CE1CC0CBCB00F197DA /* UserCountLabel.swift */,
 				451FF6D41CBCE4E100E31344 /* BorderTextField.swift */,
@@ -772,8 +803,10 @@
 				4523B4141CAD253B00811E50 /* AddItemCell.xib in Resources */,
 				4507EB521CBB9796007F3A5F /* LoginAndRegister.storyboard in Resources */,
 				451563021CBF73C9005CE865 /* MyRelatedUserCell.xib in Resources */,
+				451935261CD893BE001C3790 /* SignViewController.storyboard in Resources */,
 				45224B8F1CC7595700DE3054 /* ClientTableCell.xib in Resources */,
 				4523B3F91CACD1CA00811E50 /* HistoryActivityVC.storyboard in Resources */,
+				4519352B1CD8A487001C3790 /* SignClientCell.xib in Resources */,
 				4523B40F1CAD16B700811E50 /* ClientTypeVC.storyboard in Resources */,
 				45D052361CAA594400BB1738 /* LaunchScreen.storyboard in Resources */,
 				457C6AD11CB642AE0065E883 /* EditInfoViewController.storyboard in Resources */,
@@ -868,6 +901,7 @@
 				451562EC1CBF2C8F005CE865 /* ShowFirstStepVC.swift in Sources */,
 				451FF6D71CBCE68F00E31344 /* LoginByMobileVC.swift in Sources */,
 				45224B8E1CC7595700DE3054 /* ClientTableCell.swift in Sources */,
+				451935241CD893AA001C3790 /* SignViewController.swift in Sources */,
 				45186B971CC8AD9F0023BE4C /* Client.swift in Sources */,
 				458C27161CAA6DB9004575FC /* BaseViewController.swift in Sources */,
 				45D0522A1CAA594400BB1738 /* AppDelegate.swift in Sources */,
@@ -886,12 +920,14 @@
 				451935211CD88C41001C3790 /* CancelCell.swift in Sources */,
 				4507EB5A1CBBB3CC007F3A5F /* FeedbackViewController.swift in Sources */,
 				451DAE791CD1F7BC00B0B8EC /* EditPositionVC.swift in Sources */,
+				4519352F1CD8B1F6001C3790 /* SeprateView.swift in Sources */,
 				4519C0E01CBE48C700217C24 /* ZeusHud.swift in Sources */,
 				451EA0021CB4F2F2004FE212 /* CellBaseContainerView.swift in Sources */,
 				4523B3FC1CACFD8A00811E50 /* AddActivityVC.swift in Sources */,
 				451562FB1CBF705C005CE865 /* AddRelatedUserVC.swift in Sources */,
 				4523B3EF1CACBB9F00811E50 /* UIColor+Zeus.swift in Sources */,
 				451DAE7B1CD1F7EE00B0B8EC /* EditTitleVC.swift in Sources */,
+				4519352A1CD8A487001C3790 /* SignClientCell.swift in Sources */,
 				451562F71CBF6FD8005CE865 /* RelateEachOtherVC.swift in Sources */,
 				4523B3F41CACD0ED00811E50 /* HistoryActivityVC.swift in Sources */,
 				451562F31CBF6A94005CE865 /* MyRelatedUserVC.swift in Sources */,
