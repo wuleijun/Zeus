@@ -32,6 +32,11 @@
 		45186B911CC8A9990023BE4C /* EditClientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45186B901CC8A9990023BE4C /* EditClientVC.swift */; };
 		45186B971CC8AD9F0023BE4C /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45186B961CC8AD9F0023BE4C /* Client.swift */; };
 		4518E16F1CD3335E00B69277 /* EditHospitalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4518E16E1CD3335E00B69277 /* EditHospitalVC.swift */; };
+		451935181CD882A6001C3790 /* ActivityDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451935171CD882A6001C3790 /* ActivityDetailVC.swift */; };
+		4519351A1CD882BE001C3790 /* ActivityDetailVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451935191CD882BE001C3790 /* ActivityDetailVC.storyboard */; };
+		4519351D1CD8872B001C3790 /* MoreOperationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519351C1CD8872B001C3790 /* MoreOperationsView.swift */; };
+		4519351F1CD88AF5001C3790 /* OperationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519351E1CD88AF5001C3790 /* OperationCell.swift */; };
+		451935211CD88C41001C3790 /* CancelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451935201CD88C41001C3790 /* CancelCell.swift */; };
 		4519C0DE1CBDEB7700217C24 /* LoginVerifyMobileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0DD1CBDEB7700217C24 /* LoginVerifyMobileVC.swift */; };
 		4519C0E01CBE48C700217C24 /* ZeusHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0DF1CBE48C700217C24 /* ZeusHud.swift */; };
 		4519C0E21CBE4F4100217C24 /* ZeusHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0E11CBE4F4100217C24 /* ZeusHelper.swift */; };
@@ -129,6 +134,11 @@
 		45186B901CC8A9990023BE4C /* EditClientVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditClientVC.swift; sourceTree = "<group>"; };
 		45186B961CC8AD9F0023BE4C /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		4518E16E1CD3335E00B69277 /* EditHospitalVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditHospitalVC.swift; sourceTree = "<group>"; };
+		451935171CD882A6001C3790 /* ActivityDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailVC.swift; sourceTree = "<group>"; };
+		451935191CD882BE001C3790 /* ActivityDetailVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActivityDetailVC.storyboard; sourceTree = "<group>"; };
+		4519351C1CD8872B001C3790 /* MoreOperationsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreOperationsView.swift; sourceTree = "<group>"; };
+		4519351E1CD88AF5001C3790 /* OperationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationCell.swift; sourceTree = "<group>"; };
+		451935201CD88C41001C3790 /* CancelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelCell.swift; sourceTree = "<group>"; };
 		4519C0DD1CBDEB7700217C24 /* LoginVerifyMobileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVerifyMobileVC.swift; sourceTree = "<group>"; };
 		4519C0DF1CBE48C700217C24 /* ZeusHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusHud.swift; sourceTree = "<group>"; };
 		4519C0E11CBE4F4100217C24 /* ZeusHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusHelper.swift; sourceTree = "<group>"; };
@@ -313,6 +323,25 @@
 			name = Realm;
 			sourceTree = "<group>";
 		};
+		451935161CD88286001C3790 /* 活动详情 */ = {
+			isa = PBXGroup;
+			children = (
+				451935171CD882A6001C3790 /* ActivityDetailVC.swift */,
+				451935191CD882BE001C3790 /* ActivityDetailVC.storyboard */,
+			);
+			name = "活动详情";
+			sourceTree = "<group>";
+		};
+		4519351B1CD8870E001C3790 /* 活动详情 */ = {
+			isa = PBXGroup;
+			children = (
+				4519351C1CD8872B001C3790 /* MoreOperationsView.swift */,
+				4519351E1CD88AF5001C3790 /* OperationCell.swift */,
+				451935201CD88C41001C3790 /* CancelCell.swift */,
+			);
+			name = "活动详情";
+			sourceTree = "<group>";
+		};
 		4519C0DC1CBDEB5000217C24 /* 登录 */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,6 +493,7 @@
 		458C270E1CAA6915004575FC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4519351B1CD8870E001C3790 /* 活动详情 */,
 				451C47CE1CC0CBCB00F197DA /* UserCountLabel.swift */,
 				451FF6D41CBCE4E100E31344 /* BorderTextField.swift */,
 				451EA0031CB4FB88004FE212 /* Buttons */,
@@ -475,6 +505,7 @@
 		458C270F1CAA698F004575FC /* 活动 */ = {
 			isa = PBXGroup;
 			children = (
+				451935161CD88286001C3790 /* 活动详情 */,
 				4523B3FA1CACFD4E00811E50 /* 新建活动 */,
 				4523B3F21CACD0CE00811E50 /* 历史活动 */,
 				458C271B1CAA7AA3004575FC /* Cells */,
@@ -750,6 +781,7 @@
 				45D052331CAA594400BB1738 /* Assets.xcassets in Resources */,
 				451562F91CBF702B005CE865 /* RelateEachOtherVC.storyboard in Resources */,
 				451563081CBF79C5005CE865 /* RelateEachOtherCell.xib in Resources */,
+				4519351A1CD882BE001C3790 /* ActivityDetailVC.storyboard in Resources */,
 				451562F51CBF6AAC005CE865 /* MyRelatedUserVC.storyboard in Resources */,
 				451562FD1CBF707C005CE865 /* AddRelatedUserVC.storyboard in Resources */,
 				458C27211CAA7AFE004575FC /* ActivityCell.xib in Resources */,
@@ -831,6 +863,7 @@
 				4518E16F1CD3335E00B69277 /* EditHospitalVC.swift in Sources */,
 				4507EB541CBB980F007F3A5F /* LoginRegisterVC.swift in Sources */,
 				45175A971CAE0A9400D42A47 /* PublishButtonView.swift in Sources */,
+				4519351D1CD8872B001C3790 /* MoreOperationsView.swift in Sources */,
 				4523B3F11CACBDDC00811E50 /* UIFont+Zeus.swift in Sources */,
 				451562EC1CBF2C8F005CE865 /* ShowFirstStepVC.swift in Sources */,
 				451FF6D71CBCE68F00E31344 /* LoginByMobileVC.swift in Sources */,
@@ -850,6 +883,7 @@
 				458C271A1CAA6E24004575FC /* ProfileViewController.swift in Sources */,
 				458C27131CAA6D8E004575FC /* ActivityViewController.swift in Sources */,
 				4519C0E21CBE4F4100217C24 /* ZeusHelper.swift in Sources */,
+				451935211CD88C41001C3790 /* CancelCell.swift in Sources */,
 				4507EB5A1CBBB3CC007F3A5F /* FeedbackViewController.swift in Sources */,
 				451DAE791CD1F7BC00B0B8EC /* EditPositionVC.swift in Sources */,
 				4519C0E01CBE48C700217C24 /* ZeusHud.swift in Sources */,
@@ -870,12 +904,14 @@
 				45186B911CC8A9990023BE4C /* EditClientVC.swift in Sources */,
 				451563011CBF73C9005CE865 /* MyRelatedUserCell.swift in Sources */,
 				458C27181CAA6E05004575FC /* ClientViewController.swift in Sources */,
+				4519351F1CD88AF5001C3790 /* OperationCell.swift in Sources */,
 				4507EB5E1CBBB51E007F3A5F /* AboutViewController.swift in Sources */,
 				45167BC01CD069F2000C8FEE /* TableHeaderView.swift in Sources */,
 				451FF6DB1CBCEC9C00E31344 /* VerifyMobileVC.swift in Sources */,
 				4519C0DE1CBDEB7700217C24 /* LoginVerifyMobileVC.swift in Sources */,
 				451DAE721CD1AD5F00B0B8EC /* EditBaseVC.swift in Sources */,
 				451562F01CBF2CB5005CE865 /* ShowThirdStepVC.swift in Sources */,
+				451935181CD882A6001C3790 /* ActivityDetailVC.swift in Sources */,
 				451FF6CF1CBCD68000E31344 /* BorderButton.swift in Sources */,
 				451FF6D91CBCE6C300E31344 /* RegisterByMobileVC.swift in Sources */,
 			);

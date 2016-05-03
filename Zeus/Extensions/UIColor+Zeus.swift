@@ -80,4 +80,12 @@ extension UIColor{
     class func zeusBorderColor()->UIColor {
         return UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1)
     }
+    
+    class func zeusDefaultTextColor()->UIColor {
+        return UIColor(red: 0.26, green: 0.29, blue: 0.32, alpha: 1.0)
+    }
+    
+    class func zeusCellSelectedBackgroundColor()->UIColor {
+        return UIColor(red: 0.89, green: 0.88, blue: 0.86, alpha: 1.0)
+    }
 }

@@ -25,7 +25,11 @@ class ActivityViewController: BaseViewController {
 extension ActivityViewController:UITableViewDelegate{
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        defer{
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        }
+        let activityDetailVC = UIViewController.controllerWith(storyboardName: "ActivityDetailVC", viewControllerId: "ActivityDetailVC")
+        navigationController?.pushViewController(activityDetailVC, animated: true)
     }
     
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
