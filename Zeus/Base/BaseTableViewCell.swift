@@ -11,7 +11,7 @@ import UIKit
 
 class BaseTableViewCell: UITableViewCell {
 
-    class func heightOfCell()->CGFloat {
+    class func heightOfCell() -> CGFloat {
         return 50
     }
   
@@ -20,6 +20,15 @@ class BaseTableViewCell: UITableViewCell {
         // Initialization code
     }
 
+    override var layoutMargins: UIEdgeInsets{
+        set{
+            
+        }
+        get{
+            return UIEdgeInsetsZero
+        }
+    }
+    
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

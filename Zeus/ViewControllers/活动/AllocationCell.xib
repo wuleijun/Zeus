@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="AllocationCell" customModule="Zeus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="同事张三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SR7-1z-pSp">
+                        <rect key="frame" x="15" y="10" width="64" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已分配3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwj-4I-CYs">
+                        <rect key="frame" x="15" y="32" width="50.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sHm-IK-Xz2">
+                        <rect key="frame" x="249" y="32.5" width="35" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    </textField>
+                    <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9c8-MI-jXy">
+                        <rect key="frame" x="284" y="30" width="21" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="21" id="Adl-TF-eXh"/>
+                            <constraint firstAttribute="height" constant="21" id="pOd-V1-YEE"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="quotaallocation_reduce"/>
+                        <connections>
+                            <action selector="addAndReduce_Touch:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hOt-EE-A4D"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1Y-Yi-8pP">
+                        <rect key="frame" x="228" y="30" width="21" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="21" id="bRk-02-gZI"/>
+                            <constraint firstAttribute="height" constant="21" id="dLK-PO-4qR"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="quotaallocation_add"/>
+                        <connections>
+                            <action selector="addAndReduce_Touch:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GOD-AL-4cd"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="zwj-4I-CYs" secondAttribute="bottom" constant="10.5" id="2k7-tr-pJ9"/>
+                    <constraint firstItem="zwj-4I-CYs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="E5F-BG-rYz"/>
+                    <constraint firstItem="P1Y-Yi-8pP" firstAttribute="centerY" secondItem="9c8-MI-jXy" secondAttribute="centerY" id="W2h-Jx-4B6"/>
+                    <constraint firstItem="SR7-1z-pSp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="i3D-hl-MLf"/>
+                    <constraint firstAttribute="trailing" secondItem="9c8-MI-jXy" secondAttribute="trailing" constant="15" id="kCz-Tq-anx"/>
+                    <constraint firstItem="9c8-MI-jXy" firstAttribute="leading" secondItem="sHm-IK-Xz2" secondAttribute="trailing" id="olX-iF-epy"/>
+                    <constraint firstItem="sHm-IK-Xz2" firstAttribute="leading" secondItem="P1Y-Yi-8pP" secondAttribute="trailing" id="sm7-c1-YBb"/>
+                    <constraint firstItem="9c8-MI-jXy" firstAttribute="leading" secondItem="P1Y-Yi-8pP" secondAttribute="trailing" constant="35" id="tOH-HV-YVy"/>
+                    <constraint firstItem="sHm-IK-Xz2" firstAttribute="centerY" secondItem="9c8-MI-jXy" secondAttribute="centerY" id="tVX-sb-Tia"/>
+                    <constraint firstItem="SR7-1z-pSp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="v1z-0V-v8R"/>
+                    <constraint firstItem="9c8-MI-jXy" firstAttribute="centerY" secondItem="zwj-4I-CYs" secondAttribute="centerY" id="vCR-4a-lws"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="countTextField" destination="sHm-IK-Xz2" id="R9c-BW-6lm"/>
+            </connections>
+            <point key="canvasLocation" x="245" y="230"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="quotaallocation_add" width="21" height="21"/>
+        <image name="quotaallocation_reduce" width="21" height="21"/>
+    </resources>
+</document>

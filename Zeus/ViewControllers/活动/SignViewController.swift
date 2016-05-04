@@ -38,10 +38,8 @@ class SignViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideNavigationBarShadow()
         progressHeightConstraint.constant = 5
-        
-        navigationController?.navigationBar.shadowImage = UIImage()
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
         // Do any additional setup after loading the view.
     }
 

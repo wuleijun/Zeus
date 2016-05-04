@@ -13,4 +13,12 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.zeusBackgroundColor()
     }
+    
+    /**
+     隐藏导航栏阴影
+     */
+    func hideNavigationBarShadow() {
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+    }
 }

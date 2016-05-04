@@ -90,6 +90,10 @@
 		45D052361CAA594400BB1738 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D052341CAA594400BB1738 /* LaunchScreen.storyboard */; };
 		45D052411CAA594400BB1738 /* ZeusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D052401CAA594400BB1738 /* ZeusTests.swift */; };
 		45D0524C1CAA594400BB1738 /* ZeusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D0524B1CAA594400BB1738 /* ZeusUITests.swift */; };
+		45E51A1C1CD9EA3A004C45CA /* AllocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E51A1B1CD9EA3A004C45CA /* AllocationViewController.swift */; };
+		45E51A1E1CD9EA71004C45CA /* AllocationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E51A1D1CD9EA71004C45CA /* AllocationViewController.storyboard */; };
+		45E51A221CD9F26F004C45CA /* AllocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E51A201CD9F26F004C45CA /* AllocationCell.swift */; };
+		45E51A231CD9F26F004C45CA /* AllocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E51A211CD9F26F004C45CA /* AllocationCell.xib */; };
 		45E71AC91CBB7C4C00FC26CF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E71AC81CBB7C4C00FC26CF /* SettingsViewController.swift */; };
 		45E71ACD1CBB7D5000FC26CF /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E71ACC1CBB7D5000FC26CF /* SettingsViewController.storyboard */; };
 		45E71AD01CBB937300FC26CF /* ZeusAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E71ACF1CBB937300FC26CF /* ZeusAlert.swift */; };
@@ -204,6 +208,10 @@
 		45D052471CAA594400BB1738 /* ZeusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D0524B1CAA594400BB1738 /* ZeusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeusUITests.swift; sourceTree = "<group>"; };
 		45D0524D1CAA594400BB1738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45E51A1B1CD9EA3A004C45CA /* AllocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllocationViewController.swift; sourceTree = "<group>"; };
+		45E51A1D1CD9EA71004C45CA /* AllocationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AllocationViewController.storyboard; sourceTree = "<group>"; };
+		45E51A201CD9F26F004C45CA /* AllocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllocationCell.swift; sourceTree = "<group>"; };
+		45E51A211CD9F26F004C45CA /* AllocationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AllocationCell.xib; sourceTree = "<group>"; };
 		45E71AC81CBB7C4C00FC26CF /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		45E71ACC1CBB7D5000FC26CF /* SettingsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
 		45E71ACF1CBB937300FC26CF /* ZeusAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusAlert.swift; sourceTree = "<group>"; };
@@ -338,6 +346,7 @@
 		451935161CD88286001C3790 /* 活动详情 */ = {
 			isa = PBXGroup;
 			children = (
+				45E51A1A1CD9EA17004C45CA /* 分配名额 */,
 				451935221CD8938E001C3790 /* 签到 */,
 				451935171CD882A6001C3790 /* ActivityDetailVC.swift */,
 				451935191CD882BE001C3790 /* ActivityDetailVC.storyboard */,
@@ -651,6 +660,25 @@
 			path = ZeusUITests;
 			sourceTree = "<group>";
 		};
+		45E51A1A1CD9EA17004C45CA /* 分配名额 */ = {
+			isa = PBXGroup;
+			children = (
+				45E51A1F1CD9F242004C45CA /* Cell */,
+				45E51A1B1CD9EA3A004C45CA /* AllocationViewController.swift */,
+				45E51A1D1CD9EA71004C45CA /* AllocationViewController.storyboard */,
+			);
+			name = "分配名额";
+			sourceTree = "<group>";
+		};
+		45E51A1F1CD9F242004C45CA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				45E51A201CD9F26F004C45CA /* AllocationCell.swift */,
+				45E51A211CD9F26F004C45CA /* AllocationCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		45E71AC71CBB7C1500FC26CF /* 系统设置 */ = {
 			isa = PBXGroup;
 			children = (
@@ -811,9 +839,11 @@
 				4523B3F91CACD1CA00811E50 /* HistoryActivityVC.storyboard in Resources */,
 				4519352B1CD8A487001C3790 /* SignClientCell.xib in Resources */,
 				4523B40F1CAD16B700811E50 /* ClientTypeVC.storyboard in Resources */,
+				45E51A231CD9F26F004C45CA /* AllocationCell.xib in Resources */,
 				45D052361CAA594400BB1738 /* LaunchScreen.storyboard in Resources */,
 				457C6AD11CB642AE0065E883 /* EditInfoViewController.storyboard in Resources */,
 				4523B3FF1CACFDD500811E50 /* AddActivityVC.storyboard in Resources */,
+				45E51A1E1CD9EA71004C45CA /* AllocationViewController.storyboard in Resources */,
 				45D052331CAA594400BB1738 /* Assets.xcassets in Resources */,
 				451562F91CBF702B005CE865 /* RelateEachOtherVC.storyboard in Resources */,
 				451563081CBF79C5005CE865 /* RelateEachOtherCell.xib in Resources */,
@@ -903,6 +933,7 @@
 				4523B3F11CACBDDC00811E50 /* UIFont+Zeus.swift in Sources */,
 				451562EC1CBF2C8F005CE865 /* ShowFirstStepVC.swift in Sources */,
 				451FF6D71CBCE68F00E31344 /* LoginByMobileVC.swift in Sources */,
+				45E51A221CD9F26F004C45CA /* AllocationCell.swift in Sources */,
 				45224B8E1CC7595700DE3054 /* ClientTableCell.swift in Sources */,
 				451935241CD893AA001C3790 /* SignViewController.swift in Sources */,
 				45186B971CC8AD9F0023BE4C /* Client.swift in Sources */,
@@ -938,6 +969,7 @@
 				451FF6E11CBD009400E31344 /* ZeusConfig.swift in Sources */,
 				451FF6D51CBCE4E100E31344 /* BorderTextField.swift in Sources */,
 				458C27231CAA7C04004575FC /* BaseTableViewCell.swift in Sources */,
+				45E51A1C1CD9EA3A004C45CA /* AllocationViewController.swift in Sources */,
 				451DAE771CD1F4B200B0B8EC /* EditSectionVC.swift in Sources */,
 				458C271F1CAA7AF0004575FC /* ActivityCell.swift in Sources */,
 				451EA0071CB4FD68004FE212 /* InfoViewController.swift in Sources */,
