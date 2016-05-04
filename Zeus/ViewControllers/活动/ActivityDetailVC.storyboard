@@ -16,7 +16,19 @@
                     <view key="view" contentMode="scaleToFill" id="NPE-nI-7Fg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qcf-Vu-lNL">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qcf-Vu-lNL" firstAttribute="top" secondItem="S3x-CF-IHG" secondAttribute="bottom" id="4fG-6v-J7l"/>
+                            <constraint firstAttribute="trailing" secondItem="Qcf-Vu-lNL" secondAttribute="trailing" id="8Eq-PU-c21"/>
+                            <constraint firstItem="Pay-GJ-QNz" firstAttribute="top" secondItem="Qcf-Vu-lNL" secondAttribute="bottom" id="Agc-rl-LSL"/>
+                            <constraint firstItem="Qcf-Vu-lNL" firstAttribute="leading" secondItem="NPE-nI-7Fg" secondAttribute="leading" id="T64-rD-p3M"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="活动详情" id="MUH-CI-KDs">
                         <barButtonItem key="rightBarButtonItem" style="done" id="Z2E-wJ-mua">

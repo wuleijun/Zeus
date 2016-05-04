@@ -25,6 +25,10 @@ class Client: Object {
         self.name = name
         self.firstLetter = firstLetter
     }
+    
+    override class func primaryKey()->String? {
+        return "name"
+    }
 }
 
 struct ClientSection {
@@ -55,8 +59,9 @@ func addTestClients() {
     for letter in initialLetters {
         for index in 1...5 {
             let client = Client(name: "\(letter)-\(index)", firstLetter: letter)
-            try! realm.write({ 
-                realm.add(client)
+            try! realm.write({
+                //只有含有主键primaryKey的对象，才可以传update，
+                realm.add(client,update: true)
             })
         }
     }
