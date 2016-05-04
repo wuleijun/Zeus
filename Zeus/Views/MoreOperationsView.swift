@@ -10,8 +10,8 @@ import UIKit
 
 class MoreOperationsView: UIView {
 
-    static let rowHeight:CGFloat = 50
-    let totalHeight: CGFloat = rowHeight * 5
+    static let rowHeight:CGFloat = 45
+    let totalHeight: CGFloat = rowHeight * 6
     
     lazy var containerView: UIView = {
         let view = UIView()
@@ -182,15 +182,19 @@ extension MoreOperationsView: UITableViewDataSource, UITableViewDelegate {
     enum Row: Int {
         case Allocation = 0
         case ClientInvite
+        case Member
         case AuthSign
         case Sign
         case Cancel
+        
         var title: String {
             switch self {
             case .Allocation:
                 return "名额分配"
             case .ClientInvite:
                 return "客户邀请"
+            case .Member:
+                return "名单查看"
             case .AuthSign:
                 return "授权签到"
             case .Sign:
@@ -206,7 +210,7 @@ extension MoreOperationsView: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 6
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -256,7 +260,8 @@ extension MoreOperationsView: UITableViewDataSource, UITableViewDelegate {
             case .ClientInvite:
                 createClientInviteAction?()
                 hide()
-    
+            case .Member:
+                hide()
             case .AuthSign:
                 createAuthSignAction?()
                 hide()
