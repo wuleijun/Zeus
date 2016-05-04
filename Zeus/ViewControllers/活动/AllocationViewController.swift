@@ -43,6 +43,10 @@ class AllocationViewController: BaseViewController {
         }
     }
     
+    // MARK: Actions
+    @IBAction func addMember_Touch(sender: AnyObject) {
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -61,6 +65,7 @@ class AllocationViewController: BaseViewController {
 
 }
 
+// MARK: TableView DataSource
 extension AllocationViewController : UITableViewDataSource {
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -78,6 +83,7 @@ extension AllocationViewController : UITableViewDataSource {
     
 }
 
+// MARK: TableView Delegate
 extension AllocationViewController : UITableViewDelegate {
     
     func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
