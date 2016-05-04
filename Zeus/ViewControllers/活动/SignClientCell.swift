@@ -10,6 +10,8 @@ import UIKit
 
 class SignClientCell: BaseTableViewCell {
 
+    @IBOutlet weak var signButton: SignButton!
+    
     override class func heightOfCell()->CGFloat {
         return 145
     }

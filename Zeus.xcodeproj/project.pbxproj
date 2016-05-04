@@ -13,6 +13,7 @@
 		4507EB5C1CBBB3E5007F3A5F /* FeedbackViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4507EB5B1CBBB3E5007F3A5F /* FeedbackViewController.storyboard */; };
 		4507EB5E1CBBB51E007F3A5F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507EB5D1CBBB51E007F3A5F /* AboutViewController.swift */; };
 		4507EB601CBBB54C007F3A5F /* AboutViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4507EB5F1CBBB54C007F3A5F /* AboutViewController.storyboard */; };
+		45141FC11CD99053007CEF6F /* SignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45141FC01CD99053007CEF6F /* SignButton.swift */; };
 		451562EC1CBF2C8F005CE865 /* ShowFirstStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451562EB1CBF2C8F005CE865 /* ShowFirstStepVC.swift */; };
 		451562EE1CBF2CA4005CE865 /* ShowSecondStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451562ED1CBF2CA4005CE865 /* ShowSecondStepVC.swift */; };
 		451562F01CBF2CB5005CE865 /* ShowThirdStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451562EF1CBF2CB5005CE865 /* ShowThirdStepVC.swift */; };
@@ -120,6 +121,7 @@
 		4507EB5B1CBBB3E5007F3A5F /* FeedbackViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FeedbackViewController.storyboard; sourceTree = "<group>"; };
 		4507EB5D1CBBB51E007F3A5F /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		4507EB5F1CBBB54C007F3A5F /* AboutViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutViewController.storyboard; sourceTree = "<group>"; };
+		45141FC01CD99053007CEF6F /* SignButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignButton.swift; sourceTree = "<group>"; };
 		451562EB1CBF2C8F005CE865 /* ShowFirstStepVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowFirstStepVC.swift; sourceTree = "<group>"; };
 		451562ED1CBF2CA4005CE865 /* ShowSecondStepVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowSecondStepVC.swift; sourceTree = "<group>"; };
 		451562EF1CBF2CB5005CE865 /* ShowThirdStepVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowThirdStepVC.swift; sourceTree = "<group>"; };
@@ -405,6 +407,7 @@
 			isa = PBXGroup;
 			children = (
 				451FF6CE1CBCD68000E31344 /* BorderButton.swift */,
+				45141FC01CD99053007CEF6F /* SignButton.swift */,
 			);
 			name = Buttons;
 			sourceTree = "<group>";
@@ -911,6 +914,7 @@
 				457C6AD31CB642CF0065E883 /* EditInfoViewController.swift in Sources */,
 				451563071CBF79C5005CE865 /* RelateEachOtherCell.swift in Sources */,
 				4523B4041CAD12EA00811E50 /* ClientTypeVC.swift in Sources */,
+				45141FC11CD99053007CEF6F /* SignButton.swift in Sources */,
 				451562EE1CBF2CA4005CE865 /* ShowSecondStepVC.swift in Sources */,
 				457C6AD61CB655B90065E883 /* UIViewController+Zeus.swift in Sources */,
 				451DAE7D1CD1FC3500B0B8EC /* ZeusActionSheet.swift in Sources */,

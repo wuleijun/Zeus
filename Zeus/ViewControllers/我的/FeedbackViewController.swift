@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import KeyboardMan
 
 class FeedbackViewController: BaseViewController {
 
@@ -24,7 +23,6 @@ class FeedbackViewController: BaseViewController {
             doneButton.enabled = false
         }
     }
-    var keyboardMan = KeyboardMan()
     
 
     override func viewDidLoad() {

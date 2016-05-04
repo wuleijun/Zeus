@@ -8,11 +8,15 @@
 
 import UIKit
 
-@IBDesignable
+
 class SeprateView: UIView {
 
-    @IBInspectable var lineHeight: CGFloat = 1 / UIScreen.mainScreen().scale
-    @IBInspectable var seprateLineColor: UIColor = UIColor.lightGrayColor()
+    var lineHeight: CGFloat = 1 / UIScreen.mainScreen().scale
+    var seprateLineColor: UIColor = UIColor.lightGrayColor()
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
     
     override func didMoveToSuperview() {
         super.didMoveToSuperview()

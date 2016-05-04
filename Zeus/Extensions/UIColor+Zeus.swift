@@ -88,4 +88,10 @@ extension UIColor{
     class func zeusCellSelectedBackgroundColor()->UIColor {
         return UIColor(red: 0.89, green: 0.88, blue: 0.86, alpha: 1.0)
     }
+    /**
+     DisableButton 背景
+     */
+    class func zeusDisableButtonBackgroundColor()->UIColor {
+        return UIColor(red: 0.82, green: 0.82, blue: 0.82, alpha: 1.0)
+    }
 }

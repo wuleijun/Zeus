@@ -78,6 +78,9 @@ extension SignViewController : UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let clientCell = tableView.dequeueReusableCellWithIdentifier(signClientCell) as! SignClientCell
+        if indexPath.row == 0 {
+            clientCell.signButton.signStatus = .Signed
+        }
         return clientCell
     }
 

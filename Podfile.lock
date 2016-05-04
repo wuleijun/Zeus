@@ -1,6 +1,5 @@
 PODS:
   - Alamofire (3.3.1)
-  - ASProgressPopUpView (0.8)
   - IQKeyboardManagerSwift (4.0.2)
   - Kingfisher (2.2.2)
   - Proposer (0.8.0)
@@ -17,7 +16,6 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - ASProgressPopUpView
   - IQKeyboardManagerSwift
   - Kingfisher
   - Proposer
@@ -28,7 +26,6 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
-  ASProgressPopUpView: 945c19297da09a625db48a5a37cabd7756916b9b
   IQKeyboardManagerSwift: 2f2c19c509f67c4c0df2826db54033d3e090ce65
   Kingfisher: 7e8de5b0cf7b5dc8ec559d193029a0859df93ef1
   Proposer: 17cd7fd2509b0d8d7c9e33815d648087c7dcaa81
