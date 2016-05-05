@@ -45,6 +45,8 @@ class AllocationViewController: BaseViewController {
     
     // MARK: Actions
     @IBAction func addMember_Touch(sender: AnyObject) {
+        let chooseMemberVC = UIViewController.controllerWith(storyboardName: "ChooseMemberVC", viewControllerId: "ChooseMemberVC") as! ChooseMemberVC
+        navigationController?.pushViewController(chooseMemberVC, animated: true)
     }
     
     override func didReceiveMemoryWarning() {

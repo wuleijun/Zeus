@@ -14,6 +14,10 @@
 		4507EB5E1CBBB51E007F3A5F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507EB5D1CBBB51E007F3A5F /* AboutViewController.swift */; };
 		4507EB601CBBB54C007F3A5F /* AboutViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4507EB5F1CBBB54C007F3A5F /* AboutViewController.storyboard */; };
 		45141FC11CD99053007CEF6F /* SignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45141FC01CD99053007CEF6F /* SignButton.swift */; };
+		451460F81CDB16A2003F0742 /* ChooseMemberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451460F71CDB16A2003F0742 /* ChooseMemberVC.swift */; };
+		451460FC1CDB1809003F0742 /* ChooseRelatedUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451460FA1CDB1809003F0742 /* ChooseRelatedUserCell.swift */; };
+		451460FD1CDB1809003F0742 /* ChooseRelatedUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451460FB1CDB1809003F0742 /* ChooseRelatedUserCell.xib */; };
+		451460FF1CDB1C40003F0742 /* ChooseMemberVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451460FE1CDB1C40003F0742 /* ChooseMemberVC.storyboard */; };
 		451562EC1CBF2C8F005CE865 /* ShowFirstStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451562EB1CBF2C8F005CE865 /* ShowFirstStepVC.swift */; };
 		451562EE1CBF2CA4005CE865 /* ShowSecondStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451562ED1CBF2CA4005CE865 /* ShowSecondStepVC.swift */; };
 		451562F01CBF2CB5005CE865 /* ShowThirdStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451562EF1CBF2CB5005CE865 /* ShowThirdStepVC.swift */; };
@@ -126,6 +130,10 @@
 		4507EB5D1CBBB51E007F3A5F /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		4507EB5F1CBBB54C007F3A5F /* AboutViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutViewController.storyboard; sourceTree = "<group>"; };
 		45141FC01CD99053007CEF6F /* SignButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignButton.swift; sourceTree = "<group>"; };
+		451460F71CDB16A2003F0742 /* ChooseMemberVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseMemberVC.swift; sourceTree = "<group>"; };
+		451460FA1CDB1809003F0742 /* ChooseRelatedUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseRelatedUserCell.swift; sourceTree = "<group>"; };
+		451460FB1CDB1809003F0742 /* ChooseRelatedUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseRelatedUserCell.xib; sourceTree = "<group>"; };
+		451460FE1CDB1C40003F0742 /* ChooseMemberVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChooseMemberVC.storyboard; sourceTree = "<group>"; };
 		451562EB1CBF2C8F005CE865 /* ShowFirstStepVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowFirstStepVC.swift; sourceTree = "<group>"; };
 		451562ED1CBF2CA4005CE865 /* ShowSecondStepVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowSecondStepVC.swift; sourceTree = "<group>"; };
 		451562EF1CBF2CB5005CE865 /* ShowThirdStepVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowThirdStepVC.swift; sourceTree = "<group>"; };
@@ -272,6 +280,25 @@
 				4507EB5F1CBBB54C007F3A5F /* AboutViewController.storyboard */,
 			);
 			name = "关于";
+			sourceTree = "<group>";
+		};
+		451460F61CDB1669003F0742 /* 选择我的关联 */ = {
+			isa = PBXGroup;
+			children = (
+				451460F91CDB17BE003F0742 /* Cell */,
+				451460F71CDB16A2003F0742 /* ChooseMemberVC.swift */,
+				451460FE1CDB1C40003F0742 /* ChooseMemberVC.storyboard */,
+			);
+			name = "选择我的关联";
+			sourceTree = "<group>";
+		};
+		451460F91CDB17BE003F0742 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				451460FA1CDB1809003F0742 /* ChooseRelatedUserCell.swift */,
+				451460FB1CDB1809003F0742 /* ChooseRelatedUserCell.xib */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		451562EA1CBF2B71005CE865 /* 宣传页 */ = {
@@ -548,6 +575,7 @@
 		458C270F1CAA698F004575FC /* 活动 */ = {
 			isa = PBXGroup;
 			children = (
+				451460F61CDB1669003F0742 /* 选择我的关联 */,
 				451935161CD88286001C3790 /* 活动详情 */,
 				4523B3FA1CACFD4E00811E50 /* 新建活动 */,
 				4523B3F21CACD0CE00811E50 /* 历史活动 */,
@@ -609,7 +637,10 @@
 				8C4805F9BB3D2076624D1800 /* Pods */,
 				FC692B0599AC567BCCB49FFF /* Frameworks */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
 		};
 		45D052271CAA594300BB1738 /* Products */ = {
 			isa = PBXGroup;
@@ -826,6 +857,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451460FD1CDB1809003F0742 /* ChooseRelatedUserCell.xib in Resources */,
 				451EA00A1CB4FEA0004FE212 /* InfoViewController.storyboard in Resources */,
 				4507EB5C1CBBB3E5007F3A5F /* FeedbackViewController.storyboard in Resources */,
 				45167BBD1CD06165000C8FEE /* EditClientVC.storyboard in Resources */,
@@ -835,6 +867,7 @@
 				4507EB521CBB9796007F3A5F /* LoginAndRegister.storyboard in Resources */,
 				451563021CBF73C9005CE865 /* MyRelatedUserCell.xib in Resources */,
 				451935261CD893BE001C3790 /* SignViewController.storyboard in Resources */,
+				451460FF1CDB1C40003F0742 /* ChooseMemberVC.storyboard in Resources */,
 				45224B8F1CC7595700DE3054 /* ClientTableCell.xib in Resources */,
 				4523B3F91CACD1CA00811E50 /* HistoryActivityVC.storyboard in Resources */,
 				4519352B1CD8A487001C3790 /* SignClientCell.xib in Resources */,
@@ -954,6 +987,7 @@
 				4519C0E21CBE4F4100217C24 /* ZeusHelper.swift in Sources */,
 				451935211CD88C41001C3790 /* CancelCell.swift in Sources */,
 				4507EB5A1CBBB3CC007F3A5F /* FeedbackViewController.swift in Sources */,
+				451460F81CDB16A2003F0742 /* ChooseMemberVC.swift in Sources */,
 				451DAE791CD1F7BC00B0B8EC /* EditPositionVC.swift in Sources */,
 				4519352F1CD8B1F6001C3790 /* SeprateView.swift in Sources */,
 				4519C0E01CBE48C700217C24 /* ZeusHud.swift in Sources */,
@@ -978,6 +1012,7 @@
 				458C27181CAA6E05004575FC /* ClientViewController.swift in Sources */,
 				4519351F1CD88AF5001C3790 /* OperationCell.swift in Sources */,
 				4507EB5E1CBBB51E007F3A5F /* AboutViewController.swift in Sources */,
+				451460FC1CDB1809003F0742 /* ChooseRelatedUserCell.swift in Sources */,
 				45167BC01CD069F2000C8FEE /* TableHeaderView.swift in Sources */,
 				451FF6DB1CBCEC9C00E31344 /* VerifyMobileVC.swift in Sources */,
 				4519C0DE1CBDEB7700217C24 /* LoginVerifyMobileVC.swift in Sources */,
