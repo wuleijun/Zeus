@@ -75,7 +75,7 @@ extension ChooseMemberVC : UITableViewDelegate {
                 selectedUser.removeAtIndex(index)
             }
         }else {
-            selectedUser.insert(indexPath, atIndex: 0)
+            selectedUser.append(indexPath)
         }
         tableView.reloadData()
     }

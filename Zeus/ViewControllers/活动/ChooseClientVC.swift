@@ -13,7 +13,6 @@ class ChooseClientVC: BaseViewController {
     
     let chooseClientCellId = "ChooseClientCell"
     
-    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!{
         didSet{
