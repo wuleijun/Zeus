@@ -42,6 +42,11 @@ class ClientInviteVC: BaseViewController {
         }
     }
     
+    @IBAction func addClient_Touch(sender: AnyObject) {
+        let chooseClientVC = UIViewController.controllerWith(storyboardName: "ChooseClientVC", viewControllerId: "ChooseClientVC") as! ChooseClientVC
+        navigationController?.pushViewController(chooseClientVC, animated: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -25,7 +25,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="2" id="GsO-9q-xBi"/>
+                                            <constraint firstAttribute="height" priority="250" constant="2" id="GsO-9q-xBi"/>
                                         </constraints>
                                         <color key="progressTintColor" red="0.33725490200000002" green="0.58039215690000001" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </progressView>
@@ -74,6 +74,9 @@
                                 <rect key="frame" x="335" y="10" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="activity_add"/>
+                                <connections>
+                                    <action selector="addClient_Touch:" destination="bQg-89-lSy" eventType="touchUpInside" id="cFh-5w-iG9"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
