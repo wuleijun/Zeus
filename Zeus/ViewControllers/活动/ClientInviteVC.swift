@@ -87,6 +87,9 @@ extension ClientInviteVC : UITableViewDelegate {
         defer {
             tableView.deselectRowAtIndexPath(indexPath, animated: false)
         }
+        let clientDetailVC = UIViewController.controllerWith(storyboardName: "EditClientVC", viewControllerId: "EditClientVC") as! EditClientVC
+        clientDetailVC.type = ControllerType.ClientInviteStatus
+        navigationController?.pushViewController(clientDetailVC, animated: true)
     }
     
 }

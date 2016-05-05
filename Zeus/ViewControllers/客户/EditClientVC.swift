@@ -16,13 +16,18 @@ import Proposer
  - Edit:    编辑
  */
 enum ControllerType {
-    case Preview, Edit
+    case Preview, Edit, ClientInviteStatus
 }
 
 class EditClientVC: UITableViewController {
 
     let sectionHeaderHeight:CGFloat = 44
     
+    @IBOutlet var clientInviteStatusView: UIView! {
+        didSet{
+            clientInviteStatusView.backgroundColor = UIColor.zeusNavigationBarTintColor()
+        }
+    }
     @IBOutlet weak var editButton: UIButton!
     @IBOutlet weak var avatarButton: UIButton!
     
@@ -30,7 +35,12 @@ class EditClientVC: UITableViewController {
     
     var type:ControllerType = .Preview {
         didSet{
-            editButton.hidden = type == .Preview
+            editButton.hidden = type != .Edit
+            if type == .ClientInviteStatus {
+                tableView.tableHeaderView = clientInviteStatusView
+            }else{
+                tableView.tableHeaderView = nil
+            }
         }
     }
     var client:Client?
@@ -43,10 +53,8 @@ class EditClientVC: UITableViewController {
         if  let client = client {
             type = .Preview
             nameTxtField.text = client.name
-        }else{
-            type = .Edit
         }
-        
+
         tableView.tableFooterView = {
             let footerView = UIView(frame: self.view.frame)
             footerView.backgroundColor = UIColor.clearColor()
