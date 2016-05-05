@@ -52,6 +52,10 @@ class ZeusConfig {
         static let maxSpeaker:Int = 5
     }
     
+    struct CommonUI {
+        static let progressViewHeight:CGFloat = 5
+    }
+    
     /**
      重新获取验证的时间
      
@@ -63,4 +67,6 @@ class ZeusConfig {
     class func verifyCodeLength()-> Int {
         return 4
     }
+    
+    
 }

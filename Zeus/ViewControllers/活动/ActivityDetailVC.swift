@@ -12,6 +12,8 @@ class ActivityDetailVC: BaseViewController {
 
     private lazy var moreOperationView:MoreOperationsView = {
         let moreOperationView = MoreOperationsView()
+        
+        //签到
         moreOperationView.createSignAction = { [weak self] in
             
             if let strongSelf = self {
@@ -25,6 +27,14 @@ class ActivityDetailVC: BaseViewController {
             if let strongSelf = self {
                 let allocationVC = UIViewController.controllerWith(storyboardName: "AllocationViewController", viewControllerId: "AllocationViewController") as! AllocationViewController
                 strongSelf.navigationController?.pushViewController(allocationVC, animated: true)
+            }
+        }
+        
+        //客户邀请
+        moreOperationView.createClientInviteAction = { [weak self] in
+            if let strongSelf = self {
+                let clientInviteVC = UIViewController.controllerWith(storyboardName: "ClientInviteVC", viewControllerId: "ClientInviteVC") as! ClientInviteVC
+                strongSelf.navigationController?.pushViewController(clientInviteVC,animated: true)
             }
         }
         return moreOperationView

@@ -18,6 +18,10 @@
 		451460FC1CDB1809003F0742 /* ChooseRelatedUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451460FA1CDB1809003F0742 /* ChooseRelatedUserCell.swift */; };
 		451460FD1CDB1809003F0742 /* ChooseRelatedUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451460FB1CDB1809003F0742 /* ChooseRelatedUserCell.xib */; };
 		451460FF1CDB1C40003F0742 /* ChooseMemberVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451460FE1CDB1C40003F0742 /* ChooseMemberVC.storyboard */; };
+		451461031CDB220B003F0742 /* ClientInviteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451461021CDB220B003F0742 /* ClientInviteVC.swift */; };
+		451461051CDB221A003F0742 /* ClientInviteVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451461041CDB221A003F0742 /* ClientInviteVC.storyboard */; };
+		451461091CDB2593003F0742 /* ClientInviteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451461071CDB2593003F0742 /* ClientInviteCell.swift */; };
+		4514610A1CDB2593003F0742 /* ClientInviteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451461081CDB2593003F0742 /* ClientInviteCell.xib */; };
 		451562EC1CBF2C8F005CE865 /* ShowFirstStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451562EB1CBF2C8F005CE865 /* ShowFirstStepVC.swift */; };
 		451562EE1CBF2CA4005CE865 /* ShowSecondStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451562ED1CBF2CA4005CE865 /* ShowSecondStepVC.swift */; };
 		451562F01CBF2CB5005CE865 /* ShowThirdStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451562EF1CBF2CB5005CE865 /* ShowThirdStepVC.swift */; };
@@ -134,6 +138,10 @@
 		451460FA1CDB1809003F0742 /* ChooseRelatedUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseRelatedUserCell.swift; sourceTree = "<group>"; };
 		451460FB1CDB1809003F0742 /* ChooseRelatedUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseRelatedUserCell.xib; sourceTree = "<group>"; };
 		451460FE1CDB1C40003F0742 /* ChooseMemberVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChooseMemberVC.storyboard; sourceTree = "<group>"; };
+		451461021CDB220B003F0742 /* ClientInviteVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientInviteVC.swift; sourceTree = "<group>"; };
+		451461041CDB221A003F0742 /* ClientInviteVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClientInviteVC.storyboard; sourceTree = "<group>"; };
+		451461071CDB2593003F0742 /* ClientInviteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientInviteCell.swift; sourceTree = "<group>"; };
+		451461081CDB2593003F0742 /* ClientInviteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientInviteCell.xib; sourceTree = "<group>"; };
 		451562EB1CBF2C8F005CE865 /* ShowFirstStepVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowFirstStepVC.swift; sourceTree = "<group>"; };
 		451562ED1CBF2CA4005CE865 /* ShowSecondStepVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowSecondStepVC.swift; sourceTree = "<group>"; };
 		451562EF1CBF2CB5005CE865 /* ShowThirdStepVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowThirdStepVC.swift; sourceTree = "<group>"; };
@@ -301,6 +309,25 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
+		451461011CDB21D0003F0742 /* 客户邀请 */ = {
+			isa = PBXGroup;
+			children = (
+				451461061CDB2577003F0742 /* Cell */,
+				451461021CDB220B003F0742 /* ClientInviteVC.swift */,
+				451461041CDB221A003F0742 /* ClientInviteVC.storyboard */,
+			);
+			name = "客户邀请";
+			sourceTree = "<group>";
+		};
+		451461061CDB2577003F0742 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				451461071CDB2593003F0742 /* ClientInviteCell.swift */,
+				451461081CDB2593003F0742 /* ClientInviteCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		451562EA1CBF2B71005CE865 /* 宣传页 */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,6 +400,7 @@
 		451935161CD88286001C3790 /* 活动详情 */ = {
 			isa = PBXGroup;
 			children = (
+				451461011CDB21D0003F0742 /* 客户邀请 */,
 				45E51A1A1CD9EA17004C45CA /* 分配名额 */,
 				451935221CD8938E001C3790 /* 签到 */,
 				451935171CD882A6001C3790 /* ActivityDetailVC.swift */,
@@ -860,6 +888,7 @@
 				451460FD1CDB1809003F0742 /* ChooseRelatedUserCell.xib in Resources */,
 				451EA00A1CB4FEA0004FE212 /* InfoViewController.storyboard in Resources */,
 				4507EB5C1CBBB3E5007F3A5F /* FeedbackViewController.storyboard in Resources */,
+				4514610A1CDB2593003F0742 /* ClientInviteCell.xib in Resources */,
 				45167BBD1CD06165000C8FEE /* EditClientVC.storyboard in Resources */,
 				45E71ACD1CBB7D5000FC26CF /* SettingsViewController.storyboard in Resources */,
 				4507EB601CBBB54C007F3A5F /* AboutViewController.storyboard in Resources */,
@@ -867,6 +896,7 @@
 				4507EB521CBB9796007F3A5F /* LoginAndRegister.storyboard in Resources */,
 				451563021CBF73C9005CE865 /* MyRelatedUserCell.xib in Resources */,
 				451935261CD893BE001C3790 /* SignViewController.storyboard in Resources */,
+				451461051CDB221A003F0742 /* ClientInviteVC.storyboard in Resources */,
 				451460FF1CDB1C40003F0742 /* ChooseMemberVC.storyboard in Resources */,
 				45224B8F1CC7595700DE3054 /* ClientTableCell.xib in Resources */,
 				4523B3F91CACD1CA00811E50 /* HistoryActivityVC.storyboard in Resources */,
@@ -966,6 +996,7 @@
 				4523B3F11CACBDDC00811E50 /* UIFont+Zeus.swift in Sources */,
 				451562EC1CBF2C8F005CE865 /* ShowFirstStepVC.swift in Sources */,
 				451FF6D71CBCE68F00E31344 /* LoginByMobileVC.swift in Sources */,
+				451461091CDB2593003F0742 /* ClientInviteCell.swift in Sources */,
 				45E51A221CD9F26F004C45CA /* AllocationCell.swift in Sources */,
 				45224B8E1CC7595700DE3054 /* ClientTableCell.swift in Sources */,
 				451935241CD893AA001C3790 /* SignViewController.swift in Sources */,
@@ -993,6 +1024,7 @@
 				4519C0E01CBE48C700217C24 /* ZeusHud.swift in Sources */,
 				451EA0021CB4F2F2004FE212 /* CellBaseContainerView.swift in Sources */,
 				4523B3FC1CACFD8A00811E50 /* AddActivityVC.swift in Sources */,
+				451461031CDB220B003F0742 /* ClientInviteVC.swift in Sources */,
 				451562FB1CBF705C005CE865 /* AddRelatedUserVC.swift in Sources */,
 				4523B3EF1CACBB9F00811E50 /* UIColor+Zeus.swift in Sources */,
 				451DAE7B1CD1F7EE00B0B8EC /* EditTitleVC.swift in Sources */,

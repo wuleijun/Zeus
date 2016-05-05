@@ -31,7 +31,7 @@ class AllocationViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideNavigationBarShadow()
-        progressHeightConstraint.constant = 5
+        progressHeightConstraint.constant = ZeusConfig.CommonUI.progressViewHeight
         // Do any additional setup after loading the view.
     }
 
