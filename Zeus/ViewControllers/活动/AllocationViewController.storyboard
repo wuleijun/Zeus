@@ -68,6 +68,16 @@
                             <constraint firstAttribute="trailing" secondItem="g0Z-nt-46W" secondAttribute="trailing" id="nW0-Ju-wCD"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="分配名额" id="cSq-AR-Oia">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="IgR-Qj-JLV">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8pq-o7-5a0">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="保存"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
