@@ -269,7 +269,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4507EB501CBB971E007F3A5F /* 登录注册 */ = {
+		4507EB501CBB971E007F3A5F /* Login&Register */ = {
 			isa = PBXGroup;
 			children = (
 				451562EA1CBF2B71005CE865 /* 宣传页 */,
@@ -277,35 +277,35 @@
 				451FF6DE1CBCF1D700E31344 /* 注册 */,
 				4519C0DC1CBDEB5000217C24 /* 登录 */,
 			);
-			name = "登录注册";
+			name = "Login&Register";
 			sourceTree = "<group>";
 		};
-		4507EB571CBBB3A1007F3A5F /* 意见反馈 */ = {
+		4507EB571CBBB3A1007F3A5F /* Feedback */ = {
 			isa = PBXGroup;
 			children = (
 				4507EB591CBBB3CC007F3A5F /* FeedbackViewController.swift */,
 				4507EB5B1CBBB3E5007F3A5F /* FeedbackViewController.storyboard */,
 			);
-			name = "意见反馈";
+			name = Feedback;
 			sourceTree = "<group>";
 		};
-		4507EB581CBBB3A7007F3A5F /* 关于 */ = {
+		4507EB581CBBB3A7007F3A5F /* AboutUs */ = {
 			isa = PBXGroup;
 			children = (
 				4507EB5D1CBBB51E007F3A5F /* AboutViewController.swift */,
 				4507EB5F1CBBB54C007F3A5F /* AboutViewController.storyboard */,
 			);
-			name = "关于";
+			name = AboutUs;
 			sourceTree = "<group>";
 		};
-		451460F61CDB1669003F0742 /* 选择我的关联 */ = {
+		451460F61CDB1669003F0742 /* ChooseFriends */ = {
 			isa = PBXGroup;
 			children = (
 				451460F91CDB17BE003F0742 /* Cell */,
 				451460F71CDB16A2003F0742 /* ChooseMemberVC.swift */,
 				451460FE1CDB1C40003F0742 /* ChooseMemberVC.storyboard */,
 			);
-			name = "选择我的关联";
+			name = ChooseFriends;
 			sourceTree = "<group>";
 		};
 		451460F91CDB17BE003F0742 /* Cell */ = {
@@ -317,14 +317,14 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
-		451461011CDB21D0003F0742 /* 客户邀请 */ = {
+		451461011CDB21D0003F0742 /* ClientInvite */ = {
 			isa = PBXGroup;
 			children = (
 				451461061CDB2577003F0742 /* Cell */,
 				451461021CDB220B003F0742 /* ClientInviteVC.swift */,
 				451461041CDB221A003F0742 /* ClientInviteVC.storyboard */,
 			);
-			name = "客户邀请";
+			name = ClientInvite;
 			sourceTree = "<group>";
 		};
 		451461061CDB2577003F0742 /* Cell */ = {
@@ -336,14 +336,14 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
-		4514610B1CDB3511003F0742 /* 选择我的客户 */ = {
+		4514610B1CDB3511003F0742 /* ChooseClients */ = {
 			isa = PBXGroup;
 			children = (
 				451461101CDB35E1003F0742 /* Cell */,
 				4514610C1CDB3535003F0742 /* ChooseClientVC.swift */,
 				4514610E1CDB3546003F0742 /* ChooseClientVC.storyboard */,
 			);
-			name = "选择我的客户";
+			name = ChooseClients;
 			sourceTree = "<group>";
 		};
 		451461101CDB35E1003F0742 /* Cell */ = {
@@ -365,7 +365,7 @@
 			name = "宣传页";
 			sourceTree = "<group>";
 		};
-		451562F11CBF6A56005CE865 /* 我的关联 */ = {
+		451562F11CBF6A56005CE865 /* MyFriends */ = {
 			isa = PBXGroup;
 			children = (
 				451562FE1CBF73A4005CE865 /* Cells */,
@@ -376,7 +376,7 @@
 				451562FA1CBF705C005CE865 /* AddRelatedUserVC.swift */,
 				451562FC1CBF707C005CE865 /* AddRelatedUserVC.storyboard */,
 			);
-			name = "我的关联";
+			name = MyFriends;
 			sourceTree = "<group>";
 		};
 		451562FE1CBF73A4005CE865 /* Cells */ = {
@@ -406,14 +406,14 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		45186B8F1CC8A9200023BE4C /* 客户详情 */ = {
+		45186B8F1CC8A9200023BE4C /* ClientDetail */ = {
 			isa = PBXGroup;
 			children = (
 				45167BBE1CD069C8000C8FEE /* HeaderView */,
 				45186B901CC8A9990023BE4C /* EditClientVC.swift */,
 				45167BBC1CD06165000C8FEE /* EditClientVC.storyboard */,
 			);
-			name = "客户详情";
+			name = ClientDetail;
 			sourceTree = "<group>";
 		};
 		45186B921CC8AC400023BE4C /* Realm */ = {
@@ -424,36 +424,36 @@
 			name = Realm;
 			sourceTree = "<group>";
 		};
-		451935161CD88286001C3790 /* 活动详情 */ = {
+		451935161CD88286001C3790 /* ActivityDetail */ = {
 			isa = PBXGroup;
 			children = (
-				451461011CDB21D0003F0742 /* 客户邀请 */,
-				45E51A1A1CD9EA17004C45CA /* 分配名额 */,
-				451935221CD8938E001C3790 /* 签到 */,
+				451461011CDB21D0003F0742 /* ClientInvite */,
+				45E51A1A1CD9EA17004C45CA /* Allocation */,
+				451935221CD8938E001C3790 /* Sign */,
 				451935171CD882A6001C3790 /* ActivityDetailVC.swift */,
 				451935191CD882BE001C3790 /* ActivityDetailVC.storyboard */,
 			);
-			name = "活动详情";
+			name = ActivityDetail;
 			sourceTree = "<group>";
 		};
-		4519351B1CD8870E001C3790 /* 活动详情 */ = {
+		4519351B1CD8870E001C3790 /* ActivityDetail */ = {
 			isa = PBXGroup;
 			children = (
 				4519351C1CD8872B001C3790 /* MoreOperationsView.swift */,
 				4519351E1CD88AF5001C3790 /* OperationCell.swift */,
 				451935201CD88C41001C3790 /* CancelCell.swift */,
 			);
-			name = "活动详情";
+			name = ActivityDetail;
 			sourceTree = "<group>";
 		};
-		451935221CD8938E001C3790 /* 签到 */ = {
+		451935221CD8938E001C3790 /* Sign */ = {
 			isa = PBXGroup;
 			children = (
 				451935271CD8A469001C3790 /* Cell */,
 				451935231CD893AA001C3790 /* SignViewController.swift */,
 				451935251CD893BE001C3790 /* SignViewController.storyboard */,
 			);
-			name = "签到";
+			name = Sign;
 			sourceTree = "<group>";
 		};
 		451935271CD8A469001C3790 /* Cell */ = {
@@ -474,7 +474,7 @@
 			name = "登录";
 			sourceTree = "<group>";
 		};
-		451DAE701CD1ACF500B0B8EC /* 医院科室职务职称 */ = {
+		451DAE701CD1ACF500B0B8EC /* EditInfoChildVCs */ = {
 			isa = PBXGroup;
 			children = (
 				451DAE711CD1AD5F00B0B8EC /* EditBaseVC.swift */,
@@ -483,15 +483,15 @@
 				451DAE781CD1F7BC00B0B8EC /* EditPositionVC.swift */,
 				4518E16E1CD3335E00B69277 /* EditHospitalVC.swift */,
 			);
-			name = "医院科室职务职称";
+			name = EditInfoChildVCs;
 			sourceTree = "<group>";
 		};
-		451EA0001CB4F2A7004FE212 /* 我的 */ = {
+		451EA0001CB4F2A7004FE212 /* Me */ = {
 			isa = PBXGroup;
 			children = (
 				451EA0011CB4F2F2004FE212 /* CellBaseContainerView.swift */,
 			);
-			name = "我的";
+			name = Me;
 			sourceTree = "<group>";
 		};
 		451EA0031CB4FB88004FE212 /* Buttons */ = {
@@ -503,13 +503,13 @@
 			name = Buttons;
 			sourceTree = "<group>";
 		};
-		451EA00B1CB4FF35004FE212 /* 个人信息 */ = {
+		451EA00B1CB4FF35004FE212 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
 				451EA0061CB4FD68004FE212 /* InfoViewController.swift */,
 				451EA0081CB4FEA0004FE212 /* InfoViewController.storyboard */,
 			);
-			name = "个人信息";
+			name = Profile;
 			sourceTree = "<group>";
 		};
 		451FF6DE1CBCF1D700E31344 /* 注册 */ = {
@@ -539,16 +539,16 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
-		4523B3F21CACD0CE00811E50 /* 历史活动 */ = {
+		4523B3F21CACD0CE00811E50 /* ActivityHistory */ = {
 			isa = PBXGroup;
 			children = (
 				4523B3F31CACD0ED00811E50 /* HistoryActivityVC.swift */,
 				4523B3F71CACD1CA00811E50 /* HistoryActivityVC.storyboard */,
 			);
-			name = "历史活动";
+			name = ActivityHistory;
 			sourceTree = "<group>";
 		};
-		4523B3FA1CACFD4E00811E50 /* 新建活动 */ = {
+		4523B3FA1CACFD4E00811E50 /* AddActivity */ = {
 			isa = PBXGroup;
 			children = (
 				45175A951CAE0A8400D42A47 /* Views */,
@@ -556,16 +556,16 @@
 				4523B3FB1CACFD8A00811E50 /* AddActivityVC.swift */,
 				4523B3FD1CACFDD500811E50 /* AddActivityVC.storyboard */,
 			);
-			name = "新建活动";
+			name = AddActivity;
 			sourceTree = "<group>";
 		};
-		4523B4011CAD12CD00811E50 /* 客户类型 */ = {
+		4523B4011CAD12CD00811E50 /* ClientType */ = {
 			isa = PBXGroup;
 			children = (
 				4523B4021CAD12EA00811E50 /* ClientTypeVC.swift */,
 				4523B40D1CAD16B700811E50 /* ClientTypeVC.storyboard */,
 			);
-			name = "客户类型";
+			name = ClientType;
 			sourceTree = "<group>";
 		};
 		4523B4101CAD251100811E50 /* Cells */ = {
@@ -577,13 +577,13 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
-		457C6ACE1CB6420E0065E883 /* 编辑个人信息 */ = {
+		457C6ACE1CB6420E0065E883 /* EditProfile */ = {
 			isa = PBXGroup;
 			children = (
 				457C6AD21CB642CF0065E883 /* EditInfoViewController.swift */,
 				457C6ACF1CB642AE0065E883 /* EditInfoViewController.storyboard */,
 			);
-			name = "编辑个人信息";
+			name = EditProfile;
 			sourceTree = "<group>";
 		};
 		458C270B1CAA6915004575FC /* Extensions */ = {
@@ -606,10 +606,10 @@
 		458C270D1CAA6915004575FC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				4507EB501CBB971E007F3A5F /* 登录注册 */,
-				458C270F1CAA698F004575FC /* 活动 */,
-				458C27101CAA698F004575FC /* 客户 */,
-				458C27111CAA698F004575FC /* 我的 */,
+				4507EB501CBB971E007F3A5F /* Login&Register */,
+				458C270F1CAA698F004575FC /* Activity */,
+				458C27101CAA698F004575FC /* Clients */,
+				458C27111CAA698F004575FC /* Me */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -618,50 +618,53 @@
 			isa = PBXGroup;
 			children = (
 				4519352E1CD8B1F6001C3790 /* SeprateView.swift */,
-				4519351B1CD8870E001C3790 /* 活动详情 */,
+				4519351B1CD8870E001C3790 /* ActivityDetail */,
 				451C47CE1CC0CBCB00F197DA /* UserCountLabel.swift */,
 				451FF6D41CBCE4E100E31344 /* BorderTextField.swift */,
 				451EA0031CB4FB88004FE212 /* Buttons */,
-				451EA0001CB4F2A7004FE212 /* 我的 */,
+				451EA0001CB4F2A7004FE212 /* Me */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		458C270F1CAA698F004575FC /* 活动 */ = {
+		458C270F1CAA698F004575FC /* Activity */ = {
 			isa = PBXGroup;
 			children = (
-				4514610B1CDB3511003F0742 /* 选择我的客户 */,
-				451460F61CDB1669003F0742 /* 选择我的关联 */,
-				451935161CD88286001C3790 /* 活动详情 */,
-				4523B3FA1CACFD4E00811E50 /* 新建活动 */,
-				4523B3F21CACD0CE00811E50 /* 历史活动 */,
+				4514610B1CDB3511003F0742 /* ChooseClients */,
+				451460F61CDB1669003F0742 /* ChooseFriends */,
+				451935161CD88286001C3790 /* ActivityDetail */,
+				4523B3FA1CACFD4E00811E50 /* AddActivity */,
+				4523B3F21CACD0CE00811E50 /* ActivityHistory */,
 				458C271B1CAA7AA3004575FC /* Cells */,
 				458C27121CAA6D8E004575FC /* ActivityViewController.swift */,
 			);
+			name = Activity;
 			path = "活动";
 			sourceTree = "<group>";
 		};
-		458C27101CAA698F004575FC /* 客户 */ = {
+		458C27101CAA698F004575FC /* Clients */ = {
 			isa = PBXGroup;
 			children = (
-				451DAE701CD1ACF500B0B8EC /* 医院科室职务职称 */,
+				451DAE701CD1ACF500B0B8EC /* EditInfoChildVCs */,
 				45224B8B1CC7593500DE3054 /* Cells */,
-				45186B8F1CC8A9200023BE4C /* 客户详情 */,
-				4523B4011CAD12CD00811E50 /* 客户类型 */,
+				45186B8F1CC8A9200023BE4C /* ClientDetail */,
+				4523B4011CAD12CD00811E50 /* ClientType */,
 				458C27171CAA6E05004575FC /* ClientViewController.swift */,
 			);
+			name = Clients;
 			path = "客户";
 			sourceTree = "<group>";
 		};
-		458C27111CAA698F004575FC /* 我的 */ = {
+		458C27111CAA698F004575FC /* Me */ = {
 			isa = PBXGroup;
 			children = (
 				458C27191CAA6E24004575FC /* ProfileViewController.swift */,
-				451562F11CBF6A56005CE865 /* 我的关联 */,
-				45E71AC71CBB7C1500FC26CF /* 系统设置 */,
-				451EA00B1CB4FF35004FE212 /* 个人信息 */,
-				457C6ACE1CB6420E0065E883 /* 编辑个人信息 */,
+				451562F11CBF6A56005CE865 /* MyFriends */,
+				45E71AC71CBB7C1500FC26CF /* SystemSettings */,
+				451EA00B1CB4FF35004FE212 /* Profile */,
+				457C6ACE1CB6420E0065E883 /* EditProfile */,
 			);
+			name = Me;
 			path = "我的";
 			sourceTree = "<group>";
 		};
@@ -747,14 +750,14 @@
 			path = ZeusUITests;
 			sourceTree = "<group>";
 		};
-		45E51A1A1CD9EA17004C45CA /* 分配名额 */ = {
+		45E51A1A1CD9EA17004C45CA /* Allocation */ = {
 			isa = PBXGroup;
 			children = (
 				45E51A1F1CD9F242004C45CA /* Cell */,
 				45E51A1B1CD9EA3A004C45CA /* AllocationViewController.swift */,
 				45E51A1D1CD9EA71004C45CA /* AllocationViewController.storyboard */,
 			);
-			name = "分配名额";
+			name = Allocation;
 			sourceTree = "<group>";
 		};
 		45E51A1F1CD9F242004C45CA /* Cell */ = {
@@ -766,15 +769,15 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
-		45E71AC71CBB7C1500FC26CF /* 系统设置 */ = {
+		45E71AC71CBB7C1500FC26CF /* SystemSettings */ = {
 			isa = PBXGroup;
 			children = (
-				4507EB581CBBB3A7007F3A5F /* 关于 */,
-				4507EB571CBBB3A1007F3A5F /* 意见反馈 */,
+				4507EB581CBBB3A7007F3A5F /* AboutUs */,
+				4507EB571CBBB3A1007F3A5F /* Feedback */,
 				45E71AC81CBB7C4C00FC26CF /* SettingsViewController.swift */,
 				45E71ACC1CBB7D5000FC26CF /* SettingsViewController.storyboard */,
 			);
-			name = "系统设置";
+			name = SystemSettings;
 			sourceTree = "<group>";
 		};
 		45E71ACE1CBB935700FC26CF /* Helpers */ = {
