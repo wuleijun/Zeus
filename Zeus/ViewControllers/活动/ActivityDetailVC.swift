@@ -13,6 +13,15 @@ class ActivityDetailVC: BaseViewController {
     private lazy var moreOperationView:MoreOperationsView = {
         let moreOperationView = MoreOperationsView()
         
+        //授权签到
+        moreOperationView.createAuthSignAction = { [weak self] in
+            
+            if let strongSelf = self{
+                let authSignVC = UIViewController.controllerWith(storyboardName: "AuthSignUserVC", viewControllerId: "AuthSignUserVC") as! AuthSignUserVC
+                strongSelf.navigationController?.pushViewController(authSignVC, animated:true)
+            }
+        }
+        
         //签到
         moreOperationView.createSignAction = { [weak self] in
             

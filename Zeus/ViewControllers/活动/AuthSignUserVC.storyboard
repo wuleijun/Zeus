@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uL7-ol-CfV">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--授权签到-->
+        <scene sceneID="ldS-uu-78C">
+            <objects>
+                <viewController storyboardIdentifier="AuthSignUserVC" title="授权签到" id="uL7-ol-CfV" customClass="AuthSignUserVC" customModule="Zeus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="afU-uT-W4Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="rQR-iV-sO4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8t0-HV-Oge">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FOf-y8-aom">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="uL7-ol-CfV" id="jnG-iZ-Z9j"/>
+                                    <outlet property="delegate" destination="uL7-ol-CfV" id="wdn-sh-2XW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="FOf-y8-aom" secondAttribute="bottom" id="J0r-ee-G5B"/>
+                            <constraint firstItem="FOf-y8-aom" firstAttribute="top" secondItem="afU-uT-W4Y" secondAttribute="bottom" id="J78-Gc-GqZ"/>
+                            <constraint firstItem="FOf-y8-aom" firstAttribute="leading" secondItem="8t0-HV-Oge" secondAttribute="leading" id="oz5-Ar-Sky"/>
+                            <constraint firstAttribute="trailing" secondItem="FOf-y8-aom" secondAttribute="trailing" id="zNI-X3-iwk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="授权签到" id="M97-Xm-GpV">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="eWP-zN-STC">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wP5-tV-rnb">
+                                <rect key="frame" x="335" y="10" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="activity_add"/>
+                                <connections>
+                                    <action selector="addSignUser_Touch:" destination="uL7-ol-CfV" eventType="touchUpInside" id="gH8-y6-BoH"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="FOf-y8-aom" id="Igz-CA-LRA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t1o-Ye-irz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229.5" y="192.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="activity_add" width="24" height="24"/>
+    </resources>
+</document>

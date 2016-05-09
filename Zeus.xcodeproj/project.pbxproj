@@ -58,6 +58,8 @@
 		4519C0DE1CBDEB7700217C24 /* LoginVerifyMobileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0DD1CBDEB7700217C24 /* LoginVerifyMobileVC.swift */; };
 		4519C0E01CBE48C700217C24 /* ZeusHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0DF1CBE48C700217C24 /* ZeusHud.swift */; };
 		4519C0E21CBE4F4100217C24 /* ZeusHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0E11CBE4F4100217C24 /* ZeusHelper.swift */; };
+		451AAA731CE02BAA00B65931 /* AuthSignUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451AAA721CE02BAA00B65931 /* AuthSignUserVC.swift */; };
+		451AAA751CE02BC500B65931 /* AuthSignUserVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451AAA741CE02BC500B65931 /* AuthSignUserVC.storyboard */; };
 		451C47CF1CC0CBCB00F197DA /* UserCountLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C47CE1CC0CBCB00F197DA /* UserCountLabel.swift */; };
 		451DAE721CD1AD5F00B0B8EC /* EditBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DAE711CD1AD5F00B0B8EC /* EditBaseVC.swift */; };
 		451DAE771CD1F4B200B0B8EC /* EditSectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DAE761CD1F4B200B0B8EC /* EditSectionVC.swift */; };
@@ -182,6 +184,8 @@
 		4519C0DD1CBDEB7700217C24 /* LoginVerifyMobileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVerifyMobileVC.swift; sourceTree = "<group>"; };
 		4519C0DF1CBE48C700217C24 /* ZeusHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusHud.swift; sourceTree = "<group>"; };
 		4519C0E11CBE4F4100217C24 /* ZeusHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusHelper.swift; sourceTree = "<group>"; };
+		451AAA721CE02BAA00B65931 /* AuthSignUserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthSignUserVC.swift; sourceTree = "<group>"; };
+		451AAA741CE02BC500B65931 /* AuthSignUserVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AuthSignUserVC.storyboard; sourceTree = "<group>"; };
 		451C47CE1CC0CBCB00F197DA /* UserCountLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCountLabel.swift; sourceTree = "<group>"; };
 		451DAE711CD1AD5F00B0B8EC /* EditBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditBaseVC.swift; sourceTree = "<group>"; };
 		451DAE761CD1F4B200B0B8EC /* EditSectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditSectionVC.swift; sourceTree = "<group>"; };
@@ -427,6 +431,7 @@
 		451935161CD88286001C3790 /* ActivityDetail */ = {
 			isa = PBXGroup;
 			children = (
+				451AAA711CE02B8A00B65931 /* AuthSign */,
 				451461011CDB21D0003F0742 /* ClientInvite */,
 				45E51A1A1CD9EA17004C45CA /* Allocation */,
 				451935221CD8938E001C3790 /* Sign */,
@@ -472,6 +477,15 @@
 				4519C0DD1CBDEB7700217C24 /* LoginVerifyMobileVC.swift */,
 			);
 			name = "登录";
+			sourceTree = "<group>";
+		};
+		451AAA711CE02B8A00B65931 /* AuthSign */ = {
+			isa = PBXGroup;
+			children = (
+				451AAA721CE02BAA00B65931 /* AuthSignUserVC.swift */,
+				451AAA741CE02BC500B65931 /* AuthSignUserVC.storyboard */,
+			);
+			name = AuthSign;
 			sourceTree = "<group>";
 		};
 		451DAE701CD1ACF500B0B8EC /* EditInfoChildVCs */ = {
@@ -938,6 +952,7 @@
 				45E51A231CD9F26F004C45CA /* AllocationCell.xib in Resources */,
 				45D052361CAA594400BB1738 /* LaunchScreen.storyboard in Resources */,
 				457C6AD11CB642AE0065E883 /* EditInfoViewController.storyboard in Resources */,
+				451AAA751CE02BC500B65931 /* AuthSignUserVC.storyboard in Resources */,
 				4523B3FF1CACFDD500811E50 /* AddActivityVC.storyboard in Resources */,
 				45E51A1E1CD9EA71004C45CA /* AllocationViewController.storyboard in Resources */,
 				45D052331CAA594400BB1738 /* Assets.xcassets in Resources */,
@@ -1021,6 +1036,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				451FF6DD1CBCEFE200E31344 /* RegisterUserInfoVC.swift in Sources */,
+				451AAA731CE02BAA00B65931 /* AuthSignUserVC.swift in Sources */,
 				451C47CF1CC0CBCB00F197DA /* UserCountLabel.swift in Sources */,
 				4518E16F1CD3335E00B69277 /* EditHospitalVC.swift in Sources */,
 				4507EB541CBB980F007F3A5F /* LoginRegisterVC.swift in Sources */,
