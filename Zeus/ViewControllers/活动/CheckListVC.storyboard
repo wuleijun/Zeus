@@ -47,12 +47,24 @@
                                     <constraint firstItem="vQb-1H-c2K" firstAttribute="top" secondItem="MMK-GS-PL4" secondAttribute="top" constant="10" id="faO-dA-4vP"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c8q-lc-B4V">
+                                <rect key="frame" x="0.0" y="104" width="375" height="563"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="iAl-wj-pe9" id="ZPi-MG-brg"/>
+                                    <outlet property="delegate" destination="iAl-wj-pe9" id="Cge-hv-5wx"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="DaY-Y6-Hg3" firstAttribute="top" secondItem="c8q-lc-B4V" secondAttribute="bottom" id="3t0-v0-8X9"/>
                             <constraint firstItem="MMK-GS-PL4" firstAttribute="leading" secondItem="GvF-aA-1Bg" secondAttribute="leading" id="6HE-Dn-sRj"/>
+                            <constraint firstAttribute="trailing" secondItem="c8q-lc-B4V" secondAttribute="trailing" id="W0G-kd-RZa"/>
                             <constraint firstAttribute="trailing" secondItem="MMK-GS-PL4" secondAttribute="trailing" id="WLn-r5-cs8"/>
+                            <constraint firstItem="c8q-lc-B4V" firstAttribute="leading" secondItem="GvF-aA-1Bg" secondAttribute="leading" id="bK0-jV-h1G"/>
                             <constraint firstItem="MMK-GS-PL4" firstAttribute="top" secondItem="qKv-3k-Yx2" secondAttribute="bottom" id="yuN-95-duS"/>
+                            <constraint firstItem="c8q-lc-B4V" firstAttribute="top" secondItem="MMK-GS-PL4" secondAttribute="bottom" id="zgW-Ck-ss5"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -60,12 +72,13 @@
                     <connections>
                         <outlet property="progressHeightConstraint" destination="3bj-0P-ID2" id="TLo-xF-RZn"/>
                         <outlet property="progressView" destination="vQb-1H-c2K" id="41W-Wa-zZ1"/>
+                        <outlet property="tableView" destination="c8q-lc-B4V" id="7F8-0a-kD3"/>
                         <outlet property="topView" destination="MMK-GS-PL4" id="0UZ-M9-uj7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WkK-EV-7jK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="259.5" y="197.5"/>
+            <point key="canvasLocation" x="231.5" y="-38.5"/>
         </scene>
     </scenes>
 </document>
