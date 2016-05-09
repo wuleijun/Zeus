@@ -60,6 +60,8 @@
 		4519C0E21CBE4F4100217C24 /* ZeusHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519C0E11CBE4F4100217C24 /* ZeusHelper.swift */; };
 		451AAA731CE02BAA00B65931 /* AuthSignUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451AAA721CE02BAA00B65931 /* AuthSignUserVC.swift */; };
 		451AAA751CE02BC500B65931 /* AuthSignUserVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451AAA741CE02BC500B65931 /* AuthSignUserVC.storyboard */; };
+		451AAA781CE0312000B65931 /* CheckListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451AAA771CE0312000B65931 /* CheckListVC.swift */; };
+		451AAA7A1CE0313500B65931 /* CheckListVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451AAA791CE0313500B65931 /* CheckListVC.storyboard */; };
 		451C47CF1CC0CBCB00F197DA /* UserCountLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C47CE1CC0CBCB00F197DA /* UserCountLabel.swift */; };
 		451DAE721CD1AD5F00B0B8EC /* EditBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DAE711CD1AD5F00B0B8EC /* EditBaseVC.swift */; };
 		451DAE771CD1F4B200B0B8EC /* EditSectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DAE761CD1F4B200B0B8EC /* EditSectionVC.swift */; };
@@ -186,6 +188,8 @@
 		4519C0E11CBE4F4100217C24 /* ZeusHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeusHelper.swift; sourceTree = "<group>"; };
 		451AAA721CE02BAA00B65931 /* AuthSignUserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthSignUserVC.swift; sourceTree = "<group>"; };
 		451AAA741CE02BC500B65931 /* AuthSignUserVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AuthSignUserVC.storyboard; sourceTree = "<group>"; };
+		451AAA771CE0312000B65931 /* CheckListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckListVC.swift; sourceTree = "<group>"; };
+		451AAA791CE0313500B65931 /* CheckListVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CheckListVC.storyboard; sourceTree = "<group>"; };
 		451C47CE1CC0CBCB00F197DA /* UserCountLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCountLabel.swift; sourceTree = "<group>"; };
 		451DAE711CD1AD5F00B0B8EC /* EditBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditBaseVC.swift; sourceTree = "<group>"; };
 		451DAE761CD1F4B200B0B8EC /* EditSectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditSectionVC.swift; sourceTree = "<group>"; };
@@ -431,6 +435,7 @@
 		451935161CD88286001C3790 /* ActivityDetail */ = {
 			isa = PBXGroup;
 			children = (
+				451AAA761CE030F300B65931 /* CheckList */,
 				451AAA711CE02B8A00B65931 /* AuthSign */,
 				451461011CDB21D0003F0742 /* ClientInvite */,
 				45E51A1A1CD9EA17004C45CA /* Allocation */,
@@ -486,6 +491,15 @@
 				451AAA741CE02BC500B65931 /* AuthSignUserVC.storyboard */,
 			);
 			name = AuthSign;
+			sourceTree = "<group>";
+		};
+		451AAA761CE030F300B65931 /* CheckList */ = {
+			isa = PBXGroup;
+			children = (
+				451AAA771CE0312000B65931 /* CheckListVC.swift */,
+				451AAA791CE0313500B65931 /* CheckListVC.storyboard */,
+			);
+			name = CheckList;
 			sourceTree = "<group>";
 		};
 		451DAE701CD1ACF500B0B8EC /* EditInfoChildVCs */ = {
@@ -960,6 +974,7 @@
 				451563081CBF79C5005CE865 /* RelateEachOtherCell.xib in Resources */,
 				4519351A1CD882BE001C3790 /* ActivityDetailVC.storyboard in Resources */,
 				451562F51CBF6AAC005CE865 /* MyRelatedUserVC.storyboard in Resources */,
+				451AAA7A1CE0313500B65931 /* CheckListVC.storyboard in Resources */,
 				451562FD1CBF707C005CE865 /* AddRelatedUserVC.storyboard in Resources */,
 				458C27211CAA7AFE004575FC /* ActivityCell.xib in Resources */,
 				45D052311CAA594400BB1738 /* Main.storyboard in Resources */,
@@ -1080,6 +1095,7 @@
 				4523B3EF1CACBB9F00811E50 /* UIColor+Zeus.swift in Sources */,
 				451DAE7B1CD1F7EE00B0B8EC /* EditTitleVC.swift in Sources */,
 				4519352A1CD8A487001C3790 /* SignClientCell.swift in Sources */,
+				451AAA781CE0312000B65931 /* CheckListVC.swift in Sources */,
 				451562F71CBF6FD8005CE865 /* RelateEachOtherVC.swift in Sources */,
 				4523B3F41CACD0ED00811E50 /* HistoryActivityVC.swift in Sources */,
 				451562F31CBF6A94005CE865 /* MyRelatedUserVC.swift in Sources */,

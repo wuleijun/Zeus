@@ -22,6 +22,14 @@ class ActivityDetailVC: BaseViewController {
             }
         }
         
+        //名单查看
+        moreOperationView.createMemeberCheckAction = { [weak self] in
+            if let strongSelf = self {
+                let checkListVC = UIViewController.controllerWith(storyboardName: "CheckListVC", viewControllerId: "CheckListVC") as! CheckListVC
+                strongSelf.navigationController?.pushViewController(checkListVC, animated: true)
+            }
+        }
+        
         //签到
         moreOperationView.createSignAction = { [weak self] in
             
@@ -30,6 +38,7 @@ class ActivityDetailVC: BaseViewController {
                 strongSelf.navigationController?.pushViewController(signVC, animated: true)
             }
         }
+        
         
         //名额分配
         moreOperationView.createAllocationAction = { [weak self] in

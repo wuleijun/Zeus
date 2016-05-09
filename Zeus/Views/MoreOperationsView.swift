@@ -35,6 +35,8 @@ class MoreOperationsView: UIView {
     
     var createAllocationAction: (() -> Void)?
     var createClientInviteAction: (() -> Void)?
+    var createMemeberCheckAction: (() -> Void)?
+    
     var createAuthSignAction: (() -> Void)?
     var createSignAction: (() -> Void)?
     
@@ -261,6 +263,7 @@ extension MoreOperationsView: UITableViewDataSource, UITableViewDelegate {
                 createClientInviteAction?()
                 hide()
             case .Member:
+                createMemeberCheckAction?()
                 hide()
             case .AuthSign:
                 createAuthSignAction?()
