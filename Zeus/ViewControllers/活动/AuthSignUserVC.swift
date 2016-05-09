@@ -28,7 +28,7 @@ class AuthSignUserVC: BaseViewController {
     }
   
     @IBAction func addSignUser_Touch(sender: AnyObject) {
-        let chooseUserVC = ChooseMemberVC()
+        let chooseUserVC = UIViewController.controllerWith(storyboardName: "ChooseMemberVC", viewControllerId: "ChooseMemberVC") as! ChooseMemberVC
         navigationController?.pushViewController(chooseUserVC, animated: true)
     }
 }
