@@ -1,6 +1,6 @@
 #Zeus
 
-This project is used to learn Swift language.
+This demo is used to learn Swift language.
 ![](https://raw.githubusercontent.com/wuleijun/Zeus/master/preview.png)
 
 ## Intro
