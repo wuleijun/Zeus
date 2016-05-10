@@ -39,6 +39,10 @@
 		451563021CBF73C9005CE865 /* MyRelatedUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451563001CBF73C9005CE865 /* MyRelatedUserCell.xib */; };
 		451563071CBF79C5005CE865 /* RelateEachOtherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451563051CBF79C5005CE865 /* RelateEachOtherCell.swift */; };
 		451563081CBF79C5005CE865 /* RelateEachOtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451563061CBF79C5005CE865 /* RelateEachOtherCell.xib */; };
+		451595C81CE1B5D5004B021E /* ActivityInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451595C61CE1B5D5004B021E /* ActivityInfoCell.swift */; };
+		451595C91CE1B5D5004B021E /* ActivityInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451595C71CE1B5D5004B021E /* ActivityInfoCell.xib */; };
+		451595CE1CE1C05C004B021E /* ActivityDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451595CC1CE1C05C004B021E /* ActivityDetailCell.swift */; };
+		451595CF1CE1C05C004B021E /* ActivityDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451595CD1CE1C05C004B021E /* ActivityDetailCell.xib */; };
 		45167BBD1CD06165000C8FEE /* EditClientVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45167BBC1CD06165000C8FEE /* EditClientVC.storyboard */; };
 		45167BC01CD069F2000C8FEE /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45167BBF1CD069F2000C8FEE /* TableHeaderView.swift */; };
 		45175A971CAE0A9400D42A47 /* PublishButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45175A961CAE0A9400D42A47 /* PublishButtonView.swift */; };
@@ -167,6 +171,10 @@
 		451563001CBF73C9005CE865 /* MyRelatedUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyRelatedUserCell.xib; sourceTree = "<group>"; };
 		451563051CBF79C5005CE865 /* RelateEachOtherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelateEachOtherCell.swift; sourceTree = "<group>"; };
 		451563061CBF79C5005CE865 /* RelateEachOtherCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RelateEachOtherCell.xib; sourceTree = "<group>"; };
+		451595C61CE1B5D5004B021E /* ActivityInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityInfoCell.swift; sourceTree = "<group>"; };
+		451595C71CE1B5D5004B021E /* ActivityInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityInfoCell.xib; sourceTree = "<group>"; };
+		451595CC1CE1C05C004B021E /* ActivityDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailCell.swift; sourceTree = "<group>"; };
+		451595CD1CE1C05C004B021E /* ActivityDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityDetailCell.xib; sourceTree = "<group>"; };
 		45167BBC1CD06165000C8FEE /* EditClientVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditClientVC.storyboard; sourceTree = "<group>"; };
 		45167BBF1CD069F2000C8FEE /* TableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
 		45175A961CAE0A9400D42A47 /* PublishButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishButtonView.swift; sourceTree = "<group>"; };
@@ -398,6 +406,17 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		451595C51CE1B5A9004B021E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				451595C61CE1B5D5004B021E /* ActivityInfoCell.swift */,
+				451595C71CE1B5D5004B021E /* ActivityInfoCell.xib */,
+				451595CC1CE1C05C004B021E /* ActivityDetailCell.swift */,
+				451595CD1CE1C05C004B021E /* ActivityDetailCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		45167BBE1CD069C8000C8FEE /* HeaderView */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +454,7 @@
 		451935161CD88286001C3790 /* ActivityDetail */ = {
 			isa = PBXGroup;
 			children = (
+				451595C51CE1B5A9004B021E /* Cells */,
 				451AAA761CE030F300B65931 /* CheckList */,
 				451AAA711CE02B8A00B65931 /* AuthSign */,
 				451461011CDB21D0003F0742 /* ClientInvite */,
@@ -673,8 +693,8 @@
 		458C27101CAA698F004575FC /* Clients */ = {
 			isa = PBXGroup;
 			children = (
-				451DAE701CD1ACF500B0B8EC /* EditInfoChildVCs */,
 				45224B8B1CC7593500DE3054 /* Cells */,
+				451DAE701CD1ACF500B0B8EC /* EditInfoChildVCs */,
 				45186B8F1CC8A9200023BE4C /* ClientDetail */,
 				4523B4011CAD12CD00811E50 /* ClientType */,
 				458C27171CAA6E05004575FC /* ClientViewController.swift */,
@@ -950,6 +970,7 @@
 				4514610A1CDB2593003F0742 /* ClientInviteCell.xib in Resources */,
 				45167BBD1CD06165000C8FEE /* EditClientVC.storyboard in Resources */,
 				451461141CDB35F9003F0742 /* ChooseClientCell.xib in Resources */,
+				451595C91CE1B5D5004B021E /* ActivityInfoCell.xib in Resources */,
 				45E71ACD1CBB7D5000FC26CF /* SettingsViewController.storyboard in Resources */,
 				4507EB601CBBB54C007F3A5F /* AboutViewController.storyboard in Resources */,
 				4523B4141CAD253B00811E50 /* AddItemCell.xib in Resources */,
@@ -970,6 +991,7 @@
 				4523B3FF1CACFDD500811E50 /* AddActivityVC.storyboard in Resources */,
 				45E51A1E1CD9EA71004C45CA /* AllocationViewController.storyboard in Resources */,
 				45D052331CAA594400BB1738 /* Assets.xcassets in Resources */,
+				451595CF1CE1C05C004B021E /* ActivityDetailCell.xib in Resources */,
 				451562F91CBF702B005CE865 /* RelateEachOtherVC.storyboard in Resources */,
 				451563081CBF79C5005CE865 /* RelateEachOtherCell.xib in Resources */,
 				4519351A1CD882BE001C3790 /* ActivityDetailVC.storyboard in Resources */,
@@ -1110,12 +1132,14 @@
 				451563011CBF73C9005CE865 /* MyRelatedUserCell.swift in Sources */,
 				458C27181CAA6E05004575FC /* ClientViewController.swift in Sources */,
 				4519351F1CD88AF5001C3790 /* OperationCell.swift in Sources */,
+				451595C81CE1B5D5004B021E /* ActivityInfoCell.swift in Sources */,
 				4507EB5E1CBBB51E007F3A5F /* AboutViewController.swift in Sources */,
 				451460FC1CDB1809003F0742 /* ChooseRelatedUserCell.swift in Sources */,
 				45167BC01CD069F2000C8FEE /* TableHeaderView.swift in Sources */,
 				451FF6DB1CBCEC9C00E31344 /* VerifyMobileVC.swift in Sources */,
 				4519C0DE1CBDEB7700217C24 /* LoginVerifyMobileVC.swift in Sources */,
 				451DAE721CD1AD5F00B0B8EC /* EditBaseVC.swift in Sources */,
+				451595CE1CE1C05C004B021E /* ActivityDetailCell.swift in Sources */,
 				451562F01CBF2CB5005CE865 /* ShowThirdStepVC.swift in Sources */,
 				451935181CD882A6001C3790 /* ActivityDetailVC.swift in Sources */,
 				451FF6CF1CBCD68000E31344 /* BorderButton.swift in Sources */,
