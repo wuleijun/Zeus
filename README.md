@@ -19,10 +19,6 @@ Zeus use Storyboard to join different view controllers together. You can take a 
 
 At the same time, you should notice that some views are `@IBDesignable`. You can use Interface Builder, drag the view out and observe changes.
 
-## Activity
-
-Without integrating WeChat or Weibo SDK, Yep uses [MonkeyKing](https://github.com/nixzhu/MonkeyKing/) with the native `UIActivityViewController`. See `Activities/WeChatActivity.swift`.
-
 ## Network
 
 Zeus has no any network service currently.
