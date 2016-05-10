@@ -11,7 +11,7 @@ import UIKit
 class ActivityDetailVC: BaseViewController {
     
     let headerHeight:CGFloat = 44
-    let headerTitles = ["大会信息","大会主席","大会内容",""]
+    let headerTitles = ["大会信息","大会主席","大会内容","其他"]
     
     let activityInfoCellId = "ActivityInfoCell"
     let activityDetailCellId = "ActivityDetailCell"

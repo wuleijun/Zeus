@@ -29,10 +29,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Qcf-Vu-lNL" firstAttribute="top" secondItem="S3x-CF-IHG" secondAttribute="bottom" id="4fG-6v-J7l"/>
-                            <constraint firstAttribute="trailing" secondItem="Qcf-Vu-lNL" secondAttribute="trailing" id="8Eq-PU-c21"/>
-                            <constraint firstItem="Pay-GJ-QNz" firstAttribute="top" secondItem="Qcf-Vu-lNL" secondAttribute="bottom" id="Agc-rl-LSL"/>
-                            <constraint firstItem="Qcf-Vu-lNL" firstAttribute="leading" secondItem="NPE-nI-7Fg" secondAttribute="leading" id="T64-rD-p3M"/>
+                            <constraint firstItem="Qcf-Vu-lNL" firstAttribute="top" secondItem="S3x-CF-IHG" secondAttribute="bottom" id="V8L-2C-2nI"/>
+                            <constraint firstItem="Qcf-Vu-lNL" firstAttribute="leading" secondItem="NPE-nI-7Fg" secondAttribute="leading" id="iMW-Dx-0OZ"/>
+                            <constraint firstAttribute="bottom" secondItem="Qcf-Vu-lNL" secondAttribute="bottom" id="nBe-fQ-LYo"/>
+                            <constraint firstAttribute="trailing" secondItem="Qcf-Vu-lNL" secondAttribute="trailing" id="tth-bG-Cqr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="活动详情" id="MUH-CI-KDs">
