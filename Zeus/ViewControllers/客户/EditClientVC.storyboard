@@ -627,10 +627,24 @@
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMh-37-rv2">
+                                                            <rect key="frame" x="50" y="0.0" width="285" height="44"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                            <state key="normal" title="请输入">
+                                                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="clientType_Touch:" destination="h5z-Zd-f7B" eventType="touchUpInside" id="dok-Xc-y2m"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="DMh-37-rv2" secondAttribute="bottom" id="3PX-le-Dww"/>
+                                                        <constraint firstAttribute="trailing" secondItem="DMh-37-rv2" secondAttribute="trailing" constant="10" id="IoJ-Ke-gf3"/>
                                                         <constraint firstItem="ZZB-hn-s3m" firstAttribute="leading" secondItem="djR-XM-VKk" secondAttribute="leading" constant="15" id="MA7-nO-a2e"/>
+                                                        <constraint firstItem="DMh-37-rv2" firstAttribute="leading" secondItem="djR-XM-VKk" secondAttribute="leading" constant="50" id="XZf-7r-YfR"/>
+                                                        <constraint firstItem="DMh-37-rv2" firstAttribute="top" secondItem="djR-XM-VKk" secondAttribute="top" id="hBj-bx-gXD"/>
                                                         <constraint firstItem="ZZB-hn-s3m" firstAttribute="centerY" secondItem="djR-XM-VKk" secondAttribute="centerY" id="qF9-Ej-rXm"/>
                                                     </constraints>
                                                 </view>

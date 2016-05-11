@@ -130,6 +130,14 @@ class EditClientVC: UITableViewController {
         navigationController?.pushViewController(editPositionVC, animated: true)
     }
     
+    /**
+     客户类型
+     */
+    @IBAction func clientType_Touch(sender: AnyObject) {
+        let clientTypeVC = UIViewController.controllerWith(storyboardName: "ClientTypeVC", viewControllerId: "ClientTypeVC") as! ClientTypeVC
+        navigationController?.pushViewController(clientTypeVC, animated: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
