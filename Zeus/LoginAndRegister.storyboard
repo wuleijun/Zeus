@@ -582,14 +582,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="第一页" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDp-H7-vRT">
-                                <rect key="frame" x="86" y="318" width="203" height="31"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" red="0.33725490200000002" green="0.58039215690000001" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="引导页1" translatesAutoresizingMaskIntoConstraints="NO" id="KjR-7d-3TL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KjR-7d-3TL" secondAttribute="trailing" id="0X2-vV-O3U"/>
+                            <constraint firstItem="KjR-7d-3TL" firstAttribute="top" secondItem="fgh-ZC-aLF" secondAttribute="top" id="CyP-Ld-ubx"/>
+                            <constraint firstItem="gON-Z5-Qfm" firstAttribute="top" secondItem="KjR-7d-3TL" secondAttribute="bottom" id="duR-Sj-zmx"/>
+                            <constraint firstItem="KjR-7d-3TL" firstAttribute="leading" secondItem="fgh-ZC-aLF" secondAttribute="leading" id="kSC-nJ-ze4"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -609,14 +612,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="第二页" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksk-tB-F4l">
-                                <rect key="frame" x="86" y="318" width="203" height="31"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" red="0.33725490200000002" green="0.58039215690000001" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="引导页2" translatesAutoresizingMaskIntoConstraints="NO" id="c2C-lo-bwQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c2C-lo-bwQ" firstAttribute="leading" secondItem="Lkq-hY-XfJ" secondAttribute="leading" id="3zc-GI-Vdw"/>
+                            <constraint firstItem="c2C-lo-bwQ" firstAttribute="top" secondItem="Lkq-hY-XfJ" secondAttribute="top" id="DZU-lP-TIa"/>
+                            <constraint firstAttribute="trailing" secondItem="c2C-lo-bwQ" secondAttribute="trailing" id="Gfy-Kf-Sz1"/>
+                            <constraint firstItem="KKB-Dp-WP6" firstAttribute="top" secondItem="c2C-lo-bwQ" secondAttribute="bottom" id="VaV-iU-AzD"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -636,14 +642,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="第三页" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqG-ej-uQ8">
-                                <rect key="frame" x="86" y="318" width="203" height="31"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" red="0.33725490200000002" green="0.58039215690000001" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="引导页3" translatesAutoresizingMaskIntoConstraints="NO" id="6KC-hB-fVG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6KC-hB-fVG" firstAttribute="leading" secondItem="kBO-yn-uor" secondAttribute="leading" id="MRf-XX-E3M"/>
+                            <constraint firstAttribute="trailing" secondItem="6KC-hB-fVG" secondAttribute="trailing" id="YR1-CZ-Vxz"/>
+                            <constraint firstItem="6KC-hB-fVG" firstAttribute="top" secondItem="kBO-yn-uor" secondAttribute="top" id="aaY-cN-5jC"/>
+                            <constraint firstItem="WZc-vP-c9E" firstAttribute="top" secondItem="6KC-hB-fVG" secondAttribute="bottom" id="uBA-c2-zwm"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -741,5 +750,8 @@
         <image name="login_registered_name" width="16" height="23"/>
         <image name="login_registered_position" width="16" height="23"/>
         <image name="login_verificationcode" width="16" height="23"/>
+        <image name="引导页1" width="320" height="568"/>
+        <image name="引导页2" width="320" height="568"/>
+        <image name="引导页3" width="320" height="568"/>
     </resources>
 </document>

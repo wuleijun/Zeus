@@ -24,6 +24,13 @@ class Test:NSObject,XLFormOptionObject {
 }
 class ClientTypeVC: UIViewController,XLFormRowDescriptorViewController {
 
+    
+    @IBOutlet weak var tableView: UITableView!{
+        didSet{
+            
+        }
+    }
+    
     var rowDescriptor: XLFormRowDescriptor?
     
     override func viewDidLoad() {
