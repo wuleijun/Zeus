@@ -22,12 +22,18 @@ class Test:NSObject,XLFormOptionObject {
         return self
     }
 }
-class ClientTypeVC: UIViewController,XLFormRowDescriptorViewController {
+class ClientTypeVC: BaseViewController,XLFormRowDescriptorViewController {
 
+    let clientTypeExpandCellId = "ClientTypeExpandCell"
+    let clientTypeCellId = "ClientTypeCell"
+    let clientTypeAddCellId = "ClientTypeAddCell"
     
-    @IBOutlet weak var tableView: UITableView!{
+    @IBOutlet weak var tableView: RJExpandableTableView!{
         didSet{
-            
+            tableView.registerNib(UINib(nibName: clientTypeExpandCellId, bundle: nil), forCellReuseIdentifier: clientTypeExpandCellId)
+            tableView.registerNib(UINib(nibName: clientTypeCellId, bundle: nil), forCellReuseIdentifier: clientTypeCellId)
+            tableView.registerNib(UINib(nibName: clientTypeAddCellId, bundle: nil), forCellReuseIdentifier: clientTypeAddCellId)
+            tableView.tableFooterView = UIView()
         }
     }
     
@@ -55,4 +61,51 @@ class ClientTypeVC: UIViewController,XLFormRowDescriptorViewController {
     }
     */
 
+}
+
+// MARK: TableView DataSource
+extension ClientTypeVC : RJExpandableTableViewDataSource {
+    
+    func tableView(tableView: RJExpandableTableView, needsToDownloadDataForExpandSection section: Int) -> Bool {
+        return false
+    }
+    
+    func tableView(tableView: RJExpandableTableView, expandingCellForSection section: Int) -> RJExpandingTableViewCell {
+        let expandCell = tableView.dequeueReusableCellWithIdentifier(clientTypeExpandCellId) as! ClientTypeExpandCell
+        return expandCell
+    }
+    
+    func tableView(tableView: RJExpandableTableView, canExpandInSection section: Int) -> Bool {
+        return true
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 5
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        if indexPath.row == 3 {
+            let  addCell = tableView.dequeueReusableCellWithIdentifier(clientTypeAddCellId) as! ClientTypeAddCell
+            return addCell
+        }
+        let cell = tableView.dequeueReusableCellWithIdentifier(clientTypeCellId) as! ClientTypeCell
+        return cell
+    }
+}
+
+extension ClientTypeVC: RJExpandableTableViewDelegate {
+    func tableView(tableView: RJExpandableTableView, downloadDataForExpandableSection section: Int) {
+        
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if indexPath.row == 0 {
+            return ClientTypeExpandCell.heightOfCell()
+        }
+        return 44
+    }
 }

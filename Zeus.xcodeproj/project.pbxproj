@@ -67,6 +67,14 @@
 		451AAA781CE0312000B65931 /* CheckListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451AAA771CE0312000B65931 /* CheckListVC.swift */; };
 		451AAA7A1CE0313500B65931 /* CheckListVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451AAA791CE0313500B65931 /* CheckListVC.storyboard */; };
 		451C47CF1CC0CBCB00F197DA /* UserCountLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C47CE1CC0CBCB00F197DA /* UserCountLabel.swift */; };
+		451D5FF31CE5748900A48A40 /* RJExpandableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D5FF11CE5748900A48A40 /* RJExpandableTableViewCell.swift */; };
+		451D5FF41CE5748900A48A40 /* RJExpandableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D5FF21CE5748900A48A40 /* RJExpandableTableView.swift */; };
+		451D5FF71CE574EB00A48A40 /* ClientTypeExpandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D5FF51CE574EB00A48A40 /* ClientTypeExpandCell.swift */; };
+		451D5FF81CE574EB00A48A40 /* ClientTypeExpandCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451D5FF61CE574EB00A48A40 /* ClientTypeExpandCell.xib */; };
+		451D5FFB1CE57A3200A48A40 /* ClientTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D5FF91CE57A3200A48A40 /* ClientTypeCell.swift */; };
+		451D5FFC1CE57A3200A48A40 /* ClientTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451D5FFA1CE57A3200A48A40 /* ClientTypeCell.xib */; };
+		451D5FFF1CE57F0500A48A40 /* ClientTypeAddCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D5FFD1CE57F0500A48A40 /* ClientTypeAddCell.swift */; };
+		451D60001CE57F0500A48A40 /* ClientTypeAddCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451D5FFE1CE57F0500A48A40 /* ClientTypeAddCell.xib */; };
 		451DAE721CD1AD5F00B0B8EC /* EditBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DAE711CD1AD5F00B0B8EC /* EditBaseVC.swift */; };
 		451DAE771CD1F4B200B0B8EC /* EditSectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DAE761CD1F4B200B0B8EC /* EditSectionVC.swift */; };
 		451DAE791CD1F7BC00B0B8EC /* EditPositionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DAE781CD1F7BC00B0B8EC /* EditPositionVC.swift */; };
@@ -200,6 +208,14 @@
 		451AAA771CE0312000B65931 /* CheckListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckListVC.swift; sourceTree = "<group>"; };
 		451AAA791CE0313500B65931 /* CheckListVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CheckListVC.storyboard; sourceTree = "<group>"; };
 		451C47CE1CC0CBCB00F197DA /* UserCountLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCountLabel.swift; sourceTree = "<group>"; };
+		451D5FF11CE5748900A48A40 /* RJExpandableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RJExpandableTableViewCell.swift; sourceTree = "<group>"; };
+		451D5FF21CE5748900A48A40 /* RJExpandableTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RJExpandableTableView.swift; sourceTree = "<group>"; };
+		451D5FF51CE574EB00A48A40 /* ClientTypeExpandCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientTypeExpandCell.swift; sourceTree = "<group>"; };
+		451D5FF61CE574EB00A48A40 /* ClientTypeExpandCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientTypeExpandCell.xib; sourceTree = "<group>"; };
+		451D5FF91CE57A3200A48A40 /* ClientTypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientTypeCell.swift; sourceTree = "<group>"; };
+		451D5FFA1CE57A3200A48A40 /* ClientTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientTypeCell.xib; sourceTree = "<group>"; };
+		451D5FFD1CE57F0500A48A40 /* ClientTypeAddCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientTypeAddCell.swift; sourceTree = "<group>"; };
+		451D5FFE1CE57F0500A48A40 /* ClientTypeAddCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientTypeAddCell.xib; sourceTree = "<group>"; };
 		451DAE711CD1AD5F00B0B8EC /* EditBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditBaseVC.swift; sourceTree = "<group>"; };
 		451DAE761CD1F4B200B0B8EC /* EditSectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditSectionVC.swift; sourceTree = "<group>"; };
 		451DAE781CD1F7BC00B0B8EC /* EditPositionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPositionVC.swift; sourceTree = "<group>"; };
@@ -531,6 +547,15 @@
 			name = CheckList;
 			sourceTree = "<group>";
 		};
+		451D5FF01CE5746800A48A40 /* RJExpandTableView */ = {
+			isa = PBXGroup;
+			children = (
+				451D5FF11CE5748900A48A40 /* RJExpandableTableViewCell.swift */,
+				451D5FF21CE5748900A48A40 /* RJExpandableTableView.swift */,
+			);
+			name = RJExpandTableView;
+			sourceTree = "<group>";
+		};
 		451DAE701CD1ACF500B0B8EC /* EditInfoChildVCs */ = {
 			isa = PBXGroup;
 			children = (
@@ -590,6 +615,12 @@
 		45201B4C1CE31DEB004F3A22 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				451D5FF51CE574EB00A48A40 /* ClientTypeExpandCell.swift */,
+				451D5FF61CE574EB00A48A40 /* ClientTypeExpandCell.xib */,
+				451D5FF91CE57A3200A48A40 /* ClientTypeCell.swift */,
+				451D5FFA1CE57A3200A48A40 /* ClientTypeCell.xib */,
+				451D5FFD1CE57F0500A48A40 /* ClientTypeAddCell.swift */,
+				451D5FFE1CE57F0500A48A40 /* ClientTypeAddCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -682,6 +713,7 @@
 		458C270E1CAA6915004575FC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				451D5FF01CE5746800A48A40 /* RJExpandTableView */,
 				4519352E1CD8B1F6001C3790 /* SeprateView.swift */,
 				4519351B1CD8870E001C3790 /* ActivityDetail */,
 				451C47CE1CC0CBCB00F197DA /* UserCountLabel.swift */,
@@ -974,7 +1006,9 @@
 			files = (
 				451460FD1CDB1809003F0742 /* ChooseRelatedUserCell.xib in Resources */,
 				451EA00A1CB4FEA0004FE212 /* InfoViewController.storyboard in Resources */,
+				451D5FFC1CE57A3200A48A40 /* ClientTypeCell.xib in Resources */,
 				4507EB5C1CBBB3E5007F3A5F /* FeedbackViewController.storyboard in Resources */,
+				451D5FF81CE574EB00A48A40 /* ClientTypeExpandCell.xib in Resources */,
 				4514610A1CDB2593003F0742 /* ClientInviteCell.xib in Resources */,
 				45167BBD1CD06165000C8FEE /* EditClientVC.storyboard in Resources */,
 				451461141CDB35F9003F0742 /* ChooseClientCell.xib in Resources */,
@@ -990,6 +1024,7 @@
 				451460FF1CDB1C40003F0742 /* ChooseMemberVC.storyboard in Resources */,
 				45224B8F1CC7595700DE3054 /* ClientTableCell.xib in Resources */,
 				4523B3F91CACD1CA00811E50 /* HistoryActivityVC.storyboard in Resources */,
+				451D60001CE57F0500A48A40 /* ClientTypeAddCell.xib in Resources */,
 				4519352B1CD8A487001C3790 /* SignClientCell.xib in Resources */,
 				4523B40F1CAD16B700811E50 /* ClientTypeVC.storyboard in Resources */,
 				45E51A231CD9F26F004C45CA /* AllocationCell.xib in Resources */,
@@ -1083,6 +1118,7 @@
 				451FF6DD1CBCEFE200E31344 /* RegisterUserInfoVC.swift in Sources */,
 				451AAA731CE02BAA00B65931 /* AuthSignUserVC.swift in Sources */,
 				451C47CF1CC0CBCB00F197DA /* UserCountLabel.swift in Sources */,
+				451D5FF41CE5748900A48A40 /* RJExpandableTableView.swift in Sources */,
 				4518E16F1CD3335E00B69277 /* EditHospitalVC.swift in Sources */,
 				4507EB541CBB980F007F3A5F /* LoginRegisterVC.swift in Sources */,
 				45175A971CAE0A9400D42A47 /* PublishButtonView.swift in Sources */,
@@ -1091,6 +1127,7 @@
 				451562EC1CBF2C8F005CE865 /* ShowFirstStepVC.swift in Sources */,
 				451FF6D71CBCE68F00E31344 /* LoginByMobileVC.swift in Sources */,
 				451461091CDB2593003F0742 /* ClientInviteCell.swift in Sources */,
+				451D5FFB1CE57A3200A48A40 /* ClientTypeCell.swift in Sources */,
 				45E51A221CD9F26F004C45CA /* AllocationCell.swift in Sources */,
 				45224B8E1CC7595700DE3054 /* ClientTableCell.swift in Sources */,
 				451935241CD893AA001C3790 /* SignViewController.swift in Sources */,
@@ -1120,6 +1157,7 @@
 				451EA0021CB4F2F2004FE212 /* CellBaseContainerView.swift in Sources */,
 				4514610D1CDB3535003F0742 /* ChooseClientVC.swift in Sources */,
 				4523B3FC1CACFD8A00811E50 /* AddActivityVC.swift in Sources */,
+				451D5FF71CE574EB00A48A40 /* ClientTypeExpandCell.swift in Sources */,
 				451461031CDB220B003F0742 /* ClientInviteVC.swift in Sources */,
 				451562FB1CBF705C005CE865 /* AddRelatedUserVC.swift in Sources */,
 				4523B3EF1CACBB9F00811E50 /* UIColor+Zeus.swift in Sources */,
@@ -1128,6 +1166,7 @@
 				451AAA781CE0312000B65931 /* CheckListVC.swift in Sources */,
 				451562F71CBF6FD8005CE865 /* RelateEachOtherVC.swift in Sources */,
 				4523B3F41CACD0ED00811E50 /* HistoryActivityVC.swift in Sources */,
+				451D5FFF1CE57F0500A48A40 /* ClientTypeAddCell.swift in Sources */,
 				451562F31CBF6A94005CE865 /* MyRelatedUserVC.swift in Sources */,
 				451FF6E11CBD009400E31344 /* ZeusConfig.swift in Sources */,
 				451FF6D51CBCE4E100E31344 /* BorderTextField.swift in Sources */,
@@ -1148,6 +1187,7 @@
 				4519C0DE1CBDEB7700217C24 /* LoginVerifyMobileVC.swift in Sources */,
 				451DAE721CD1AD5F00B0B8EC /* EditBaseVC.swift in Sources */,
 				451595CE1CE1C05C004B021E /* ActivityDetailCell.swift in Sources */,
+				451D5FF31CE5748900A48A40 /* RJExpandableTableViewCell.swift in Sources */,
 				451562F01CBF2CB5005CE865 /* ShowThirdStepVC.swift in Sources */,
 				451935181CD882A6001C3790 /* ActivityDetailVC.swift in Sources */,
 				451FF6CF1CBCD68000E31344 /* BorderButton.swift in Sources */,
