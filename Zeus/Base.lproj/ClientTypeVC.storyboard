@@ -27,8 +27,8 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
                                 <connections>
-                                    <outlet property="dataSource" destination="KHv-g8-esf" id="FK1-9Y-a1f"/>
-                                    <outlet property="delegate" destination="KHv-g8-esf" id="Axi-Qa-NtO"/>
+                                    <outlet property="dataSource" destination="KHv-g8-esf" id="0Yv-Lb-fcX"/>
+                                    <outlet property="delegate" destination="KHv-g8-esf" id="gWc-YZ-xSU"/>
                                 </connections>
                             </tableView>
                         </subviews>

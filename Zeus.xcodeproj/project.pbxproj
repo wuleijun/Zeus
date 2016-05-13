@@ -67,14 +67,14 @@
 		451AAA781CE0312000B65931 /* CheckListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451AAA771CE0312000B65931 /* CheckListVC.swift */; };
 		451AAA7A1CE0313500B65931 /* CheckListVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451AAA791CE0313500B65931 /* CheckListVC.storyboard */; };
 		451C47CF1CC0CBCB00F197DA /* UserCountLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C47CE1CC0CBCB00F197DA /* UserCountLabel.swift */; };
-		451D5FF31CE5748900A48A40 /* RJExpandableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D5FF11CE5748900A48A40 /* RJExpandableTableViewCell.swift */; };
-		451D5FF41CE5748900A48A40 /* RJExpandableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D5FF21CE5748900A48A40 /* RJExpandableTableView.swift */; };
 		451D5FF71CE574EB00A48A40 /* ClientTypeExpandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D5FF51CE574EB00A48A40 /* ClientTypeExpandCell.swift */; };
 		451D5FF81CE574EB00A48A40 /* ClientTypeExpandCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451D5FF61CE574EB00A48A40 /* ClientTypeExpandCell.xib */; };
 		451D5FFB1CE57A3200A48A40 /* ClientTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D5FF91CE57A3200A48A40 /* ClientTypeCell.swift */; };
 		451D5FFC1CE57A3200A48A40 /* ClientTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451D5FFA1CE57A3200A48A40 /* ClientTypeCell.xib */; };
 		451D5FFF1CE57F0500A48A40 /* ClientTypeAddCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D5FFD1CE57F0500A48A40 /* ClientTypeAddCell.swift */; };
 		451D60001CE57F0500A48A40 /* ClientTypeAddCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451D5FFE1CE57F0500A48A40 /* ClientTypeAddCell.xib */; };
+		451D60041CE5A68200A48A40 /* RJExpandableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D60021CE5A68200A48A40 /* RJExpandableTableViewCell.swift */; };
+		451D60051CE5A68200A48A40 /* RJExpandableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D60031CE5A68200A48A40 /* RJExpandableTableView.swift */; };
 		451DAE721CD1AD5F00B0B8EC /* EditBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DAE711CD1AD5F00B0B8EC /* EditBaseVC.swift */; };
 		451DAE771CD1F4B200B0B8EC /* EditSectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DAE761CD1F4B200B0B8EC /* EditSectionVC.swift */; };
 		451DAE791CD1F7BC00B0B8EC /* EditPositionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DAE781CD1F7BC00B0B8EC /* EditPositionVC.swift */; };
@@ -208,14 +208,14 @@
 		451AAA771CE0312000B65931 /* CheckListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckListVC.swift; sourceTree = "<group>"; };
 		451AAA791CE0313500B65931 /* CheckListVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CheckListVC.storyboard; sourceTree = "<group>"; };
 		451C47CE1CC0CBCB00F197DA /* UserCountLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCountLabel.swift; sourceTree = "<group>"; };
-		451D5FF11CE5748900A48A40 /* RJExpandableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RJExpandableTableViewCell.swift; sourceTree = "<group>"; };
-		451D5FF21CE5748900A48A40 /* RJExpandableTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RJExpandableTableView.swift; sourceTree = "<group>"; };
 		451D5FF51CE574EB00A48A40 /* ClientTypeExpandCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientTypeExpandCell.swift; sourceTree = "<group>"; };
 		451D5FF61CE574EB00A48A40 /* ClientTypeExpandCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientTypeExpandCell.xib; sourceTree = "<group>"; };
 		451D5FF91CE57A3200A48A40 /* ClientTypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientTypeCell.swift; sourceTree = "<group>"; };
 		451D5FFA1CE57A3200A48A40 /* ClientTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientTypeCell.xib; sourceTree = "<group>"; };
 		451D5FFD1CE57F0500A48A40 /* ClientTypeAddCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientTypeAddCell.swift; sourceTree = "<group>"; };
 		451D5FFE1CE57F0500A48A40 /* ClientTypeAddCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientTypeAddCell.xib; sourceTree = "<group>"; };
+		451D60021CE5A68200A48A40 /* RJExpandableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RJExpandableTableViewCell.swift; sourceTree = "<group>"; };
+		451D60031CE5A68200A48A40 /* RJExpandableTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RJExpandableTableView.swift; sourceTree = "<group>"; };
 		451DAE711CD1AD5F00B0B8EC /* EditBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditBaseVC.swift; sourceTree = "<group>"; };
 		451DAE761CD1F4B200B0B8EC /* EditSectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditSectionVC.swift; sourceTree = "<group>"; };
 		451DAE781CD1F7BC00B0B8EC /* EditPositionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPositionVC.swift; sourceTree = "<group>"; };
@@ -547,11 +547,11 @@
 			name = CheckList;
 			sourceTree = "<group>";
 		};
-		451D5FF01CE5746800A48A40 /* RJExpandTableView */ = {
+		451D60011CE5A66A00A48A40 /* RJExpandTableView */ = {
 			isa = PBXGroup;
 			children = (
-				451D5FF11CE5748900A48A40 /* RJExpandableTableViewCell.swift */,
-				451D5FF21CE5748900A48A40 /* RJExpandableTableView.swift */,
+				451D60021CE5A68200A48A40 /* RJExpandableTableViewCell.swift */,
+				451D60031CE5A68200A48A40 /* RJExpandableTableView.swift */,
 			);
 			name = RJExpandTableView;
 			sourceTree = "<group>";
@@ -713,7 +713,7 @@
 		458C270E1CAA6915004575FC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				451D5FF01CE5746800A48A40 /* RJExpandTableView */,
+				451D60011CE5A66A00A48A40 /* RJExpandTableView */,
 				4519352E1CD8B1F6001C3790 /* SeprateView.swift */,
 				4519351B1CD8870E001C3790 /* ActivityDetail */,
 				451C47CE1CC0CBCB00F197DA /* UserCountLabel.swift */,
@@ -1116,9 +1116,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				451FF6DD1CBCEFE200E31344 /* RegisterUserInfoVC.swift in Sources */,
+				451D60041CE5A68200A48A40 /* RJExpandableTableViewCell.swift in Sources */,
 				451AAA731CE02BAA00B65931 /* AuthSignUserVC.swift in Sources */,
 				451C47CF1CC0CBCB00F197DA /* UserCountLabel.swift in Sources */,
-				451D5FF41CE5748900A48A40 /* RJExpandableTableView.swift in Sources */,
 				4518E16F1CD3335E00B69277 /* EditHospitalVC.swift in Sources */,
 				4507EB541CBB980F007F3A5F /* LoginRegisterVC.swift in Sources */,
 				45175A971CAE0A9400D42A47 /* PublishButtonView.swift in Sources */,
@@ -1133,6 +1133,7 @@
 				451935241CD893AA001C3790 /* SignViewController.swift in Sources */,
 				45186B971CC8AD9F0023BE4C /* Client.swift in Sources */,
 				458C27161CAA6DB9004575FC /* BaseViewController.swift in Sources */,
+				451D60051CE5A68200A48A40 /* RJExpandableTableView.swift in Sources */,
 				45D0522A1CAA594400BB1738 /* AppDelegate.swift in Sources */,
 				4523B4131CAD253B00811E50 /* AddItemCell.swift in Sources */,
 				451461131CDB35F9003F0742 /* ChooseClientCell.swift in Sources */,
@@ -1187,7 +1188,6 @@
 				4519C0DE1CBDEB7700217C24 /* LoginVerifyMobileVC.swift in Sources */,
 				451DAE721CD1AD5F00B0B8EC /* EditBaseVC.swift in Sources */,
 				451595CE1CE1C05C004B021E /* ActivityDetailCell.swift in Sources */,
-				451D5FF31CE5748900A48A40 /* RJExpandableTableViewCell.swift in Sources */,
 				451562F01CBF2CB5005CE865 /* ShowThirdStepVC.swift in Sources */,
 				451935181CD882A6001C3790 /* ActivityDetailVC.swift in Sources */,
 				451FF6CF1CBCD68000E31344 /* BorderButton.swift in Sources */,

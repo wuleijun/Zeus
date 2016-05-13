@@ -13,7 +13,6 @@ def pods
     #Objc
     pod 'YYCategories'
     pod 'XLForm'
-    pod 'SLExpandableTableView'
 end
 
 target 'Zeus' do
